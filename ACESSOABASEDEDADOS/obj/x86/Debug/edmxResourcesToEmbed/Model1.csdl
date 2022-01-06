@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SICREEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TbActa">
+    <Key>
+      <PropertyRef Name="AssembleiaID" />
+    </Key>
+    <Property Name="AssembleiaID" Type="Int32" Nullable="false" />
+    <Property Name="UsuarioID" Type="Int32" />
+    <Property Name="QtdMesa" Type="Int32" />
+    <Property Name="VotosBrancos" Type="Int32" />
+    <Property Name="VotosNulos" Type="Int32" />
+    <Property Name="VotosReclamados" Type="Int32" />
+    <Property Name="VotosValidos" Type="Int32" />
+    <NavigationProperty Name="TbAssembleia" Relationship="Self.FK_TbActa_TbAssembleia" FromRole="TbActa" ToRole="TbAssembleia" />
+    <NavigationProperty Name="TbUsuario" Relationship="Self.FK_TbActa_TbUsuario" FromRole="TbActa" ToRole="TbUsuario" />
+    <NavigationProperty Name="TbResultadoConcorrente" Relationship="Self.FK_TbResultadoConcorrente_TbActa" FromRole="TbActa" ToRole="TbResultadoConcorrente" />
+  </EntityType>
+  <EntityType Name="TbAssembleia">
+    <Key>
+      <PropertyRef Name="NumeroAssembleia" />
+    </Key>
+    <Property Name="NumeroAssembleia" Type="Int32" Nullable="false" />
+    <Property Name="MunicipioID" Type="Int32" />
+    <Property Name="Endereco" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TbActa" Relationship="Self.FK_TbActa_TbAssembleia" FromRole="TbAssembleia" ToRole="TbActa" />
+    <NavigationProperty Name="TbMunicipio" Relationship="Self.FK_TbAssembleia_TbMunicipio" FromRole="TbAssembleia" ToRole="TbMunicipio" />
+  </EntityType>
+  <EntityType Name="TbConcorrente">
+    <Key>
+      <PropertyRef Name="NumeroOrdem" />
+    </Key>
+    <Property Name="NumeroOrdem" Type="Int32" Nullable="false" />
+    <Property Name="NomePartido" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Sigla" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NomePresidente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BandeiraPartido" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="FotoPresidente" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <NavigationProperty Name="TbResultadoConcorrente" Relationship="Self.FK_TbResultadoConcorrente_TbConcorrente" FromRole="TbConcorrente" ToRole="TbResultadoConcorrente" />
+  </EntityType>
+  <EntityType Name="TbGeral">
+    <Key>
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="ProvinciaID" Type="Int32" Nullable="false" />
+    <Property Name="QuantidadeAssembleias" Type="Int32" />
+    <Property Name="QuantidadeEleitores" Type="Int32" />
+    <Property Name="QuantidadeMesasVotos" Type="Int32" />
+    <NavigationProperty Name="TbProvincia" Relationship="Self.FK_TbGeral_TbProvincia" FromRole="TbGeral" ToRole="TbProvincia" />
+  </EntityType>
+  <EntityType Name="TbMunicipio">
+    <Key>
+      <PropertyRef Name="MunicipioID" />
+    </Key>
+    <Property Name="MunicipioID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProvinciaID" Type="Int32" />
+    <Property Name="Designacao" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TbAssembleia" Relationship="Self.FK_TbAssembleia_TbMunicipio" FromRole="TbMunicipio" ToRole="TbAssembleia" />
+    <NavigationProperty Name="TbProvincia" Relationship="Self.FK_TbMunicipio_TbProvincia" FromRole="TbMunicipio" ToRole="TbProvincia" />
+  </EntityType>
+  <EntityType Name="TbProvincia">
+    <Key>
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="ProvinciaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Designacao" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TbGeral" Relationship="Self.FK_TbGeral_TbProvincia" FromRole="TbProvincia" ToRole="TbGeral" />
+    <NavigationProperty Name="TbMunicipio" Relationship="Self.FK_TbMunicipio_TbProvincia" FromRole="TbProvincia" ToRole="TbMunicipio" />
+  </EntityType>
+  <EntityType Name="TbResultadoConcorrente">
+    <Key>
+      <PropertyRef Name="ResultadoID" />
+    </Key>
+    <Property Name="ResultadoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ConcorrenteID" Type="Int32" Nullable="false" />
+    <Property Name="NumeroVotos" Type="Int32" Nullable="false" />
+    <Property Name="AssembleiaID" Type="Int32" />
+    <NavigationProperty Name="TbActa" Relationship="Self.FK_TbResultadoConcorrente_TbActa" FromRole="TbResultadoConcorrente" ToRole="TbActa" />
+    <NavigationProperty Name="TbConcorrente" Relationship="Self.FK_TbResultadoConcorrente_TbConcorrente" FromRole="TbResultadoConcorrente" ToRole="TbConcorrente" />
+  </EntityType>
+  <EntityType Name="TbUsuario">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Senha" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Telefone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <Property Name="Previlegio" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TbActa" Relationship="Self.FK_TbActa_TbUsuario" FromRole="TbUsuario" ToRole="TbActa" />
+  </EntityType>
+  <EntityType Name="ViewActa">
+    <Key>
+      <PropertyRef Name="NumeroAssembleia" />
+      <PropertyRef Name="UsuarioID" />
+      <PropertyRef Name="MunicipioID" />
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="NumeroAssembleia" Type="Int32" Nullable="false" />
+    <Property Name="Endereco" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UsuarioID" Type="Int32" Nullable="false" />
+    <Property Name="MunicipioID" Type="Int32" Nullable="false" />
+    <Property Name="Municipio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ProvinciaID" Type="Int32" Nullable="false" />
+    <Property Name="Provincia" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="QtdMesa" Type="Int32" />
+    <Property Name="VotosBrancos" Type="Int32" />
+    <Property Name="VotosNulos" Type="Int32" />
+    <Property Name="VotosReclamados" Type="Int32" />
+    <Property Name="VotosValidos" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ViewAssembleia">
+    <Key>
+      <PropertyRef Name="NumeroAssembleia" />
+      <PropertyRef Name="MunicipioID" />
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="NumeroAssembleia" Type="Int32" Nullable="false" />
+    <Property Name="Endereco" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Municipio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Provincia" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="MunicipioID" Type="Int32" Nullable="false" />
+    <Property Name="ProvinciaID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewGeral">
+    <Key>
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="ProvinciaID" Type="Int32" Nullable="false" />
+    <Property Name="Provincia" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="QuantidadeAssembleias" Type="Int32" />
+    <Property Name="QuantidadeEleitores" Type="Int32" />
+    <Property Name="QuantidadeMesasVotos" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ViewMunicipio">
+    <Key>
+      <PropertyRef Name="MunicipioID" />
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="MunicipioID" Type="Int32" Nullable="false" />
+    <Property Name="Municipio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ProvinciaID" Type="Int32" Nullable="false" />
+    <Property Name="Provincia" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ViewResultados">
+    <Key>
+      <PropertyRef Name="NomePartido" />
+      <PropertyRef Name="Sigla" />
+      <PropertyRef Name="NumeroVotos" />
+      <PropertyRef Name="ConcorrenteID" />
+      <PropertyRef Name="NumeroAssembleia" />
+      <PropertyRef Name="MunicipioID" />
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="NomePartido" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Sigla" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NumeroVotos" Type="Int32" Nullable="false" />
+    <Property Name="ConcorrenteID" Type="Int32" Nullable="false" />
+    <Property Name="NumeroAssembleia" Type="Int32" Nullable="false" />
+    <Property Name="MunicipioID" Type="Int32" Nullable="false" />
+    <Property Name="ProvinciaID" Type="Int32" Nullable="false" />
+    <Property Name="Municipio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Provincia" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_TbActa_TbAssembleia">
+    <End Role="TbAssembleia" Type="Self.TbAssembleia" Multiplicity="1" />
+    <End Role="TbActa" Type="Self.TbActa" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TbAssembleia">
+        <PropertyRef Name="NumeroAssembleia" />
+      </Principal>
+      <Dependent Role="TbActa">
+        <PropertyRef Name="AssembleiaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbActa_TbUsuario">
+    <End Role="TbUsuario" Type="Self.TbUsuario" Multiplicity="0..1" />
+    <End Role="TbActa" Type="Self.TbActa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbUsuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="TbActa">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbResultadoConcorrente_TbActa">
+    <End Role="TbActa" Type="Self.TbActa" Multiplicity="0..1" />
+    <End Role="TbResultadoConcorrente" Type="Self.TbResultadoConcorrente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbActa">
+        <PropertyRef Name="AssembleiaID" />
+      </Principal>
+      <Dependent Role="TbResultadoConcorrente">
+        <PropertyRef Name="AssembleiaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbAssembleia_TbMunicipio">
+    <End Role="TbMunicipio" Type="Self.TbMunicipio" Multiplicity="0..1" />
+    <End Role="TbAssembleia" Type="Self.TbAssembleia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbMunicipio">
+        <PropertyRef Name="MunicipioID" />
+      </Principal>
+      <Dependent Role="TbAssembleia">
+        <PropertyRef Name="MunicipioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbResultadoConcorrente_TbConcorrente">
+    <End Role="TbConcorrente" Type="Self.TbConcorrente" Multiplicity="1" />
+    <End Role="TbResultadoConcorrente" Type="Self.TbResultadoConcorrente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbConcorrente">
+        <PropertyRef Name="NumeroOrdem" />
+      </Principal>
+      <Dependent Role="TbResultadoConcorrente">
+        <PropertyRef Name="ConcorrenteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbGeral_TbProvincia">
+    <End Role="TbProvincia" Type="Self.TbProvincia" Multiplicity="1" />
+    <End Role="TbGeral" Type="Self.TbGeral" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TbProvincia">
+        <PropertyRef Name="ProvinciaID" />
+      </Principal>
+      <Dependent Role="TbGeral">
+        <PropertyRef Name="ProvinciaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbMunicipio_TbProvincia">
+    <End Role="TbProvincia" Type="Self.TbProvincia" Multiplicity="0..1" />
+    <End Role="TbMunicipio" Type="Self.TbMunicipio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbProvincia">
+        <PropertyRef Name="ProvinciaID" />
+      </Principal>
+      <Dependent Role="TbMunicipio">
+        <PropertyRef Name="ProvinciaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SICREEEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TbActa" EntityType="Self.TbActa" />
+    <EntitySet Name="TbAssembleia" EntityType="Self.TbAssembleia" />
+    <EntitySet Name="TbConcorrente" EntityType="Self.TbConcorrente" />
+    <EntitySet Name="TbGeral" EntityType="Self.TbGeral" />
+    <EntitySet Name="TbMunicipio" EntityType="Self.TbMunicipio" />
+    <EntitySet Name="TbProvincia" EntityType="Self.TbProvincia" />
+    <EntitySet Name="TbResultadoConcorrente" EntityType="Self.TbResultadoConcorrente" />
+    <EntitySet Name="TbUsuario" EntityType="Self.TbUsuario" />
+    <EntitySet Name="ViewActa" EntityType="Self.ViewActa" />
+    <EntitySet Name="ViewAssembleia" EntityType="Self.ViewAssembleia" />
+    <EntitySet Name="ViewGeral" EntityType="Self.ViewGeral" />
+    <EntitySet Name="ViewMunicipio" EntityType="Self.ViewMunicipio" />
+    <EntitySet Name="ViewResultados" EntityType="Self.ViewResultados" />
+    <AssociationSet Name="FK_TbActa_TbAssembleia" Association="Self.FK_TbActa_TbAssembleia">
+      <End Role="TbAssembleia" EntitySet="TbAssembleia" />
+      <End Role="TbActa" EntitySet="TbActa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbActa_TbUsuario" Association="Self.FK_TbActa_TbUsuario">
+      <End Role="TbUsuario" EntitySet="TbUsuario" />
+      <End Role="TbActa" EntitySet="TbActa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbResultadoConcorrente_TbActa" Association="Self.FK_TbResultadoConcorrente_TbActa">
+      <End Role="TbActa" EntitySet="TbActa" />
+      <End Role="TbResultadoConcorrente" EntitySet="TbResultadoConcorrente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbAssembleia_TbMunicipio" Association="Self.FK_TbAssembleia_TbMunicipio">
+      <End Role="TbMunicipio" EntitySet="TbMunicipio" />
+      <End Role="TbAssembleia" EntitySet="TbAssembleia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbResultadoConcorrente_TbConcorrente" Association="Self.FK_TbResultadoConcorrente_TbConcorrente">
+      <End Role="TbConcorrente" EntitySet="TbConcorrente" />
+      <End Role="TbResultadoConcorrente" EntitySet="TbResultadoConcorrente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbGeral_TbProvincia" Association="Self.FK_TbGeral_TbProvincia">
+      <End Role="TbProvincia" EntitySet="TbProvincia" />
+      <End Role="TbGeral" EntitySet="TbGeral" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbMunicipio_TbProvincia" Association="Self.FK_TbMunicipio_TbProvincia">
+      <End Role="TbProvincia" EntitySet="TbProvincia" />
+      <End Role="TbMunicipio" EntitySet="TbMunicipio" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

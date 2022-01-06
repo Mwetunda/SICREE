@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SICEREModelStoreContainer" CdmEntityContainer="SICEREEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SICEREModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbActa">
+      <EntityTypeMapping TypeName="SICEREModel.TbActa">
+        <MappingFragment StoreEntitySet="TbActa">
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="AssembleiaID" ColumnName="AssembleiaID" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbAssembleia">
+      <EntityTypeMapping TypeName="SICEREModel.TbAssembleia">
+        <MappingFragment StoreEntitySet="TbAssembleia">
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="MunicipioID" ColumnName="MunicipioID" />
+          <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbConcorrente">
+      <EntityTypeMapping TypeName="SICEREModel.TbConcorrente">
+        <MappingFragment StoreEntitySet="TbConcorrente">
+          <ScalarProperty Name="NumeroOrdem" ColumnName="NumeroOrdem" />
+          <ScalarProperty Name="NomePartido" ColumnName="NomePartido" />
+          <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+          <ScalarProperty Name="NomePresidente" ColumnName="NomePresidente" />
+          <ScalarProperty Name="BandeiraPartido" ColumnName="BandeiraPartido" />
+          <ScalarProperty Name="FotoPresidente" ColumnName="FotoPresidente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbGeral">
+      <EntityTypeMapping TypeName="SICEREModel.TbGeral">
+        <MappingFragment StoreEntitySet="TbGeral">
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="QuantidadeAssembleias" ColumnName="QuantidadeAssembleias" />
+          <ScalarProperty Name="QuantidadeEleitores" ColumnName="QuantidadeEleitores" />
+          <ScalarProperty Name="QuantidadeMesasVotos" ColumnName="QuantidadeMesasVotos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbMunicipio">
+      <EntityTypeMapping TypeName="SICEREModel.TbMunicipio">
+        <MappingFragment StoreEntitySet="TbMunicipio">
+          <ScalarProperty Name="MunicipioID" ColumnName="MunicipioID" />
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="Designacao" ColumnName="Designacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbProvincia">
+      <EntityTypeMapping TypeName="SICEREModel.TbProvincia">
+        <MappingFragment StoreEntitySet="TbProvincia">
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="Designacao" ColumnName="Designacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbUsuario">
+      <EntityTypeMapping TypeName="SICEREModel.TbUsuario">
+        <MappingFragment StoreEntitySet="TbUsuario">
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Senha" ColumnName="Senha" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Previlegio" ColumnName="Previlegio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewActa">
+      <EntityTypeMapping TypeName="SICEREModel.ViewActa">
+        <MappingFragment StoreEntitySet="ViewActa">
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewAssembleia">
+      <EntityTypeMapping TypeName="SICEREModel.ViewAssembleia">
+        <MappingFragment StoreEntitySet="ViewAssembleia">
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
+          <ScalarProperty Name="MunicipioID" ColumnName="MunicipioID" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewGeral">
+      <EntityTypeMapping TypeName="SICEREModel.ViewGeral">
+        <MappingFragment StoreEntitySet="ViewGeral">
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="QuantidadeEleitores" ColumnName="QuantidadeEleitores" />
+          <ScalarProperty Name="QuantidadeAssembleias" ColumnName="QuantidadeAssembleias" />
+          <ScalarProperty Name="QuantidadeMesasVotos" ColumnName="QuantidadeMesasVotos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewMunicipio">
+      <EntityTypeMapping TypeName="SICEREModel.ViewMunicipio">
+        <MappingFragment StoreEntitySet="ViewMunicipio">
+          <ScalarProperty Name="MunicipioID" ColumnName="MunicipioID" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbMesas">
+      <EntityTypeMapping TypeName="SICEREModel.TbMesas">
+        <MappingFragment StoreEntitySet="TbMesas">
+          <ScalarProperty Name="VotosValidos" ColumnName="VotosValidos" />
+          <ScalarProperty Name="VotosReclamados" ColumnName="VotosReclamados" />
+          <ScalarProperty Name="VotosBrancos" ColumnName="VotosBrancos" />
+          <ScalarProperty Name="VotosNulos" ColumnName="VotosNulos" />
+          <ScalarProperty Name="NumMesa" ColumnName="NumMesa" />
+          <ScalarProperty Name="AssembleiaID" ColumnName="AssembleiaID" />
+          <ScalarProperty Name="MesaID" ColumnName="MesaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbResultadoConcorrente">
+      <EntityTypeMapping TypeName="SICEREModel.TbResultadoConcorrente">
+        <MappingFragment StoreEntitySet="TbResultadoConcorrente">
+          <ScalarProperty Name="MesaID" ColumnName="MesaID" />
+          <ScalarProperty Name="NumeroVotos" ColumnName="NumeroVotos" />
+          <ScalarProperty Name="ConcorrenteID" ColumnName="ConcorrenteID" />
+          <ScalarProperty Name="ResultadoID" ColumnName="ResultadoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewResultado">
+      <EntityTypeMapping TypeName="SICEREModel.ViewResultado">
+        <MappingFragment StoreEntitySet="ViewResultado">
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="MunicipioID" ColumnName="MunicipioID" />
+          <ScalarProperty Name="NumeroVotos" ColumnName="NumeroVotos" />
+          <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+          <ScalarProperty Name="NumeroPartido" ColumnName="NumeroPartido" />
+          <ScalarProperty Name="NumMesa" ColumnName="NumMesa" />
+          <ScalarProperty Name="MesaID" ColumnName="MesaID" />
+          <ScalarProperty Name="AssembleiaID" ColumnName="AssembleiaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_Mesa">
+      <EntityTypeMapping TypeName="SICEREModel.View_Mesa">
+        <MappingFragment StoreEntitySet="View_Mesa">
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="VotosValidos" ColumnName="VotosValidos" />
+          <ScalarProperty Name="VotosReclamados" ColumnName="VotosReclamados" />
+          <ScalarProperty Name="VotosBrancos" ColumnName="VotosBrancos" />
+          <ScalarProperty Name="VotosNulos" ColumnName="VotosNulos" />
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="MunicipioID" ColumnName="MunicipioID" />
+          <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
+          <ScalarProperty Name="NumMesa" ColumnName="NumMesa" />
+          <ScalarProperty Name="MesaID" ColumnName="MesaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

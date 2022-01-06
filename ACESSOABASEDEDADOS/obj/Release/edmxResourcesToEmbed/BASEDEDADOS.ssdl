@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SICEREModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TbActa">
+    <Key>
+      <PropertyRef Name="AssembleiaID" />
+    </Key>
+    <Property Name="AssembleiaID" Type="int" Nullable="false" />
+    <Property Name="VotosValidos" Type="int" />
+    <Property Name="VotosBrancos" Type="int" />
+    <Property Name="VotosNulos" Type="int" />
+    <Property Name="UsuarioID" Type="int" />
+  </EntityType>
+  <EntityType Name="TbAssembleia">
+    <Key>
+      <PropertyRef Name="NumeroAssembleia" />
+    </Key>
+    <Property Name="NumeroAssembleia" Type="int" Nullable="false" />
+    <Property Name="DistritoID" Type="int" />
+  </EntityType>
+  <EntityType Name="TbConcorrente">
+    <Key>
+      <PropertyRef Name="NumeroOrdem" />
+    </Key>
+    <Property Name="NumeroOrdem" Type="int" Nullable="false" />
+    <Property Name="NomePartido" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Sigla" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="NomePresidente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BandeiraPartido" Type="image" Nullable="false" />
+    <Property Name="FotoPresidente" Type="image" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TbDistrito">
+    <Key>
+      <PropertyRef Name="DistritoID" />
+    </Key>
+    <Property Name="DistritoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MunicipioID" Type="int" />
+    <Property Name="Designacao" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="TbGeral">
+    <Key>
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="ProvinciaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuantidadeAssembleias" Type="int" />
+    <Property Name="QuantidadeEleitores" Type="int" />
+    <Property Name="QuantidadeMesasVotos" Type="int" />
+  </EntityType>
+  <EntityType Name="TbMunicipio">
+    <Key>
+      <PropertyRef Name="MunicipioID" />
+    </Key>
+    <Property Name="MunicipioID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProvinciaID" Type="int" />
+    <Property Name="Designacao" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="TbProvincia">
+    <Key>
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="ProvinciaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Designacao" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="TbResultado">
+    <Key>
+      <PropertyRef Name="AssembleiaID" />
+      <PropertyRef Name="ConcorrenteID" />
+      <PropertyRef Name="NumeroMesa" />
+    </Key>
+    <Property Name="AssembleiaID" Type="int" Nullable="false" />
+    <Property Name="ConcorrenteID" Type="int" Nullable="false" />
+    <Property Name="NumeroMesa" Type="int" Nullable="false" />
+    <Property Name="NumeroVotos" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TbUsuario">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="50" />
+    <Property Name="Login" Type="varchar" MaxLength="20" />
+    <Property Name="Senha" Type="varchar" MaxLength="10" />
+    <Property Name="Telefone" Type="varchar" MaxLength="10" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="Previlegio" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SICERE.dbo.ViewActa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewActa">
+    <Key>
+      <PropertyRef Name="NumeroAssembleia" />
+      <PropertyRef Name="DistritoID" />
+      <PropertyRef Name="MunicipioID" />
+      <PropertyRef Name="ProvinciaID" />
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="NumeroAssembleia" Type="int" Nullable="false" />
+    <Property Name="VotosValidos" Type="int" />
+    <Property Name="VotosBrancos" Type="int" />
+    <Property Name="VotosNulos" Type="int" />
+    <Property Name="DistritoID" Type="int" Nullable="false" />
+    <Property Name="Disrtito" Type="varchar" MaxLength="20" />
+    <Property Name="MunicipioID" Type="int" Nullable="false" />
+    <Property Name="Municipio" Type="varchar" MaxLength="20" />
+    <Property Name="ProvinciaID" Type="int" Nullable="false" />
+    <Property Name="Provincia" Type="varchar" MaxLength="15" />
+    <Property Name="UsuarioID" Type="int" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SICERE.dbo.ViewAssembleia' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewAssembleia">
+    <Key>
+      <PropertyRef Name="NumeroAssembleia" />
+      <PropertyRef Name="DistritoID" />
+      <PropertyRef Name="MunicipioID" />
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="NumeroAssembleia" Type="int" Nullable="false" />
+    <Property Name="DistritoID" Type="int" Nullable="false" />
+    <Property Name="Distrito" Type="varchar" MaxLength="20" />
+    <Property Name="MunicipioID" Type="int" Nullable="false" />
+    <Property Name="Municipio" Type="varchar" MaxLength="20" />
+    <Property Name="ProvinciaID" Type="int" Nullable="false" />
+    <Property Name="Provincia" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SICERE.dbo.ViewDistrido' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewDistrido">
+    <Key>
+      <PropertyRef Name="DistritoID" />
+      <PropertyRef Name="MunicipioID" />
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="DistritoID" Type="int" Nullable="false" />
+    <Property Name="Distrito" Type="varchar" MaxLength="20" />
+    <Property Name="MunicipioID" Type="int" Nullable="false" />
+    <Property Name="Municipio" Type="varchar" MaxLength="20" />
+    <Property Name="ProvinciaID" Type="int" Nullable="false" />
+    <Property Name="Provincia" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SICERE.dbo.ViewGeral' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewGeral">
+    <Key>
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="ProvinciaID" Type="int" Nullable="false" />
+    <Property Name="Provincia" Type="varchar" MaxLength="15" />
+    <Property Name="QuantidadeEleitores" Type="int" />
+    <Property Name="QuantidadeAssembleias" Type="int" />
+    <Property Name="QuantidadeMesasVotos" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SICERE.dbo.ViewMunicipio' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewMunicipio">
+    <Key>
+      <PropertyRef Name="MunicipioID" />
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="MunicipioID" Type="int" Nullable="false" />
+    <Property Name="Municipio" Type="varchar" MaxLength="20" />
+    <Property Name="ProvinciaID" Type="int" Nullable="false" />
+    <Property Name="Provincia" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SICERE.dbo.ViewResultado' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewResultado">
+    <Key>
+      <PropertyRef Name="NumeroMesa" />
+      <PropertyRef Name="AssembleiaID" />
+      <PropertyRef Name="ConcorrenteID" />
+      <PropertyRef Name="NomePartido" />
+      <PropertyRef Name="Sigla" />
+      <PropertyRef Name="NomePresidente" />
+      <PropertyRef Name="BandeiraPartido" />
+      <PropertyRef Name="FotoPresidente" />
+      <PropertyRef Name="NumeroVotos" />
+    </Key>
+    <Property Name="NumeroMesa" Type="int" Nullable="false" />
+    <Property Name="AssembleiaID" Type="int" Nullable="false" />
+    <Property Name="ConcorrenteID" Type="int" Nullable="false" />
+    <Property Name="NomePartido" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Sigla" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="NomePresidente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BandeiraPartido" Type="image" Nullable="false" />
+    <Property Name="FotoPresidente" Type="image" Nullable="false" />
+    <Property Name="NumeroVotos" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_TbActa_TbAssembleia">
+    <End Role="TbAssembleia" Type="Self.TbAssembleia" Multiplicity="1" />
+    <End Role="TbActa" Type="Self.TbActa" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TbAssembleia">
+        <PropertyRef Name="NumeroAssembleia" />
+      </Principal>
+      <Dependent Role="TbActa">
+        <PropertyRef Name="AssembleiaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbActa_TbUsuario">
+    <End Role="TbUsuario" Type="Self.TbUsuario" Multiplicity="0..1" />
+    <End Role="TbActa" Type="Self.TbActa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbUsuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="TbActa">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbAssembleia_TbDistrito">
+    <End Role="TbDistrito" Type="Self.TbDistrito" Multiplicity="0..1" />
+    <End Role="TbAssembleia" Type="Self.TbAssembleia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbDistrito">
+        <PropertyRef Name="DistritoID" />
+      </Principal>
+      <Dependent Role="TbAssembleia">
+        <PropertyRef Name="DistritoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbDistrito_TbMunicipio">
+    <End Role="TbMunicipio" Type="Self.TbMunicipio" Multiplicity="0..1" />
+    <End Role="TbDistrito" Type="Self.TbDistrito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbMunicipio">
+        <PropertyRef Name="MunicipioID" />
+      </Principal>
+      <Dependent Role="TbDistrito">
+        <PropertyRef Name="MunicipioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbGeral_TbProvincia">
+    <End Role="TbProvincia" Type="Self.TbProvincia" Multiplicity="1" />
+    <End Role="TbGeral" Type="Self.TbGeral" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TbProvincia">
+        <PropertyRef Name="ProvinciaID" />
+      </Principal>
+      <Dependent Role="TbGeral">
+        <PropertyRef Name="ProvinciaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbMunicipio_TbProvincia">
+    <End Role="TbProvincia" Type="Self.TbProvincia" Multiplicity="0..1" />
+    <End Role="TbMunicipio" Type="Self.TbMunicipio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbProvincia">
+        <PropertyRef Name="ProvinciaID" />
+      </Principal>
+      <Dependent Role="TbMunicipio">
+        <PropertyRef Name="ProvinciaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbResultado_TbActa">
+    <End Role="TbActa" Type="Self.TbActa" Multiplicity="1" />
+    <End Role="TbResultado" Type="Self.TbResultado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbActa">
+        <PropertyRef Name="AssembleiaID" />
+      </Principal>
+      <Dependent Role="TbResultado">
+        <PropertyRef Name="AssembleiaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TbResultado_TbConcorrente">
+    <End Role="TbConcorrente" Type="Self.TbConcorrente" Multiplicity="1" />
+    <End Role="TbResultado" Type="Self.TbResultado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TbConcorrente">
+        <PropertyRef Name="NumeroOrdem" />
+      </Principal>
+      <Dependent Role="TbResultado">
+        <PropertyRef Name="ConcorrenteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SICEREModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TbActa" EntityType="Self.TbActa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TbAssembleia" EntityType="Self.TbAssembleia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TbConcorrente" EntityType="Self.TbConcorrente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TbDistrito" EntityType="Self.TbDistrito" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TbGeral" EntityType="Self.TbGeral" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TbMunicipio" EntityType="Self.TbMunicipio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TbProvincia" EntityType="Self.TbProvincia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TbResultado" EntityType="Self.TbResultado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TbUsuario" EntityType="Self.TbUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ViewActa" EntityType="Self.ViewActa" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[ViewActa].[NumeroAssembleia] AS [NumeroAssembleia], 
+[ViewActa].[VotosValidos] AS [VotosValidos], 
+[ViewActa].[VotosBrancos] AS [VotosBrancos], 
+[ViewActa].[VotosNulos] AS [VotosNulos], 
+[ViewActa].[DistritoID] AS [DistritoID], 
+[ViewActa].[Disrtito] AS [Disrtito], 
+[ViewActa].[MunicipioID] AS [MunicipioID], 
+[ViewActa].[Municipio] AS [Municipio], 
+[ViewActa].[ProvinciaID] AS [ProvinciaID], 
+[ViewActa].[Provincia] AS [Provincia], 
+[ViewActa].[UsuarioID] AS [UsuarioID], 
+[ViewActa].[Usuario] AS [Usuario]
+FROM [dbo].[ViewActa] AS [ViewActa]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewAssembleia" EntityType="Self.ViewAssembleia" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[ViewAssembleia].[NumeroAssembleia] AS [NumeroAssembleia], 
+[ViewAssembleia].[DistritoID] AS [DistritoID], 
+[ViewAssembleia].[Distrito] AS [Distrito], 
+[ViewAssembleia].[MunicipioID] AS [MunicipioID], 
+[ViewAssembleia].[Municipio] AS [Municipio], 
+[ViewAssembleia].[ProvinciaID] AS [ProvinciaID], 
+[ViewAssembleia].[Provincia] AS [Provincia]
+FROM [dbo].[ViewAssembleia] AS [ViewAssembleia]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewDistrido" EntityType="Self.ViewDistrido" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[ViewDistrido].[DistritoID] AS [DistritoID], 
+[ViewDistrido].[Distrito] AS [Distrito], 
+[ViewDistrido].[MunicipioID] AS [MunicipioID], 
+[ViewDistrido].[Municipio] AS [Municipio], 
+[ViewDistrido].[ProvinciaID] AS [ProvinciaID], 
+[ViewDistrido].[Provincia] AS [Provincia]
+FROM [dbo].[ViewDistrido] AS [ViewDistrido]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewGeral" EntityType="Self.ViewGeral" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[ViewGeral].[ProvinciaID] AS [ProvinciaID], 
+[ViewGeral].[Provincia] AS [Provincia], 
+[ViewGeral].[QuantidadeEleitores] AS [QuantidadeEleitores], 
+[ViewGeral].[QuantidadeAssembleias] AS [QuantidadeAssembleias], 
+[ViewGeral].[QuantidadeMesasVotos] AS [QuantidadeMesasVotos]
+FROM [dbo].[ViewGeral] AS [ViewGeral]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewMunicipio" EntityType="Self.ViewMunicipio" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[ViewMunicipio].[MunicipioID] AS [MunicipioID], 
+[ViewMunicipio].[Municipio] AS [Municipio], 
+[ViewMunicipio].[ProvinciaID] AS [ProvinciaID], 
+[ViewMunicipio].[Provincia] AS [Provincia]
+FROM [dbo].[ViewMunicipio] AS [ViewMunicipio]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewResultado" EntityType="Self.ViewResultado" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[ViewResultado].[NumeroMesa] AS [NumeroMesa], 
+[ViewResultado].[AssembleiaID] AS [AssembleiaID], 
+[ViewResultado].[ConcorrenteID] AS [ConcorrenteID], 
+[ViewResultado].[NomePartido] AS [NomePartido], 
+[ViewResultado].[Sigla] AS [Sigla], 
+[ViewResultado].[NomePresidente] AS [NomePresidente], 
+[ViewResultado].[BandeiraPartido] AS [BandeiraPartido], 
+[ViewResultado].[FotoPresidente] AS [FotoPresidente], 
+[ViewResultado].[NumeroVotos] AS [NumeroVotos]
+FROM [dbo].[ViewResultado] AS [ViewResultado]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_TbActa_TbAssembleia" Association="Self.FK_TbActa_TbAssembleia">
+      <End Role="TbAssembleia" EntitySet="TbAssembleia" />
+      <End Role="TbActa" EntitySet="TbActa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbActa_TbUsuario" Association="Self.FK_TbActa_TbUsuario">
+      <End Role="TbUsuario" EntitySet="TbUsuario" />
+      <End Role="TbActa" EntitySet="TbActa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbAssembleia_TbDistrito" Association="Self.FK_TbAssembleia_TbDistrito">
+      <End Role="TbDistrito" EntitySet="TbDistrito" />
+      <End Role="TbAssembleia" EntitySet="TbAssembleia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbDistrito_TbMunicipio" Association="Self.FK_TbDistrito_TbMunicipio">
+      <End Role="TbMunicipio" EntitySet="TbMunicipio" />
+      <End Role="TbDistrito" EntitySet="TbDistrito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbGeral_TbProvincia" Association="Self.FK_TbGeral_TbProvincia">
+      <End Role="TbProvincia" EntitySet="TbProvincia" />
+      <End Role="TbGeral" EntitySet="TbGeral" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbMunicipio_TbProvincia" Association="Self.FK_TbMunicipio_TbProvincia">
+      <End Role="TbProvincia" EntitySet="TbProvincia" />
+      <End Role="TbMunicipio" EntitySet="TbMunicipio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbResultado_TbActa" Association="Self.FK_TbResultado_TbActa">
+      <End Role="TbActa" EntitySet="TbActa" />
+      <End Role="TbResultado" EntitySet="TbResultado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TbResultado_TbConcorrente" Association="Self.FK_TbResultado_TbConcorrente">
+      <End Role="TbConcorrente" EntitySet="TbConcorrente" />
+      <End Role="TbResultado" EntitySet="TbResultado" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

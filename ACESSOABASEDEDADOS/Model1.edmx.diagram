@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bb5d7233505a4a83991987b90ab2e8fe" Name="Diagram1">
+        <EntityTypeShape EntityType="SICREEModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.TbActa" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.TbAssembleia" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.TbConcorrente" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.TbGeral" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.TbMunicipio" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.TbProvincia" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.TbResultadoConcorrente" Width="1.5" PointX="9.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.TbUsuario" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.ViewActa" Width="1.5" PointX="2.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.ViewAssembleia" Width="1.5" PointX="4.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.ViewGeral" Width="1.5" PointX="6.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.ViewMunicipio" Width="1.5" PointX="8.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.ViewResultados" Width="1.5" PointX="4.75" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="SICREEModel.FK_TbActa_TbAssembleia" ManuallyRouted="false" />
+        <AssociationConnector Association="SICREEModel.FK_TbActa_TbUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SICREEModel.FK_TbResultadoConcorrente_TbActa" ManuallyRouted="false" />
+        <AssociationConnector Association="SICREEModel.FK_TbAssembleia_TbMunicipio" ManuallyRouted="false" />
+        <AssociationConnector Association="SICREEModel.FK_TbResultadoConcorrente_TbConcorrente" ManuallyRouted="false" />
+        <AssociationConnector Association="SICREEModel.FK_TbGeral_TbProvincia" ManuallyRouted="false" />
+        <AssociationConnector Association="SICREEModel.FK_TbMunicipio_TbProvincia" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

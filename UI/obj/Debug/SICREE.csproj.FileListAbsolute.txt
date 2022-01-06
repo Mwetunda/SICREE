@@ -1,0 +1,162 @@
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\PROPRIEDADES.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\REGRASDENEGOCIO.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\PROPRIEDADES.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\REGRASDENEGOCIO.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.csprojResolveAssemblyReference.cache
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.csproj.GenerateResource.Cache
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\SICREE.exe.config
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\SICREE.exe
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\SICREE.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.Properties.Resources.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.exe
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\RdlCompile.cache
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\RdlCompile.compiled
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.MENU.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmConcorrente.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmActa.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmRelatorio.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmLogin.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmAuxiliar.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmResultados.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmUsuario.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\SICREE.Actas.FrmActasLista.resources
+M:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\SICREE.exe.config
+M:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.exe
+M:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.pdb
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\SICREE.exe.config
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\SICREE.exe
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\SICREE.pdb
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\PROPRIEDADES.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\REGRASDENEGOCIO.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\PROPRIEDADES.pdb
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\REGRASDENEGOCIO.pdb
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\ACESSOABASEDEDADOS.dll.config
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.csprojAssemblyReference.cache
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.Actas.FrmActasLista.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.MENU.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmConcorrente.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmActa.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmRelatorio.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmLogin.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmAuxiliar.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmResultados.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.FrmUsuario.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.Properties.Resources.resources
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.csproj.GenerateResource.cache
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.csproj.CoreCompileInputs.cache
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.csproj.CopyComplete
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.exe
+D:\PROJECTOS\SICREE Actual PCP\UI\obj\Debug\SICREE.pdb
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.csprojAssemblyReference.cache
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.Actas.FrmActasLista.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.MENU.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.FrmConcorrente.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.FrmActa.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.FrmRelatorio.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.FrmLogin.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.FrmAuxiliar.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.FrmResultados.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.FrmUsuario.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.Properties.Resources.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.csproj.GenerateResource.cache
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\RdlCompile.cache
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\RdlCompile.compiled
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.csproj.CoreCompileInputs.cache
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.csprojAssemblyReference.cache
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.Actas.FrmActasLista.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.MENU.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.FrmConcorrente.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.FrmActa.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.FrmRelatorio.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.FrmLogin.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.FrmAuxiliar.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.FrmResultados.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.FrmUsuario.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.Properties.Resources.resources
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.csproj.GenerateResource.cache
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\RdlCompile.cache
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\RdlCompile.compiled
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual - Cópia\UI\obj\Debug\SICREE.csproj.CoreCompileInputs.cache
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\SICREE.exe.config
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\SICREE.exe
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\SICREE.pdb
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\PROPRIEDADES.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\REGRASDENEGOCIO.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\PROPRIEDADES.pdb
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\REGRASDENEGOCIO.pdb
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ACESSOABASEDEDADOS.dll.config
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.csproj.CopyComplete
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.exe
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\obj\Debug\SICREE.pdb
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\EntityFramework.dll
+D:\PROJECTOS\GEPA\Tesste 1\SICREE Actual\UI\bin\Debug\EntityFramework.xml

@@ -1,0 +1,164 @@
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\bin\Debug\UI.exe.config
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\bin\Debug\UI.exe
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\bin\Debug\UI.pdb
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\bin\Debug\Bunifu_UI_v1.5.3.dll
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\obj\Debug\UI.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\obj\Debug\UI.exe
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\obj\Debug\UI.pdb
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\obj\Debug\UI.MENU.resources
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\obj\Debug\UI.FrmResultados.resources
+c:\users\user\documents\visual studio 2015\Projects\SICERE\UI\obj\Debug\UI.FrmUsuario.resources
+M:\PROJECTOS\SICERE\UI\bin\Debug\UI.exe.config
+M:\PROJECTOS\SICERE\UI\obj\Debug\UI.exe
+M:\PROJECTOS\SICERE\UI\obj\Debug\UI.pdb
+M:\PROJECTOS\SICERE\UI\bin\Debug\UI.exe
+M:\PROJECTOS\SICERE\UI\bin\Debug\UI.pdb
+M:\PROJECTOS\SICERE\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+M:\PROJECTOS\SICERE\UI\obj\Debug\UI.MENU.resources
+M:\PROJECTOS\SICERE\UI\obj\Debug\UI.FrmResultados.resources
+M:\PROJECTOS\SICERE\UI\obj\Debug\UI.FrmUsuario.resources
+M:\PROJECTOS\SICERE\UI\obj\Debug\UI.Properties.Resources.resources
+M:\PROJECTOS\SICERE\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+E:\PROJECTOS\SICERE\UI\bin\Debug\UI.exe.config
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.exe
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.pdb
+E:\PROJECTOS\SICERE\UI\bin\Debug\UI.exe
+E:\PROJECTOS\SICERE\UI\bin\Debug\UI.pdb
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.MENU.resources
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.FrmResultados.resources
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.FrmUsuario.resources
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.Properties.Resources.resources
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+E:\PROJECTOS\SICERE\UI\bin\Debug\PROPRIEDADES.dll
+E:\PROJECTOS\SICERE\UI\bin\Debug\REGRASDENEGOCIO.dll
+E:\PROJECTOS\SICERE\UI\bin\Debug\PROPRIEDADES.pdb
+E:\PROJECTOS\SICERE\UI\bin\Debug\REGRASDENEGOCIO.pdb
+E:\PROJECTOS\SICERE\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+E:\PROJECTOS\SICERE\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.FrmConcorrente.resources
+E:\PROJECTOS\SICERE\UI\obj\Debug\UI.FrmAuxiliar.resources
+E:\PROJECTOS\SICERE - Cópia\UI\bin\Debug\UI.exe.config
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.exe
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.pdb
+E:\PROJECTOS\SICERE - Cópia\UI\bin\Debug\UI.exe
+E:\PROJECTOS\SICERE - Cópia\UI\bin\Debug\UI.pdb
+E:\PROJECTOS\SICERE - Cópia\UI\bin\Debug\PROPRIEDADES.dll
+E:\PROJECTOS\SICERE - Cópia\UI\bin\Debug\REGRASDENEGOCIO.dll
+E:\PROJECTOS\SICERE - Cópia\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+E:\PROJECTOS\SICERE - Cópia\UI\bin\Debug\PROPRIEDADES.pdb
+E:\PROJECTOS\SICERE - Cópia\UI\bin\Debug\REGRASDENEGOCIO.pdb
+E:\PROJECTOS\SICERE - Cópia\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.MENU.resources
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.FrmConcorrente.resources
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.FrmAuxiliar.resources
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.FrmResultados.resources
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.FrmUsuario.resources
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.Properties.Resources.resources
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+E:\PROJECTOS\SICERE - Cópia\UI\obj\Debug\UI.FrmActa.resources
+E:\PROJECTOS\SICERE 2\UI\bin\Debug\UI.exe.config
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.exe
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.pdb
+E:\PROJECTOS\SICERE 2\UI\bin\Debug\UI.exe
+E:\PROJECTOS\SICERE 2\UI\bin\Debug\UI.pdb
+E:\PROJECTOS\SICERE 2\UI\bin\Debug\PROPRIEDADES.dll
+E:\PROJECTOS\SICERE 2\UI\bin\Debug\REGRASDENEGOCIO.dll
+E:\PROJECTOS\SICERE 2\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+E:\PROJECTOS\SICERE 2\UI\bin\Debug\PROPRIEDADES.pdb
+E:\PROJECTOS\SICERE 2\UI\bin\Debug\REGRASDENEGOCIO.pdb
+E:\PROJECTOS\SICERE 2\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.MENU.resources
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.FrmConcorrente.resources
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.FrmActa.resources
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.FrmAuxiliar.resources
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.FrmResultados.resources
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.FrmUsuario.resources
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.Properties.Resources.resources
+E:\PROJECTOS\SICERE 2\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+E:\PROJECTOS\SICERE 3\UI\bin\Debug\UI.exe.config
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.exe
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.pdb
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.MENU.resources
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.FrmConcorrente.resources
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.FrmActa.resources
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.FrmAuxiliar.resources
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.FrmResultados.resources
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.FrmUsuario.resources
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.Properties.Resources.resources
+E:\PROJECTOS\SICERE 3\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+E:\PROJECTOS\SICERE 3\UI\bin\Debug\UI.exe
+E:\PROJECTOS\SICERE 3\UI\bin\Debug\UI.pdb
+E:\PROJECTOS\SICERE 3\UI\bin\Debug\PROPRIEDADES.dll
+E:\PROJECTOS\SICERE 3\UI\bin\Debug\REGRASDENEGOCIO.dll
+E:\PROJECTOS\SICERE 3\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+E:\PROJECTOS\SICERE 3\UI\bin\Debug\PROPRIEDADES.pdb
+E:\PROJECTOS\SICERE 3\UI\bin\Debug\REGRASDENEGOCIO.pdb
+E:\PROJECTOS\SICERE 3\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+E:\PROJECTOS\SICREE\SICERE 4\UI\bin\Debug\UI.exe.config
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.exe
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.pdb
+E:\PROJECTOS\SICREE\SICERE 4\UI\bin\Debug\UI.exe
+E:\PROJECTOS\SICREE\SICERE 4\UI\bin\Debug\UI.pdb
+E:\PROJECTOS\SICREE\SICERE 4\UI\bin\Debug\PROPRIEDADES.dll
+E:\PROJECTOS\SICREE\SICERE 4\UI\bin\Debug\REGRASDENEGOCIO.dll
+E:\PROJECTOS\SICREE\SICERE 4\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+E:\PROJECTOS\SICREE\SICERE 4\UI\bin\Debug\PROPRIEDADES.pdb
+E:\PROJECTOS\SICREE\SICERE 4\UI\bin\Debug\REGRASDENEGOCIO.pdb
+E:\PROJECTOS\SICREE\SICERE 4\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.MENU.resources
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.FrmConcorrente.resources
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.FrmActa.resources
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.FrmAuxiliar.resources
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.FrmResultados.resources
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.FrmUsuario.resources
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.Properties.Resources.resources
+E:\PROJECTOS\SICREE\SICERE 4\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\bin\Debug\UI.exe.config
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\bin\Debug\UI.exe
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\bin\Debug\UI.pdb
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\bin\Debug\PROPRIEDADES.dll
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\bin\Debug\REGRASDENEGOCIO.dll
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\bin\Debug\PROPRIEDADES.pdb
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\bin\Debug\REGRASDENEGOCIO.pdb
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.MENU.resources
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.FrmConcorrente.resources
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.FrmActa.resources
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.FrmLogin.resources
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.FrmAuxiliar.resources
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.FrmResultados.resources
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.FrmUsuario.resources
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.Properties.Resources.resources
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.exe
+E:\PROJECTOS\SICREE\SICERE 4 PCP\UI\obj\Debug\UI.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\UI.exe.config
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.exe
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\UI.exe
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\UI.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\PROPRIEDADES.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\REGRASDENEGOCIO.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\ACESSOABASEDEDADOS.dll
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\PROPRIEDADES.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\REGRASDENEGOCIO.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\bin\Debug\ACESSOABASEDEDADOS.pdb
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.MENU.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.FrmConcorrente.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.FrmActa.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.FrmLogin.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.FrmAuxiliar.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.FrmResultados.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.FrmUsuario.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.Properties.Resources.resources
+E:\PROJECTOS\SICREE\SICREE Actual PCP\UI\obj\Debug\UI.csproj.GenerateResource.Cache
