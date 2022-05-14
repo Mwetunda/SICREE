@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SICREEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SICREEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -26,6 +26,9 @@
           <Property Name="VotosNulos" Type="int" />
           <Property Name="VotosReclamados" Type="int" />
           <Property Name="VotosValidos" Type="int" />
+          <Property Name="BoletinsRecebidos" Type="int" />
+          <Property Name="BoletinsUtilizados" Type="int" />
+          <Property Name="BoletinsInutilizados" Type="int" />
         </EntityType>
         <EntityType Name="TbAssembleia">
           <Key>
@@ -34,6 +37,8 @@
           <Property Name="NumeroAssembleia" Type="int" Nullable="false" />
           <Property Name="MunicipioID" Type="int" />
           <Property Name="Endereco" Type="varchar" MaxLength="70" />
+          <Property Name="CoordenadasGeograficas" Type="varchar" MaxLength="100" />
+          <Property Name="NumEleitores" Type="int" />
         </EntityType>
         <EntityType Name="TbConcorrente">
           <Key>
@@ -113,6 +118,11 @@ warning 6002: The table/view 'SICREE.dbo.ViewActa' does not have a primary key d
           <Property Name="VotosNulos" Type="int" />
           <Property Name="VotosReclamados" Type="int" />
           <Property Name="VotosValidos" Type="int" />
+          <Property Name="CoordenadasGeograficas" Type="varchar" MaxLength="100" />
+          <Property Name="NumEleitores" Type="int" />
+          <Property Name="BoletinsRecebidos" Type="int" />
+          <Property Name="BoletinsUtilizados" Type="int" />
+          <Property Name="BoletinsInutilizados" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'SICREE.dbo.ViewAssembleia' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -128,6 +138,8 @@ warning 6002: The table/view 'SICREE.dbo.ViewAssembleia' does not have a primary
           <Property Name="Provincia" Type="varchar" MaxLength="15" />
           <Property Name="MunicipioID" Type="int" Nullable="false" />
           <Property Name="ProvinciaID" Type="int" Nullable="false" />
+          <Property Name="CoordenadasGeograficas" Type="varchar" MaxLength="100" />
+          <Property Name="NumEleitores" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'SICREE.dbo.ViewGeral' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -283,7 +295,12 @@ warning 6002: The table/view 'SICREE.dbo.ViewResultados' does not have a primary
 [ViewActa].[VotosBrancos] AS [VotosBrancos], 
 [ViewActa].[VotosNulos] AS [VotosNulos], 
 [ViewActa].[VotosReclamados] AS [VotosReclamados], 
-[ViewActa].[VotosValidos] AS [VotosValidos]
+[ViewActa].[VotosValidos] AS [VotosValidos], 
+[ViewActa].[CoordenadasGeograficas] AS [CoordenadasGeograficas], 
+[ViewActa].[NumEleitores] AS [NumEleitores], 
+[ViewActa].[BoletinsRecebidos] AS [BoletinsRecebidos], 
+[ViewActa].[BoletinsUtilizados] AS [BoletinsUtilizados], 
+[ViewActa].[BoletinsInutilizados] AS [BoletinsInutilizados]
 FROM [dbo].[ViewActa] AS [ViewActa]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="ViewAssembleia" EntityType="Self.ViewAssembleia" store:Type="Views" store:Schema="dbo">
@@ -293,7 +310,9 @@ FROM [dbo].[ViewActa] AS [ViewActa]</DefiningQuery>
 [ViewAssembleia].[Municipio] AS [Municipio], 
 [ViewAssembleia].[Provincia] AS [Provincia], 
 [ViewAssembleia].[MunicipioID] AS [MunicipioID], 
-[ViewAssembleia].[ProvinciaID] AS [ProvinciaID]
+[ViewAssembleia].[ProvinciaID] AS [ProvinciaID], 
+[ViewAssembleia].[CoordenadasGeograficas] AS [CoordenadasGeograficas], 
+[ViewAssembleia].[NumEleitores] AS [NumEleitores]
 FROM [dbo].[ViewAssembleia] AS [ViewAssembleia]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="ViewGeral" EntityType="Self.ViewGeral" store:Type="Views" store:Schema="dbo">
@@ -355,8 +374,7 @@ FROM [dbo].[ViewResultados] AS [ViewResultados]</DefiningQuery>
             <End Role="TbResultadoConcorrente" EntitySet="TbResultadoConcorrente" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SICREEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -384,6 +402,9 @@ FROM [dbo].[ViewResultados] AS [ViewResultados]</DefiningQuery>
           <NavigationProperty Name="TbAssembleia" Relationship="Self.FK_TbActa_TbAssembleia" FromRole="TbActa" ToRole="TbAssembleia" />
           <NavigationProperty Name="TbUsuario" Relationship="Self.FK_TbActa_TbUsuario" FromRole="TbActa" ToRole="TbUsuario" />
           <NavigationProperty Name="TbResultadoConcorrente" Relationship="Self.FK_TbResultadoConcorrente_TbActa" FromRole="TbActa" ToRole="TbResultadoConcorrente" />
+          <Property Name="BoletinsRecebidos" Type="Int32" />
+          <Property Name="BoletinsUtilizados" Type="Int32" />
+          <Property Name="BoletinsInutilizados" Type="Int32" />
         </EntityType>
         <EntityType Name="TbAssembleia">
           <Key>
@@ -394,6 +415,8 @@ FROM [dbo].[ViewResultados] AS [ViewResultados]</DefiningQuery>
           <Property Name="Endereco" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="TbActa" Relationship="Self.FK_TbActa_TbAssembleia" FromRole="TbAssembleia" ToRole="TbActa" />
           <NavigationProperty Name="TbMunicipio" Relationship="Self.FK_TbAssembleia_TbMunicipio" FromRole="TbAssembleia" ToRole="TbMunicipio" />
+          <Property Name="CoordenadasGeograficas" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="NumEleitores" Type="Int32" />
         </EntityType>
         <EntityType Name="TbConcorrente">
           <Key>
@@ -480,6 +503,11 @@ FROM [dbo].[ViewResultados] AS [ViewResultados]</DefiningQuery>
           <Property Name="VotosNulos" Type="Int32" />
           <Property Name="VotosReclamados" Type="Int32" />
           <Property Name="VotosValidos" Type="Int32" />
+          <Property Name="CoordenadasGeograficas" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="NumEleitores" Type="Int32" />
+          <Property Name="BoletinsRecebidos" Type="Int32" />
+          <Property Name="BoletinsUtilizados" Type="Int32" />
+          <Property Name="BoletinsInutilizados" Type="Int32" />
         </EntityType>
         <EntityType Name="ViewAssembleia">
           <Key>
@@ -493,6 +521,8 @@ FROM [dbo].[ViewResultados] AS [ViewResultados]</DefiningQuery>
           <Property Name="Provincia" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
           <Property Name="MunicipioID" Type="Int32" Nullable="false" />
           <Property Name="ProvinciaID" Type="Int32" Nullable="false" />
+          <Property Name="CoordenadasGeograficas" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="NumEleitores" Type="Int32" />
         </EntityType>
         <EntityType Name="ViewGeral">
           <Key>
@@ -682,6 +712,9 @@ FROM [dbo].[ViewResultados] AS [ViewResultados]</DefiningQuery>
           <EntitySetMapping Name="TbActa">
             <EntityTypeMapping TypeName="SICREEModel.TbActa">
               <MappingFragment StoreEntitySet="TbActa">
+                <ScalarProperty Name="BoletinsInutilizados" ColumnName="BoletinsInutilizados" />
+                <ScalarProperty Name="BoletinsUtilizados" ColumnName="BoletinsUtilizados" />
+                <ScalarProperty Name="BoletinsRecebidos" ColumnName="BoletinsRecebidos" />
                 <ScalarProperty Name="AssembleiaID" ColumnName="AssembleiaID" />
                 <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
                 <ScalarProperty Name="QtdMesa" ColumnName="QtdMesa" />
@@ -695,6 +728,8 @@ FROM [dbo].[ViewResultados] AS [ViewResultados]</DefiningQuery>
           <EntitySetMapping Name="TbAssembleia">
             <EntityTypeMapping TypeName="SICREEModel.TbAssembleia">
               <MappingFragment StoreEntitySet="TbAssembleia">
+                <ScalarProperty Name="NumEleitores" ColumnName="NumEleitores" />
+                <ScalarProperty Name="CoordenadasGeograficas" ColumnName="CoordenadasGeograficas" />
                 <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
                 <ScalarProperty Name="MunicipioID" ColumnName="MunicipioID" />
                 <ScalarProperty Name="Endereco" ColumnName="Endereco" />
@@ -766,6 +801,11 @@ FROM [dbo].[ViewResultados] AS [ViewResultados]</DefiningQuery>
           <EntitySetMapping Name="ViewActa">
             <EntityTypeMapping TypeName="SICREEModel.ViewActa">
               <MappingFragment StoreEntitySet="ViewActa">
+                <ScalarProperty Name="BoletinsInutilizados" ColumnName="BoletinsInutilizados" />
+                <ScalarProperty Name="BoletinsUtilizados" ColumnName="BoletinsUtilizados" />
+                <ScalarProperty Name="BoletinsRecebidos" ColumnName="BoletinsRecebidos" />
+                <ScalarProperty Name="NumEleitores" ColumnName="NumEleitores" />
+                <ScalarProperty Name="CoordenadasGeograficas" ColumnName="CoordenadasGeograficas" />
                 <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
                 <ScalarProperty Name="Endereco" ColumnName="Endereco" />
                 <ScalarProperty Name="Usuario" ColumnName="Usuario" />
@@ -785,6 +825,8 @@ FROM [dbo].[ViewResultados] AS [ViewResultados]</DefiningQuery>
           <EntitySetMapping Name="ViewAssembleia">
             <EntityTypeMapping TypeName="SICREEModel.ViewAssembleia">
               <MappingFragment StoreEntitySet="ViewAssembleia">
+                <ScalarProperty Name="NumEleitores" ColumnName="NumEleitores" />
+                <ScalarProperty Name="CoordenadasGeograficas" ColumnName="CoordenadasGeograficas" />
                 <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
                 <ScalarProperty Name="Endereco" ColumnName="Endereco" />
                 <ScalarProperty Name="Municipio" ColumnName="Municipio" />

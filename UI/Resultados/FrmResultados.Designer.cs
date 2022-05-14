@@ -100,7 +100,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuGradientPanel6 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.lbMesas = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lbAssembleias = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -195,7 +194,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel8 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.lbMesas2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lbAssembleias2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel23 = new System.Windows.Forms.Panel();
@@ -276,6 +274,18 @@
             this.GraficoEstatisticaProvincialVotantes = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.GraficoEstatisticaProvincialEleitores = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel36 = new System.Windows.Forms.Panel();
+            this.PnAssE = new System.Windows.Forms.Panel();
+            this.RbtAssE = new System.Windows.Forms.RadioButton();
+            this.PnProvE = new System.Windows.Forms.Panel();
+            this.RbtProvE = new System.Windows.Forms.RadioButton();
+            this.PnMunE = new System.Windows.Forms.Panel();
+            this.RbtMunE = new System.Windows.Forms.RadioButton();
+            this.BtnDadosAssembleia = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.TxtNumAssembleia = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.CbxMunicipioEstatistica = new System.Windows.Forms.ComboBox();
+            this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuCustomLabel17 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel45 = new System.Windows.Forms.Panel();
             this.CbxProvinciaL = new System.Windows.Forms.ComboBox();
             this.bunifuMetroTextbox7 = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -402,6 +412,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.GraficoEstatisticaProvincialVotantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GraficoEstatisticaProvincialEleitores)).BeginInit();
             this.panel36.SuspendLayout();
+            this.PnAssE.SuspendLayout();
+            this.PnProvE.SuspendLayout();
+            this.PnMunE.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
@@ -729,7 +742,6 @@
             this.bunifuGradientPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(220)))), ((int)(((byte)(224)))));
             this.bunifuGradientPanel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel6.BackgroundImage")));
             this.bunifuGradientPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel6.Controls.Add(this.lbMesas);
             this.bunifuGradientPanel6.Controls.Add(this.lbAssembleias);
             this.bunifuGradientPanel6.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(220)))), ((int)(((byte)(224)))));
             this.bunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(135)))), ((int)(((byte)(177)))));
@@ -741,20 +753,6 @@
             this.bunifuGradientPanel6.Size = new System.Drawing.Size(1279, 25);
             this.bunifuGradientPanel6.TabIndex = 4430;
             // 
-            // lbMesas
-            // 
-            this.lbMesas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbMesas.AutoSize = true;
-            this.lbMesas.BackColor = System.Drawing.Color.Transparent;
-            this.lbMesas.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMesas.ForeColor = System.Drawing.Color.Black;
-            this.lbMesas.Location = new System.Drawing.Point(3, 0);
-            this.lbMesas.Name = "lbMesas";
-            this.lbMesas.Size = new System.Drawing.Size(599, 26);
-            this.lbMesas.TabIndex = 4426;
-            this.lbMesas.Text = "Mesas escrutinadas: 73.136, Correspondentes a 38,74%";
-            this.lbMesas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lbAssembleias
             // 
             this.lbAssembleias.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -762,7 +760,7 @@
             this.lbAssembleias.BackColor = System.Drawing.Color.Transparent;
             this.lbAssembleias.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAssembleias.ForeColor = System.Drawing.Color.Black;
-            this.lbAssembleias.Location = new System.Drawing.Point(612, 0);
+            this.lbAssembleias.Location = new System.Drawing.Point(336, 0);
             this.lbAssembleias.Name = "lbAssembleias";
             this.lbAssembleias.Size = new System.Drawing.Size(665, 26);
             this.lbAssembleias.TabIndex = 4427;
@@ -2121,7 +2119,6 @@
             this.bunifuGradientPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(220)))), ((int)(((byte)(224)))));
             this.bunifuGradientPanel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel8.BackgroundImage")));
             this.bunifuGradientPanel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel8.Controls.Add(this.lbMesas2);
             this.bunifuGradientPanel8.Controls.Add(this.lbAssembleias2);
             this.bunifuGradientPanel8.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(220)))), ((int)(((byte)(224)))));
             this.bunifuGradientPanel8.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(135)))), ((int)(((byte)(177)))));
@@ -2133,20 +2130,6 @@
             this.bunifuGradientPanel8.Size = new System.Drawing.Size(1295, 25);
             this.bunifuGradientPanel8.TabIndex = 4429;
             // 
-            // lbMesas2
-            // 
-            this.lbMesas2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbMesas2.AutoSize = true;
-            this.lbMesas2.BackColor = System.Drawing.Color.Transparent;
-            this.lbMesas2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMesas2.ForeColor = System.Drawing.Color.Black;
-            this.lbMesas2.Location = new System.Drawing.Point(131, 2);
-            this.lbMesas2.Name = "lbMesas2";
-            this.lbMesas2.Size = new System.Drawing.Size(516, 23);
-            this.lbMesas2.TabIndex = 4426;
-            this.lbMesas2.Text = "Mesas escrutinadas: 73.136, Correspondentes a 38,74%";
-            this.lbMesas2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lbAssembleias2
             // 
             this.lbAssembleias2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -2154,7 +2137,7 @@
             this.lbAssembleias2.BackColor = System.Drawing.Color.Transparent;
             this.lbAssembleias2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAssembleias2.ForeColor = System.Drawing.Color.Black;
-            this.lbAssembleias2.Location = new System.Drawing.Point(680, 2);
+            this.lbAssembleias2.Location = new System.Drawing.Point(344, 2);
             this.lbAssembleias2.Name = "lbAssembleias2";
             this.lbAssembleias2.Size = new System.Drawing.Size(574, 23);
             this.lbAssembleias2.TabIndex = 4427;
@@ -2857,9 +2840,9 @@
             this.panel38.Controls.Add(this.panel39);
             this.panel38.Controls.Add(this.panel44);
             this.panel38.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel38.Location = new System.Drawing.Point(693, 113);
+            this.panel38.Location = new System.Drawing.Point(693, 115);
             this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(650, 573);
+            this.panel38.Size = new System.Drawing.Size(650, 571);
             this.panel38.TabIndex = 4403;
             // 
             // panel39
@@ -2871,7 +2854,7 @@
             this.panel39.Controls.Add(this.panel43);
             this.panel39.Controls.Add(this.GraficoEstatisticaProvincialVotos);
             this.panel39.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel39.Location = new System.Drawing.Point(0, 309);
+            this.panel39.Location = new System.Drawing.Point(0, 307);
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(650, 264);
             this.panel39.TabIndex = 1;
@@ -3223,9 +3206,9 @@
             this.panel17.Controls.Add(this.GraficoEstatisticaProvincialVotantes);
             this.panel17.Controls.Add(this.GraficoEstatisticaProvincialEleitores);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel17.Location = new System.Drawing.Point(3, 113);
+            this.panel17.Location = new System.Drawing.Point(3, 115);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(685, 573);
+            this.panel17.Size = new System.Drawing.Size(685, 571);
             this.panel17.TabIndex = 4402;
             // 
             // panel34
@@ -3234,7 +3217,7 @@
             this.panel34.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel34.Controls.Add(this.pictureBox33);
             this.panel34.Controls.Add(this.bunifuCustomLabel3);
-            this.panel34.Location = new System.Drawing.Point(459, 82);
+            this.panel34.Location = new System.Drawing.Point(459, 81);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(222, 70);
             this.panel34.TabIndex = 4406;
@@ -3267,7 +3250,7 @@
             this.panel35.BackColor = System.Drawing.Color.Red;
             this.panel35.Controls.Add(this.pictureBox34);
             this.panel35.Controls.Add(this.lbPA2);
-            this.panel35.Location = new System.Drawing.Point(459, 428);
+            this.panel35.Location = new System.Drawing.Point(459, 427);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(222, 70);
             this.panel35.TabIndex = 4405;
@@ -3299,7 +3282,7 @@
             this.panel37.BackColor = System.Drawing.Color.SeaGreen;
             this.panel37.Controls.Add(this.pictureBox35);
             this.panel37.Controls.Add(this.lbPV2);
-            this.panel37.Location = new System.Drawing.Point(459, 333);
+            this.panel37.Location = new System.Drawing.Point(459, 332);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(222, 70);
             this.panel37.TabIndex = 4404;
@@ -3442,6 +3425,15 @@
             // panel36
             // 
             this.panel36.BackColor = System.Drawing.Color.LightBlue;
+            this.panel36.Controls.Add(this.PnAssE);
+            this.panel36.Controls.Add(this.PnProvE);
+            this.panel36.Controls.Add(this.PnMunE);
+            this.panel36.Controls.Add(this.BtnDadosAssembleia);
+            this.panel36.Controls.Add(this.TxtNumAssembleia);
+            this.panel36.Controls.Add(this.bunifuCustomLabel4);
+            this.panel36.Controls.Add(this.CbxMunicipioEstatistica);
+            this.panel36.Controls.Add(this.bunifuMetroTextbox3);
+            this.panel36.Controls.Add(this.bunifuCustomLabel17);
             this.panel36.Controls.Add(this.panel45);
             this.panel36.Controls.Add(this.CbxProvinciaL);
             this.panel36.Controls.Add(this.bunifuMetroTextbox7);
@@ -3449,14 +3441,184 @@
             this.panel36.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel36.Location = new System.Drawing.Point(3, 43);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(1340, 70);
+            this.panel36.Size = new System.Drawing.Size(1340, 72);
             this.panel36.TabIndex = 4398;
+            // 
+            // PnAssE
+            // 
+            this.PnAssE.BackColor = System.Drawing.Color.Gray;
+            this.PnAssE.Controls.Add(this.RbtAssE);
+            this.PnAssE.Location = new System.Drawing.Point(937, 30);
+            this.PnAssE.Name = "PnAssE";
+            this.PnAssE.Size = new System.Drawing.Size(28, 31);
+            this.PnAssE.TabIndex = 4442;
+            // 
+            // RbtAssE
+            // 
+            this.RbtAssE.AutoSize = true;
+            this.RbtAssE.Location = new System.Drawing.Point(7, 9);
+            this.RbtAssE.Name = "RbtAssE";
+            this.RbtAssE.Size = new System.Drawing.Size(14, 13);
+            this.RbtAssE.TabIndex = 49;
+            this.RbtAssE.UseVisualStyleBackColor = true;
+            this.RbtAssE.CheckedChanged += new System.EventHandler(this.RbtAssE_CheckedChanged);
+            // 
+            // PnProvE
+            // 
+            this.PnProvE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(202)))), ((int)(((byte)(94)))));
+            this.PnProvE.Controls.Add(this.RbtProvE);
+            this.PnProvE.Location = new System.Drawing.Point(154, 30);
+            this.PnProvE.Name = "PnProvE";
+            this.PnProvE.Size = new System.Drawing.Size(28, 31);
+            this.PnProvE.TabIndex = 4441;
+            // 
+            // RbtProvE
+            // 
+            this.RbtProvE.AutoSize = true;
+            this.RbtProvE.Checked = true;
+            this.RbtProvE.Location = new System.Drawing.Point(7, 9);
+            this.RbtProvE.Name = "RbtProvE";
+            this.RbtProvE.Size = new System.Drawing.Size(14, 13);
+            this.RbtProvE.TabIndex = 49;
+            this.RbtProvE.TabStop = true;
+            this.RbtProvE.UseVisualStyleBackColor = true;
+            this.RbtProvE.CheckedChanged += new System.EventHandler(this.RbtProvE_CheckedChanged);
+            // 
+            // PnMunE
+            // 
+            this.PnMunE.BackColor = System.Drawing.Color.Gray;
+            this.PnMunE.Controls.Add(this.RbtMunE);
+            this.PnMunE.Location = new System.Drawing.Point(535, 30);
+            this.PnMunE.Name = "PnMunE";
+            this.PnMunE.Size = new System.Drawing.Size(28, 31);
+            this.PnMunE.TabIndex = 4440;
+            // 
+            // RbtMunE
+            // 
+            this.RbtMunE.AutoSize = true;
+            this.RbtMunE.Location = new System.Drawing.Point(7, 9);
+            this.RbtMunE.Name = "RbtMunE";
+            this.RbtMunE.Size = new System.Drawing.Size(14, 13);
+            this.RbtMunE.TabIndex = 49;
+            this.RbtMunE.UseVisualStyleBackColor = true;
+            this.RbtMunE.CheckedChanged += new System.EventHandler(this.RbtMunE_CheckedChanged);
+            // 
+            // BtnDadosAssembleia
+            // 
+            this.BtnDadosAssembleia.ActiveBorderThickness = 2;
+            this.BtnDadosAssembleia.ActiveCornerRadius = 20;
+            this.BtnDadosAssembleia.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.BtnDadosAssembleia.ActiveForecolor = System.Drawing.Color.White;
+            this.BtnDadosAssembleia.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.BtnDadosAssembleia.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnDadosAssembleia.BackColor = System.Drawing.Color.LightBlue;
+            this.BtnDadosAssembleia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDadosAssembleia.BackgroundImage")));
+            this.BtnDadosAssembleia.ButtonText = "OK";
+            this.BtnDadosAssembleia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDadosAssembleia.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDadosAssembleia.ForeColor = System.Drawing.Color.White;
+            this.BtnDadosAssembleia.IdleBorderThickness = 2;
+            this.BtnDadosAssembleia.IdleCornerRadius = 20;
+            this.BtnDadosAssembleia.IdleFillColor = System.Drawing.Color.Transparent;
+            this.BtnDadosAssembleia.IdleForecolor = System.Drawing.Color.Black;
+            this.BtnDadosAssembleia.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.BtnDadosAssembleia.Location = new System.Drawing.Point(1138, 15);
+            this.BtnDadosAssembleia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnDadosAssembleia.Name = "BtnDadosAssembleia";
+            this.BtnDadosAssembleia.Size = new System.Drawing.Size(62, 51);
+            this.BtnDadosAssembleia.TabIndex = 4439;
+            this.BtnDadosAssembleia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnDadosAssembleia.Click += new System.EventHandler(this.BtnDadosAssembleia_Click);
+            // 
+            // TxtNumAssembleia
+            // 
+            this.TxtNumAssembleia.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtNumAssembleia.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtNumAssembleia.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtNumAssembleia.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtNumAssembleia.BorderThickness = 3;
+            this.TxtNumAssembleia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNumAssembleia.Enabled = false;
+            this.TxtNumAssembleia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNumAssembleia.ForeColor = System.Drawing.Color.Black;
+            this.TxtNumAssembleia.isPassword = false;
+            this.TxtNumAssembleia.Location = new System.Drawing.Point(972, 23);
+            this.TxtNumAssembleia.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtNumAssembleia.Name = "TxtNumAssembleia";
+            this.TxtNumAssembleia.Size = new System.Drawing.Size(163, 41);
+            this.TxtNumAssembleia.TabIndex = 4438;
+            this.TxtNumAssembleia.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtNumAssembleia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNumAssembleia_KeyPress);
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(976, 0);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(143, 25);
+            this.bunifuCustomLabel4.TabIndex = 4437;
+            this.bunifuCustomLabel4.Text = "Assembleia:";
+            this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CbxMunicipioEstatistica
+            // 
+            this.CbxMunicipioEstatistica.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CbxMunicipioEstatistica.BackColor = System.Drawing.Color.LightBlue;
+            this.CbxMunicipioEstatistica.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbxMunicipioEstatistica.Enabled = false;
+            this.CbxMunicipioEstatistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CbxMunicipioEstatistica.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CbxMunicipioEstatistica.ForeColor = System.Drawing.Color.Black;
+            this.CbxMunicipioEstatistica.FormattingEnabled = true;
+            this.CbxMunicipioEstatistica.Location = new System.Drawing.Point(575, 28);
+            this.CbxMunicipioEstatistica.Name = "CbxMunicipioEstatistica";
+            this.CbxMunicipioEstatistica.Size = new System.Drawing.Size(269, 32);
+            this.CbxMunicipioEstatistica.TabIndex = 4436;
+            this.CbxMunicipioEstatistica.SelectedIndexChanged += new System.EventHandler(this.CbxMunicipioEstatistica_SelectedIndexChanged);
+            // 
+            // bunifuMetroTextbox3
+            // 
+            this.bunifuMetroTextbox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.bunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.bunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.bunifuMetroTextbox3.BorderThickness = 3;
+            this.bunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox3.isPassword = false;
+            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(570, 23);
+            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
+            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(278, 41);
+            this.bunifuMetroTextbox3.TabIndex = 4435;
+            this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel17
+            // 
+            this.bunifuCustomLabel17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCustomLabel17.AutoSize = true;
+            this.bunifuCustomLabel17.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuCustomLabel17.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel17.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel17.Location = new System.Drawing.Point(573, 0);
+            this.bunifuCustomLabel17.Name = "bunifuCustomLabel17";
+            this.bunifuCustomLabel17.Size = new System.Drawing.Size(124, 25);
+            this.bunifuCustomLabel17.TabIndex = 4434;
+            this.bunifuCustomLabel17.Text = "Município:";
+            this.bunifuCustomLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel45
             // 
             this.panel45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
             this.panel45.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel45.Location = new System.Drawing.Point(0, 65);
+            this.panel45.Location = new System.Drawing.Point(0, 67);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(1340, 5);
             this.panel45.TabIndex = 4403;
@@ -3470,7 +3632,7 @@
             this.CbxProvinciaL.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbxProvinciaL.ForeColor = System.Drawing.Color.Black;
             this.CbxProvinciaL.FormattingEnabled = true;
-            this.CbxProvinciaL.Location = new System.Drawing.Point(194, 19);
+            this.CbxProvinciaL.Location = new System.Drawing.Point(194, 28);
             this.CbxProvinciaL.Name = "CbxProvinciaL";
             this.CbxProvinciaL.Size = new System.Drawing.Size(276, 32);
             this.CbxProvinciaL.TabIndex = 34;
@@ -3487,7 +3649,7 @@
             this.bunifuMetroTextbox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMetroTextbox7.ForeColor = System.Drawing.Color.Black;
             this.bunifuMetroTextbox7.isPassword = false;
-            this.bunifuMetroTextbox7.Location = new System.Drawing.Point(189, 14);
+            this.bunifuMetroTextbox7.Location = new System.Drawing.Point(189, 23);
             this.bunifuMetroTextbox7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMetroTextbox7.Name = "bunifuMetroTextbox7";
             this.bunifuMetroTextbox7.Size = new System.Drawing.Size(285, 41);
@@ -3502,7 +3664,7 @@
             this.bunifuCustomLabel63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bunifuCustomLabel63.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel63.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel63.Location = new System.Drawing.Point(71, 22);
+            this.bunifuCustomLabel63.Location = new System.Drawing.Point(189, 1);
             this.bunifuCustomLabel63.Name = "bunifuCustomLabel63";
             this.bunifuCustomLabel63.Size = new System.Drawing.Size(117, 25);
             this.bunifuCustomLabel63.TabIndex = 32;
@@ -3789,6 +3951,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.GraficoEstatisticaProvincialEleitores)).EndInit();
             this.panel36.ResumeLayout(false);
             this.panel36.PerformLayout();
+            this.PnAssE.ResumeLayout(false);
+            this.PnAssE.PerformLayout();
+            this.PnProvE.ResumeLayout(false);
+            this.PnProvE.PerformLayout();
+            this.PnMunE.ResumeLayout(false);
+            this.PnMunE.PerformLayout();
             this.bunifuGradientPanel5.ResumeLayout(false);
             this.bunifuGradientPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -3885,7 +4053,6 @@
         private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.PictureBox pictureBox31;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel8;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbMesas2;
         private Bunifu.Framework.UI.BunifuCustomLabel lbAssembleias2;
         private System.Windows.Forms.DataVisualization.Charting.Chart GraficProvincial;
         private System.Windows.Forms.Panel panel27;
@@ -3902,7 +4069,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox7;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel63;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel6;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbMesas;
         private Bunifu.Framework.UI.BunifuCustomLabel lbAssembleias;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private System.Windows.Forms.Panel panel10;
@@ -4005,5 +4171,17 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
         private System.Windows.Forms.PictureBox pictureBox40;
         private System.Windows.Forms.DataVisualization.Charting.Chart GraficoEstatisticaProvincialVotos;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnDadosAssembleia;
+        private Bunifu.Framework.UI.BunifuMetroTextbox TxtNumAssembleia;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private System.Windows.Forms.ComboBox CbxMunicipioEstatistica;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox3;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel17;
+        private System.Windows.Forms.Panel PnAssE;
+        private System.Windows.Forms.RadioButton RbtAssE;
+        private System.Windows.Forms.Panel PnProvE;
+        private System.Windows.Forms.RadioButton RbtProvE;
+        private System.Windows.Forms.Panel PnMunE;
+        private System.Windows.Forms.RadioButton RbtMunE;
     }
 }

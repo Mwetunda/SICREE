@@ -47,7 +47,8 @@
             this.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ReportViewer1.Location = new System.Drawing.Point(0, 72);
             this.ReportViewer1.Name = "ReportViewer1";
-            this.ReportViewer1.Size = new System.Drawing.Size(1303, 619);
+            this.ReportViewer1.ServerReport.BearerToken = null;
+            this.ReportViewer1.Size = new System.Drawing.Size(1303, 649);
             this.ReportViewer1.TabIndex = 0;
             this.ReportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.FullPage;
             // 
@@ -122,9 +123,9 @@
             this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 691);
+            this.panel5.Location = new System.Drawing.Point(0, 721);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1303, 58);
+            this.panel5.Size = new System.Drawing.Size(1303, 28);
             this.panel5.TabIndex = 4394;
             // 
             // FrmRelatorio

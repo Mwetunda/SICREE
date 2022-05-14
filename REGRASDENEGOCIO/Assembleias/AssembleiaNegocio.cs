@@ -1,10 +1,7 @@
-﻿using System;
+﻿using ACESSOABASEDEDADOS;
+using PROPRIEDADES;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PROPRIEDADES;
-using ACESSOABASEDEDADOS;
 
 namespace REGRASDENEGOCIO
 {
@@ -61,7 +58,11 @@ namespace REGRASDENEGOCIO
                         Numero = assembleia.Numero,
                         Endereco = assembleia.Endereco,
                         Municipio = assembleia.Municipio,
-                        MunicipioID = assembleia.MunicipioID
+                        MunicipioID = assembleia.MunicipioID,
+                        Provincia = assembleia.Provincia,
+                        ProvinciaId = assembleia.ProvinciaId,
+                        CoordenadasGeograficas = assembleia.CoordenadasGeograficas,
+                        NumeroEleitores = assembleia.NumeroEleitores
                     });
                 }
             }
@@ -81,8 +82,12 @@ namespace REGRASDENEGOCIO
 
                 EntidadePropriedades.MunicipioID = entidade.MunicipioID;
                 EntidadePropriedades.Municipio = entidade.Municipio;
+                EntidadePropriedades.Provincia = entidade.Provincia;
+                EntidadePropriedades.ProvinciaId = entidade.ProvinciaId;
                 EntidadePropriedades.Numero = entidade.Numero;
                 EntidadePropriedades.Endereco = entidade.Endereco;
+                EntidadePropriedades.CoordenadasGeograficas = entidade.CoordenadasGeograficas;
+                EntidadePropriedades.NumeroEleitores = entidade.NumeroEleitores;
             }
             return EntidadePropriedades;
         }
@@ -90,9 +95,9 @@ namespace REGRASDENEGOCIO
         //Verificar
         public bool Verificar(int numero)
         {
-            var Entidade = EntidadeBD.BuscaTotal().Where(entidade => entidade.Numero == numero).ToList();
-
-            if (Entidade.Count == 0)
+            var Entidade = EntidadeBD.Verificar(numero);
+            
+            if (Entidade == null)
             {
                 return false;
             }
@@ -100,6 +105,59 @@ namespace REGRASDENEGOCIO
             {
                 return true;
             }
+        }
+
+
+        //Busca
+        public viewAssembleia EstatisticaNacional()
+        {
+            viewAssembleia geral = new viewAssembleia();
+
+            geral.Numero = EntidadeBD.BuscaTotal().Count();
+            geral.NumeroEleitores = EntidadeBD.BuscaTotal().Sum(x => x.NumeroEleitores);
+
+            return geral;
+        }
+
+        public viewAssembleia EstatisticaProvincial(int idProvincia)
+        {
+            viewAssembleia dadosProvinciais = new viewAssembleia();
+
+            dadosProvinciais.Numero = EntidadeBD.BuscaTotal().Where(x => x.ProvinciaId == idProvincia).Count();
+            dadosProvinciais.NumeroEleitores = EntidadeBD.BuscaTotal().Where(x => x.ProvinciaId == idProvincia).Sum(x => x.NumeroEleitores);
+
+            return dadosProvinciais;
+        }
+
+        public viewAssembleia EstatisticaMunicipal(int idMunicipio)
+        {
+            viewAssembleia geral = new viewAssembleia();
+
+            geral.Numero = EntidadeBD.BuscaTotal().Where(x=>x.MunicipioID == idMunicipio).Count();
+            geral.NumeroEleitores = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == idMunicipio).Sum(x => x.NumeroEleitores);
+
+            return geral;
+        }
+
+        //Busca
+        public List<viewAssembleia> EstatisticaNacionalReport()
+        {
+            List<viewAssembleia> Geral = new List<viewAssembleia>();
+            var Lista = EntidadeBD.BuscaTotal();
+
+            var NumeroAssembleia = Lista.Count();
+            var NumeroEleitor = Lista.Sum(x => x.NumeroEleitores);
+
+            if (Geral.Count == 0)
+            {
+                Geral.Add(new viewAssembleia
+                {
+                    Numero = NumeroAssembleia,
+                    NumeroEleitores = NumeroEleitor,
+                });
+            }
+
+            return Geral;
         }
     }
 }

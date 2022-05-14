@@ -21,6 +21,9 @@
     <Property Name="VotosNulos" Type="int" />
     <Property Name="VotosReclamados" Type="int" />
     <Property Name="VotosValidos" Type="int" />
+    <Property Name="BoletinsRecebidos" Type="int" />
+    <Property Name="BoletinsUtilizados" Type="int" />
+    <Property Name="BoletinsInutilizados" Type="int" />
   </EntityType>
   <EntityType Name="TbAssembleia">
     <Key>
@@ -29,6 +32,8 @@
     <Property Name="NumeroAssembleia" Type="int" Nullable="false" />
     <Property Name="MunicipioID" Type="int" />
     <Property Name="Endereco" Type="varchar" MaxLength="70" />
+    <Property Name="CoordenadasGeograficas" Type="varchar" MaxLength="100" />
+    <Property Name="NumEleitores" Type="int" />
   </EntityType>
   <EntityType Name="TbConcorrente">
     <Key>
@@ -108,6 +113,11 @@ warning 6002: The table/view 'SICREE.dbo.ViewActa' does not have a primary key d
     <Property Name="VotosNulos" Type="int" />
     <Property Name="VotosReclamados" Type="int" />
     <Property Name="VotosValidos" Type="int" />
+    <Property Name="CoordenadasGeograficas" Type="varchar" MaxLength="100" />
+    <Property Name="NumEleitores" Type="int" />
+    <Property Name="BoletinsRecebidos" Type="int" />
+    <Property Name="BoletinsUtilizados" Type="int" />
+    <Property Name="BoletinsInutilizados" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'SICREE.dbo.ViewAssembleia' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -123,6 +133,8 @@ warning 6002: The table/view 'SICREE.dbo.ViewAssembleia' does not have a primary
     <Property Name="Provincia" Type="varchar" MaxLength="15" />
     <Property Name="MunicipioID" Type="int" Nullable="false" />
     <Property Name="ProvinciaID" Type="int" Nullable="false" />
+    <Property Name="CoordenadasGeograficas" Type="varchar" MaxLength="100" />
+    <Property Name="NumEleitores" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'SICREE.dbo.ViewGeral' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -278,7 +290,12 @@ warning 6002: The table/view 'SICREE.dbo.ViewResultados' does not have a primary
 [ViewActa].[VotosBrancos] AS [VotosBrancos], 
 [ViewActa].[VotosNulos] AS [VotosNulos], 
 [ViewActa].[VotosReclamados] AS [VotosReclamados], 
-[ViewActa].[VotosValidos] AS [VotosValidos]
+[ViewActa].[VotosValidos] AS [VotosValidos], 
+[ViewActa].[CoordenadasGeograficas] AS [CoordenadasGeograficas], 
+[ViewActa].[NumEleitores] AS [NumEleitores], 
+[ViewActa].[BoletinsRecebidos] AS [BoletinsRecebidos], 
+[ViewActa].[BoletinsUtilizados] AS [BoletinsUtilizados], 
+[ViewActa].[BoletinsInutilizados] AS [BoletinsInutilizados]
 FROM [dbo].[ViewActa] AS [ViewActa]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="ViewAssembleia" EntityType="Self.ViewAssembleia" store:Type="Views" store:Schema="dbo">
@@ -288,7 +305,9 @@ FROM [dbo].[ViewActa] AS [ViewActa]</DefiningQuery>
 [ViewAssembleia].[Municipio] AS [Municipio], 
 [ViewAssembleia].[Provincia] AS [Provincia], 
 [ViewAssembleia].[MunicipioID] AS [MunicipioID], 
-[ViewAssembleia].[ProvinciaID] AS [ProvinciaID]
+[ViewAssembleia].[ProvinciaID] AS [ProvinciaID], 
+[ViewAssembleia].[CoordenadasGeograficas] AS [CoordenadasGeograficas], 
+[ViewAssembleia].[NumEleitores] AS [NumEleitores]
 FROM [dbo].[ViewAssembleia] AS [ViewAssembleia]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="ViewGeral" EntityType="Self.ViewGeral" store:Type="Views" store:Schema="dbo">

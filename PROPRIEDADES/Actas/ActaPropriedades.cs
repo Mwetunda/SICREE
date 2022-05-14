@@ -15,6 +15,9 @@ namespace PROPRIEDADES
         public int VotosReclamados { get; set; }
         public int VotosValidos { get; set; }
         public int UsuarioID { get; set; }
+        public int BoletinsRecebidos { get; set; }
+        public int BoletinsNaoUtilizados { get; set; }
+        public int BoletinsInutilizados { get; set; }
     }
     public class viewActa
     {
@@ -31,6 +34,9 @@ namespace PROPRIEDADES
         public string Provincia { get; set; }
         public string Usuario { get; set; }
         public int UsuarioID { get; set; }
+        public int BoletinsRecebidos { get; set; }
+        public int BoletinsUtilizados { get; set; }
+        public int BoletinsInutilizados { get; set; }
     }
     public class Grafico
     {

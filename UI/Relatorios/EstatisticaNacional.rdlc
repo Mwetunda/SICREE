@@ -2455,7 +2455,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>  Quantidade de Assembleias de voto:                                                                                        Quantidade de mesas de voto: </Value>
+                      <Value>                                    Quantidade de Assembleias de voto:                                                                                                                                                                                    </Value>
                       <Style>
                         <FontFamily>Candara</FontFamily>
                         <FontWeight>Bold</FontWeight>
@@ -2510,44 +2510,10 @@
               </Paragraphs>
               <rd:DefaultName>QtdAssembleias</rd:DefaultName>
               <Top>4.8161cm</Top>
-              <Left>10.96501cm</Left>
+              <Left>11.12376cm</Left>
               <Height>0.64312cm</Height>
-              <Width>3.34667cm</Width>
+              <Width>3.18792cm</Width>
               <ZIndex>4</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="QtdMesas">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=Parameters!QtdMesas.Value</Value>
-                      <Style>
-                        <FontFamily>Candara</FontFamily>
-                        <FontWeight>Bold</FontWeight>
-                        <Format>#,0;(#,0)</Format>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>QtdMesas</rd:DefaultName>
-              <Top>4.8161cm</Top>
-              <Left>22.27474cm</Left>
-              <Height>0.60784cm</Height>
-              <Width>3.24083cm</Width>
-              <ZIndex>5</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -2817,11 +2783,21 @@
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="Municipio">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Numero">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>2</NumberOfColumns>
-      <NumberOfRows>10</NumberOfRows>
+      <NumberOfRows>11</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -2917,6 +2893,16 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>9</RowIndex>
           <ParameterName>Provincia</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>9</RowIndex>
+          <ParameterName>Municipio</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>10</RowIndex>
+          <ParameterName>Numero</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

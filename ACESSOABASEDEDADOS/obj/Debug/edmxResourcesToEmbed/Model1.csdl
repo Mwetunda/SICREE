@@ -24,6 +24,9 @@
     <NavigationProperty Name="TbAssembleia" Relationship="Self.FK_TbActa_TbAssembleia" FromRole="TbActa" ToRole="TbAssembleia" />
     <NavigationProperty Name="TbUsuario" Relationship="Self.FK_TbActa_TbUsuario" FromRole="TbActa" ToRole="TbUsuario" />
     <NavigationProperty Name="TbResultadoConcorrente" Relationship="Self.FK_TbResultadoConcorrente_TbActa" FromRole="TbActa" ToRole="TbResultadoConcorrente" />
+    <Property Name="BoletinsRecebidos" Type="Int32" />
+    <Property Name="BoletinsUtilizados" Type="Int32" />
+    <Property Name="BoletinsInutilizados" Type="Int32" />
   </EntityType>
   <EntityType Name="TbAssembleia">
     <Key>
@@ -34,6 +37,8 @@
     <Property Name="Endereco" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="TbActa" Relationship="Self.FK_TbActa_TbAssembleia" FromRole="TbAssembleia" ToRole="TbActa" />
     <NavigationProperty Name="TbMunicipio" Relationship="Self.FK_TbAssembleia_TbMunicipio" FromRole="TbAssembleia" ToRole="TbMunicipio" />
+    <Property Name="CoordenadasGeograficas" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NumEleitores" Type="Int32" />
   </EntityType>
   <EntityType Name="TbConcorrente">
     <Key>
@@ -120,6 +125,11 @@
     <Property Name="VotosNulos" Type="Int32" />
     <Property Name="VotosReclamados" Type="Int32" />
     <Property Name="VotosValidos" Type="Int32" />
+    <Property Name="CoordenadasGeograficas" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NumEleitores" Type="Int32" />
+    <Property Name="BoletinsRecebidos" Type="Int32" />
+    <Property Name="BoletinsUtilizados" Type="Int32" />
+    <Property Name="BoletinsInutilizados" Type="Int32" />
   </EntityType>
   <EntityType Name="ViewAssembleia">
     <Key>
@@ -133,6 +143,8 @@
     <Property Name="Provincia" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
     <Property Name="MunicipioID" Type="Int32" Nullable="false" />
     <Property Name="ProvinciaID" Type="Int32" Nullable="false" />
+    <Property Name="CoordenadasGeograficas" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NumEleitores" Type="Int32" />
   </EntityType>
   <EntityType Name="ViewGeral">
     <Key>

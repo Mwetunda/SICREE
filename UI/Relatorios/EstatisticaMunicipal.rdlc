@@ -2334,7 +2334,7 @@
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value>                                                                                 ESTATÍSTICA PROVINCIAL                                      </Value>
+                      <Value>                                                                                  ESTATÍSTICA MUNICIPAL                      </Value>
                       <Style>
                         <FontFamily>Candara</FontFamily>
                         <FontWeight>Bold</FontWeight>
@@ -2342,14 +2342,7 @@
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value xml:space="preserve">       </Value>
-                      <Style>
-                        <FontFamily>Candara</FontFamily>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>Província:</Value>
+                      <Value>Município:</Value>
                       <Style>
                         <FontFamily>Candara</FontFamily>
                         <FontSize>12pt</FontSize>
@@ -2470,7 +2463,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Quantidade de Assembleias de voto:                                                                                                                                              </Value>
+                      <Value>  Quantidade de Assembleias de voto:                                                                                                                                                 </Value>
                       <Style>
                         <FontFamily>Candara</FontFamily>
                         <FontWeight>Bold</FontWeight>
@@ -2527,7 +2520,7 @@
               <Top>4.8161cm</Top>
               <Left>11.12376cm</Left>
               <Height>0.64312cm</Height>
-              <Width>3.50542cm</Width>
+              <Width>3.18792cm</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <Border>
@@ -2539,12 +2532,26 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="Provincia">
+            <Textbox Name="Municipio">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!Municipio.Value</Value>
+                      <Style>
+                        <FontFamily>Candara</FontFamily>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>/</Value>
+                      <Style>
+                        <FontFamily>Candara</FontFamily>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
                     <TextRun>
                       <Value>=Parameters!Provincia.Value</Value>
                       <Style>
@@ -2553,14 +2560,16 @@
                       </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Provincia</rd:DefaultName>
-              <Top>4.19062cm</Top>
-              <Left>20.72442cm</Left>
-              <Height>0.62548cm</Height>
-              <Width>4.35208cm</Width>
+              <rd:DefaultName>Municipio</rd:DefaultName>
+              <Top>4.2161cm</Top>
+              <Left>19.20557cm</Left>
+              <Height>0.6cm</Height>
+              <Width>7.91542cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -2833,7 +2842,6 @@
     </ReportParameter>
     <ReportParameter Name="Municipio">
       <DataType>String</DataType>
-      <Nullable>true</Nullable>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="Numero">

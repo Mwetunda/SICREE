@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using PROPRIEDADES;
+using REGRASDENEGOCIO;
+using System;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using PROPRIEDADES;
-using REGRASDENEGOCIO;
 
 namespace SICREE
 {
@@ -54,6 +49,9 @@ namespace SICREE
             style.MaxLength(TxtVotoReclamado, 2);
             style.MaxLength(TxtVotos, 4);
             style.MaxLength(TxtVotoValido, 4);
+            style.MaxLength(TxtBoletinsRecebidos, 4);
+            style.MaxLength(TxtBoletinsNaoUtilizados, 4);
+            style.MaxLength(TxtBoletinsInutilizados, 4);
 
 
             Listar();
@@ -85,16 +83,12 @@ namespace SICREE
             if (TxtAssembleia.Text == "")
             {
                 MessageBox.Show("Digite o número da assembleia", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TxtAssembleia.Focus();
-            }
-            else if (TxtNumMesas.Text == "")
-            {
-                MessageBox.Show("Digite a quantidade de mesas de voto da assembleia", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TxtNumMesas.Focus();
+                TxtBoletinsRecebidos.Focus();
             }
             else
             {
                 assembleia = assembleiaNegocio.BuscaID(Convert.ToInt32(TxtAssembleia.Text));
+
 
                 if (assembleia == null)
                 {
@@ -103,6 +97,7 @@ namespace SICREE
                 }
                 else
                 {
+
                     if (actaNegocio.Verificar(assembleia.Numero))
                     {
                         MessageBox.Show("A assembleia " + assembleia.Numero + " já foi escrutinada", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -114,7 +109,7 @@ namespace SICREE
                         TxtNumAssembleia.Text = TxtAssembleia.Text;
                         LblCabecalho.Text = "DADOS DA ASSEMBLEIA Nº: " + TxtAssembleia.Text;
                         tabControl1.SelectTab(tabPage2);
-                        TxtVotoBranco.Focus();
+                        TxtBoletinsRecebidos.Focus();
                     }
                 }
             }
@@ -155,6 +150,15 @@ namespace SICREE
 
                 PanelCabecalho.Visible = true;
 
+                LblEleitores.Text = assembleia.NumeroEleitores.ToString();
+
+                LblAbstecoes.Text = (assembleia.NumeroEleitores 
+                    - Convert.ToInt32(TxtVotoBranco.Text) 
+                    - Convert.ToInt32(TxtVotoNulo.Text)
+                    - Convert.ToInt32(TxtVotoReclamado.Text)
+                    - Convert.ToInt32(TxtVotoValido.Text)
+                    ).ToString();
+
                 tabControl1.SelectTab(tabPage6);
                 TxtVotos.Focus();
             }
@@ -168,16 +172,6 @@ namespace SICREE
         private void BtnContinuar_Click(object sender, EventArgs e)
         {
             Avancar();
-        }
-
-        private void bunifuCustomLabel10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void DGVEntidade_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -334,11 +328,14 @@ namespace SICREE
                 if (DGVEntidade.Rows.Count == DGVResultados.Rows.Count - 1)
                 {
                     actaPropriedades.Assembleia.Numero = assembleia.Numero;
-                    actaPropriedades.QtdMesa = Convert.ToInt32(TxtNumMesas.Text);
+                    actaPropriedades.QtdMesa = 0;
                     actaPropriedades.VotosBrancos = Convert.ToInt32(TxtVotoBranco.Text);
                     actaPropriedades.VotosNulos = Convert.ToInt32(TxtVotoNulo.Text);
                     actaPropriedades.VotosReclamados = Convert.ToInt32(TxtVotoReclamado.Text);
                     actaPropriedades.VotosValidos = Convert.ToInt32(TxtVotoValido.Text);
+                    actaPropriedades.BoletinsInutilizados = Convert.ToInt32(TxtBoletinsInutilizados.Text);
+                    actaPropriedades.BoletinsRecebidos = Convert.ToInt32(TxtBoletinsRecebidos.Text);
+                    actaPropriedades.BoletinsNaoUtilizados = Convert.ToInt32(TxtBoletinsNaoUtilizados.Text);
                     actaPropriedades.UsuarioID = FrmLogin.codigo;
 
                     actaNegocio.Gravar(actaPropriedades);
@@ -362,6 +359,9 @@ namespace SICREE
                     TxtVotoReclamado.Text = "";
                     TxtVotoValido.Text = "";
                     TxtVotos.Text = "";
+                    TxtBoletinsNaoUtilizados.Text = "000";
+                    TxtBoletinsInutilizados.Text = "000";
+                    TxtBoletinsRecebidos.Text = "000";
 
                     Listar();
                     DGVResultados.Rows.Clear();
@@ -529,56 +529,6 @@ namespace SICREE
             
         }
 
-        private void panel18_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void DGVResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel11_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtMesaVoto_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnRetroceder_Click_1(object sender, EventArgs e)
         {
             tabControl1.SelectTab(tabPage2);
@@ -589,6 +539,35 @@ namespace SICREE
             if (e.KeyCode == Keys.Enter)
             {
                 Avancar();
+            }
+        }
+
+        private void TxtVotoBranco_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtBoletinsRecebidos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtBoletinsNaoUtilizados_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtBoletinsInutilizados_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

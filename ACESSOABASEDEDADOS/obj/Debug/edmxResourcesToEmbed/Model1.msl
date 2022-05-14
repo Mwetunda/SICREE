@@ -15,6 +15,9 @@
     <EntitySetMapping Name="TbActa">
       <EntityTypeMapping TypeName="SICREEModel.TbActa">
         <MappingFragment StoreEntitySet="TbActa">
+          <ScalarProperty Name="BoletinsInutilizados" ColumnName="BoletinsInutilizados" />
+          <ScalarProperty Name="BoletinsUtilizados" ColumnName="BoletinsUtilizados" />
+          <ScalarProperty Name="BoletinsRecebidos" ColumnName="BoletinsRecebidos" />
           <ScalarProperty Name="AssembleiaID" ColumnName="AssembleiaID" />
           <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
           <ScalarProperty Name="QtdMesa" ColumnName="QtdMesa" />
@@ -28,6 +31,8 @@
     <EntitySetMapping Name="TbAssembleia">
       <EntityTypeMapping TypeName="SICREEModel.TbAssembleia">
         <MappingFragment StoreEntitySet="TbAssembleia">
+          <ScalarProperty Name="NumEleitores" ColumnName="NumEleitores" />
+          <ScalarProperty Name="CoordenadasGeograficas" ColumnName="CoordenadasGeograficas" />
           <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
           <ScalarProperty Name="MunicipioID" ColumnName="MunicipioID" />
           <ScalarProperty Name="Endereco" ColumnName="Endereco" />
@@ -99,6 +104,11 @@
     <EntitySetMapping Name="ViewActa">
       <EntityTypeMapping TypeName="SICREEModel.ViewActa">
         <MappingFragment StoreEntitySet="ViewActa">
+          <ScalarProperty Name="BoletinsInutilizados" ColumnName="BoletinsInutilizados" />
+          <ScalarProperty Name="BoletinsUtilizados" ColumnName="BoletinsUtilizados" />
+          <ScalarProperty Name="BoletinsRecebidos" ColumnName="BoletinsRecebidos" />
+          <ScalarProperty Name="NumEleitores" ColumnName="NumEleitores" />
+          <ScalarProperty Name="CoordenadasGeograficas" ColumnName="CoordenadasGeograficas" />
           <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
           <ScalarProperty Name="Endereco" ColumnName="Endereco" />
           <ScalarProperty Name="Usuario" ColumnName="Usuario" />
@@ -118,6 +128,8 @@
     <EntitySetMapping Name="ViewAssembleia">
       <EntityTypeMapping TypeName="SICREEModel.ViewAssembleia">
         <MappingFragment StoreEntitySet="ViewAssembleia">
+          <ScalarProperty Name="NumEleitores" ColumnName="NumEleitores" />
+          <ScalarProperty Name="CoordenadasGeograficas" ColumnName="CoordenadasGeograficas" />
           <ScalarProperty Name="NumeroAssembleia" ColumnName="NumeroAssembleia" />
           <ScalarProperty Name="Endereco" ColumnName="Endereco" />
           <ScalarProperty Name="Municipio" ColumnName="Municipio" />

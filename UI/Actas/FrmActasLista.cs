@@ -61,7 +61,7 @@ namespace SICREE.Actas
         //ACTA NACIONAL
         void ActaNacional()
         {
-            var Acta = actaNegocio.BuscarDadosMesa();
+            var Acta = actaNegocio.DadosNacionais();
             var Geral = geralNegocio.DadosGeraisNacional();
             var Lista = resultadoNegocio.ListarResultadoNacional();
 
@@ -269,7 +269,7 @@ namespace SICREE.Actas
         {
             try
             {
-                var Acta = actaNegocio.BuscarDadosMesa();
+                var Acta = actaNegocio.DadosNacionais();
                 var Geral = geralNegocio.DadosGeraisNacional();
                 var Lista = resultadoNegocio.ListarResultadoNacional();
 

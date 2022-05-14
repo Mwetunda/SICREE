@@ -24,6 +24,8 @@ namespace ACESSOABASEDEDADOS
             tbEntidade.MunicipioID = entidadePropriedades.MunicipioID;
             tbEntidade.NumeroAssembleia = entidadePropriedades.Numero;
             tbEntidade.Endereco = entidadePropriedades.Endereco;
+            tbEntidade.CoordenadasGeograficas = entidadePropriedades.CoordenadasGeograficas;
+            tbEntidade.NumEleitores = entidadePropriedades.NumeroEleitores;
 
             conexao.BD.AddToTbAssembleia(tbEntidade);
             conexao.Abrir();
@@ -38,6 +40,9 @@ namespace ACESSOABASEDEDADOS
 
             tbEntidade.MunicipioID = entidadePropriedades.MunicipioID;
             tbEntidade.Endereco = entidadePropriedades.Endereco;
+            tbEntidade.CoordenadasGeograficas = entidadePropriedades.CoordenadasGeograficas;
+            tbEntidade.NumEleitores = entidadePropriedades.NumeroEleitores;
+
             conexao.Abrir();
             conexao.Salvar();
             conexao.Fechar();
@@ -56,11 +61,22 @@ namespace ACESSOABASEDEDADOS
                 entidadePropriedades.MunicipioID = entidade.MunicipioID;
                 entidadePropriedades.Municipio = entidade.Municipio;
                 entidadePropriedades.Numero = entidade.NumeroAssembleia;
+                entidadePropriedades.Provincia = entidade.Provincia;
+                entidadePropriedades.ProvinciaId = entidade.ProvinciaID;
                 entidadePropriedades.Endereco = entidade.Endereco;
+                entidadePropriedades.CoordenadasGeograficas = entidade.CoordenadasGeograficas;
+                entidadePropriedades.NumeroEleitores =(int) entidade.NumEleitores;
 
                 Registos.Add(entidadePropriedades);
             }
             return Registos;
+        }
+
+        public ViewAssembleia Verificar(int numeroAssembleia)
+        {
+            
+            var assembleia = conexao.BD.ViewAssembleia.FirstOrDefault(x=>x.NumeroAssembleia== numeroAssembleia);
+            return assembleia;
         }
     }
 }

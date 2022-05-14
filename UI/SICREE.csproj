@@ -159,6 +159,8 @@
     <EmbeddedResource Include="Relatorios\ActaMunicipal.rdlc" />
     <EmbeddedResource Include="Relatorios\ActaAssembleia.rdlc" />
     <EmbeddedResource Include="Relatorios\ActaProvincial.rdlc" />
+    <EmbeddedResource Include="Relatorios\EstatisticaDaAssembleia.rdlc" />
+    <EmbeddedResource Include="Relatorios\EstatisticaMunicipal.rdlc" />
     <EmbeddedResource Include="Relatorios\EstatisticaProvincial.rdlc" />
     <EmbeddedResource Include="Relatorios\FrmRelatorio.resx">
       <DependentUpon>FrmRelatorio.cs</DependentUpon>

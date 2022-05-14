@@ -1,10 +1,7 @@
-﻿using System;
+﻿using ACESSOABASEDEDADOS;
+using PROPRIEDADES;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PROPRIEDADES;
-using ACESSOABASEDEDADOS;
 
 namespace REGRASDENEGOCIO
 {
@@ -33,18 +30,9 @@ namespace REGRASDENEGOCIO
         //Busca Pelo ID
         public viewActa BuscaID(int ID)
         {
-            viewActa EntidadePropriedades = null;
-            var Entidade = EntidadeBD.BuscaTotal().Where(entidade => entidade.NumeroAssembleia == ID).ToList();
+            var Entidade = EntidadeBD.BuscaTotal().FirstOrDefault(entidade => entidade.NumeroAssembleia == ID);
 
-            foreach (var entidade in Entidade)
-            {
-                EntidadePropriedades = new viewActa();
-
-                EntidadePropriedades.NumeroAssembleia = entidade.NumeroAssembleia;
-                EntidadePropriedades.Usuario = entidade.Usuario;
-                EntidadePropriedades.UsuarioID = entidade.UsuarioID;
-            }
-            return EntidadePropriedades;
+            return Entidade;
         }
 
         //Buscr ultima acta
@@ -63,18 +51,113 @@ namespace REGRASDENEGOCIO
         }
 
         // BuscarDadosActa
-        public viewActa BuscarDadosMesa()
+        public viewActa DadosNacionais()
         {
             viewActa Acta = new viewActa();
 
-            Acta.QtdMesa = EntidadeBD.BuscaTotal().Sum(x => x.QtdMesa);
-            Acta.VotosBrancos = EntidadeBD.BuscaTotal().Sum(x => x.VotosBrancos);
-            Acta.VotosNulos = EntidadeBD.BuscaTotal().Sum(x => x.VotosNulos);
-            Acta.VotosReclamados = EntidadeBD.BuscaTotal().Sum(x => x.VotosReclamados);
-            Acta.VotosValidos = EntidadeBD.BuscaTotal().Sum(x => x.VotosValidos);
+            var actas = EntidadeBD.ListarDadosNacional();
 
-            Acta.QtdAssembleia = EntidadeBD.BuscaTotal().Count();
-            return Acta;
+            if (actas.Count > 0)
+            {
+
+                Acta.VotosBrancos = (int)actas.Sum(x => x.VotosBrancos);
+                Acta.VotosNulos = (int)actas.Sum(x => x.VotosNulos);
+                Acta.VotosReclamados = (int)actas.Sum(x => x.VotosReclamados);
+                Acta.VotosValidos = (int)actas.Sum(x => x.VotosValidos);
+                Acta.BoletinsUtilizados = (int)actas.Sum(x => x.BoletinsUtilizados);
+                Acta.BoletinsRecebidos = (int)actas.Sum(x => x.BoletinsRecebidos);
+                Acta.BoletinsInutilizados = (int)actas.Sum(x => x.BoletinsInutilizados);
+
+                Acta.QtdAssembleia = (int)actas.Count;
+
+                return Acta;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        // BuscarDadosActaProvincial
+        public viewActa BuscarDadosMesaProvincial(int provincia)
+        {
+            viewActa Acta = new viewActa();
+
+            var actas = EntidadeBD.ListarDadosProvincial(provincia);
+
+            if (actas.Count > 0)
+            {
+
+                Acta.VotosBrancos = (int)actas.Sum(x => x.VotosBrancos);
+                Acta.VotosNulos = (int)actas.Sum(x => x.VotosNulos);
+                Acta.VotosReclamados = (int)actas.Sum(x => x.VotosReclamados);
+                Acta.VotosValidos = (int)actas.Sum(x => x.VotosValidos);
+                Acta.BoletinsUtilizados = (int)actas.Sum(x => x.BoletinsUtilizados);
+                Acta.BoletinsRecebidos = (int)actas.Sum(x => x.BoletinsRecebidos);
+                Acta.BoletinsInutilizados = (int)actas.Sum(x => x.BoletinsInutilizados);
+
+                Acta.QtdAssembleia = (int)actas.Count;
+
+                return Acta;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        // BuscarDadosActaMunicipal
+        public viewActa BuscarDadosMesaMunicipal(int municipio)
+        {
+            viewActa Acta = new viewActa();
+
+            var actas = EntidadeBD.ListarDadosMunicipal(municipio);
+
+            if (actas.Count > 0)
+            {
+
+                Acta.VotosBrancos = (int)actas.Sum(x => x.VotosBrancos);
+                Acta.VotosNulos = (int)actas.Sum(x => x.VotosNulos);
+                Acta.VotosReclamados = (int)actas.Sum(x => x.VotosReclamados);
+                Acta.VotosValidos = (int)actas.Sum(x => x.VotosValidos);
+                Acta.BoletinsUtilizados = (int)actas.Sum(x => x.BoletinsUtilizados);
+                Acta.BoletinsRecebidos = (int)actas.Sum(x => x.BoletinsRecebidos);
+                Acta.BoletinsInutilizados = (int)actas.Sum(x => x.BoletinsInutilizados);
+
+                Acta.QtdAssembleia = (int)actas.Count;
+
+                return Acta;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        //Busca BuscarDadosMesaAssembleia
+        public viewActa BuscarDadosMesaAssembleia(int municipio, int assembleia)
+        {
+            viewActa Acta = new viewActa();
+
+            var actas = EntidadeBD.ListarDadosDaAssembleia(municipio, assembleia);
+
+            if(actas.Count > 0)
+            {
+                
+                Acta.VotosBrancos = (int) actas.Sum(x => x.VotosBrancos);
+                Acta.VotosNulos = (int)actas.Sum(x => x.VotosNulos);
+                Acta.VotosReclamados = (int)actas.Sum(x => x.VotosReclamados);
+                Acta.VotosValidos = (int)actas.Sum(x => x.VotosValidos);
+                Acta.BoletinsUtilizados = (int)actas.Sum(x => x.BoletinsUtilizados);
+                Acta.BoletinsRecebidos = (int)actas.Sum(x => x.BoletinsRecebidos);
+                Acta.BoletinsInutilizados = (int)actas.Sum(x => x.BoletinsInutilizados);
+
+                return Acta;
+            }
+            else
+            {
+                return null;
+            }      
         }
 
         // BuscarDadosActa
@@ -89,9 +172,9 @@ namespace REGRASDENEGOCIO
             var VotosNulos = Lista.Sum(x => x.VotosNulos);
             var VotosReclamados = Lista.Sum(x => x.VotosReclamados);
             var VotosValidos = Lista.Sum(x => x.VotosValidos);
-            
 
-            if(Acta.Count==0)
+
+            if (Acta.Count == 0)
             {
                 Acta.Add(new viewActa
                 {
@@ -106,56 +189,13 @@ namespace REGRASDENEGOCIO
             return Acta;
         }
 
-        // BuscarDadosActaProvincial
-        public viewActa BuscarDadosMesaProvincial(int provincia)
-        {
-            viewActa Acta = new viewActa();
-
-            Acta.QtdMesa = EntidadeBD.BuscaTotal().Where(x => x.ProvinciaID == provincia).Sum(x => x.QtdMesa);
-            Acta.VotosBrancos = EntidadeBD.BuscaTotal().Where(x => x.ProvinciaID == provincia).Sum(x => x.VotosBrancos);
-            Acta.VotosNulos = EntidadeBD.BuscaTotal().Where(x => x.ProvinciaID == provincia).Sum(x => x.VotosNulos);
-            Acta.VotosReclamados = EntidadeBD.BuscaTotal().Where(x => x.ProvinciaID == provincia).Sum(x => x.VotosReclamados);
-            Acta.VotosValidos = EntidadeBD.BuscaTotal().Where(x => x.ProvinciaID == provincia).Sum(x => x.VotosValidos);
-
-            Acta.QtdAssembleia = EntidadeBD.BuscaTotal().Where(x => x.ProvinciaID == provincia).Count();
-            return Acta;
-        }
-
-        // BuscarDadosActaMunicipal
-        public viewActa BuscarDadosMesaMunicipal(int municipio)
-        {
-            viewActa Acta = new viewActa();
-
-            Acta.QtdMesa = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio).Sum(x => x.QtdMesa);
-            Acta.VotosBrancos = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio).Sum(x => x.VotosBrancos);
-            Acta.VotosNulos = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio).Sum(x => x.VotosNulos);
-            Acta.VotosReclamados = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio).Sum(x => x.VotosReclamados);
-            Acta.VotosValidos = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio).Sum(x => x.VotosValidos);
-
-            Acta.QtdAssembleia = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio).Count();
-            return Acta;
-        }
-
-        //Busca BuscarDadosMesaAssembleia
-        public viewActa BuscarDadosMesaAssembleia(int municipio, int assembleia)
-        {
-            viewActa Acta = new viewActa();
-
-            Acta.QtdMesa = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio && x.NumeroAssembleia == assembleia).Sum(x => x.QtdMesa);
-            Acta.VotosBrancos = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio && x.NumeroAssembleia == assembleia).Sum(x => x.VotosBrancos);
-            Acta.VotosNulos = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio && x.NumeroAssembleia == assembleia).Sum(x => x.VotosNulos);
-            Acta.VotosReclamados = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio && x.NumeroAssembleia == assembleia).Sum(x => x.VotosReclamados);
-            Acta.VotosValidos = EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio && x.NumeroAssembleia == assembleia).Sum(x => x.VotosValidos);
-
-            return Acta;
-        }
-
         //Verificar
         public bool Verificar(int numero)
         {
-            var Entidade = EntidadeBD.BuscaTotal().Where(entidade => entidade.NumeroAssembleia == numero).ToList();
+            var Entidade = EntidadeBD.BuscaTotal()
+                .FirstOrDefault(entidade => entidade.NumeroAssembleia == numero);
 
-            if (Entidade.Count == 0)
+            if (Entidade == null)
             {
                 return false;
             }

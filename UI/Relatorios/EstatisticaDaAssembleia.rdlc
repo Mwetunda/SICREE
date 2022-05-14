@@ -2334,33 +2334,11 @@
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value>                                                                                 ESTATÍSTICA PROVINCIAL                                      </Value>
+                      <Value>                                                   ESTATÍSTICA DA ASSEMBLEIA DE VOTO NÚMERO:                                                             </Value>
                       <Style>
                         <FontFamily>Candara</FontFamily>
                         <FontWeight>Bold</FontWeight>
                         <TextDecoration>None</TextDecoration>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value xml:space="preserve">       </Value>
-                      <Style>
-                        <FontFamily>Candara</FontFamily>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>Província:</Value>
-                      <Style>
-                        <FontFamily>Candara</FontFamily>
-                        <FontSize>12pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value xml:space="preserve">    </Value>
-                      <Style>
-                        <FontFamily>Candara</FontFamily>
-                        <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -2470,7 +2448,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Quantidade de Assembleias de voto:                                                                                                                                              </Value>
+                      <Value xml:space="preserve">                         </Value>
                       <Style>
                         <FontFamily>Candara</FontFamily>
                         <FontWeight>Bold</FontWeight>
@@ -2505,29 +2483,44 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="QtdAssembleias">
+            <Textbox Name="Municipio">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Parameters!QtdAssembleias.Value</Value>
+                      <Value>=Parameters!Municipio.Value</Value>
                       <Style>
                         <FontFamily>Candara</FontFamily>
-                        <FontWeight>Bold</FontWeight>
-                        <Format>#,0;(#,0)</Format>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>/</Value>
+                      <Style>
+                        <FontFamily>Candara</FontFamily>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Parameters!Provincia.Value</Value>
+                      <Style>
+                        <FontFamily>Candara</FontFamily>
+                        <FontSize>12pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>QtdAssembleias</rd:DefaultName>
-              <Top>4.8161cm</Top>
-              <Left>11.12376cm</Left>
-              <Height>0.64312cm</Height>
-              <Width>3.50542cm</Width>
+              <rd:DefaultName>Municipio</rd:DefaultName>
+              <Top>4.07499cm</Top>
+              <Left>19.91995cm</Left>
+              <Height>0.6cm</Height>
+              <Width>7.20104cm</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <Border>
@@ -2539,28 +2532,29 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="Provincia">
+            <Textbox Name="Numero">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Parameters!Provincia.Value</Value>
+                      <Value>=Parameters!Numero.Value</Value>
                       <Style>
                         <FontFamily>Candara</FontFamily>
-                        <FontSize>12pt</FontSize>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Provincia</rd:DefaultName>
-              <Top>4.19062cm</Top>
-              <Left>20.72442cm</Left>
-              <Height>0.62548cm</Height>
-              <Width>4.35208cm</Width>
+              <rd:DefaultName>Numero</rd:DefaultName>
+              <Top>4.2259cm</Top>
+              <Left>16.97584cm</Left>
+              <Height>0.5902cm</Height>
+              <Width>2.52078cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -2833,12 +2827,10 @@
     </ReportParameter>
     <ReportParameter Name="Municipio">
       <DataType>String</DataType>
-      <Nullable>true</Nullable>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="Numero">
       <DataType>String</DataType>
-      <Nullable>true</Nullable>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>

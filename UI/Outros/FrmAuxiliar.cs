@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using PROPRIEDADES;
+using REGRASDENEGOCIO;
+using System;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using REGRASDENEGOCIO;
-using PROPRIEDADES;
 
 namespace SICREE
 {
@@ -52,6 +47,7 @@ namespace SICREE
 
             style = new UIStyle();
             style.MaxLength(TxtAssembleia, 5);
+            style.MaxLength(TxtNumEleitores, 4);
 
             if (MENU.oper == 1)
             {
@@ -452,6 +448,8 @@ namespace SICREE
                     assembleiaPropriedades.Numero = Convert.ToInt32(TxtAssembleia.Text);
                     assembleiaPropriedades.MunicipioID = Convert.ToInt32(CbxMunicipioAssembleia.SelectedValue);
                     assembleiaPropriedades.Endereco = TxtEndereco.Text;
+                    assembleiaPropriedades.CoordenadasGeograficas = TxtGeolocalizacao.Text;
+                    assembleiaPropriedades.NumeroEleitores = Convert.ToInt32(TxtNumEleitores.Text);
 
                     if (assembleiaNegocio.Verificar(Convert.ToInt32(TxtAssembleia.Text)))
                     {
@@ -462,10 +460,12 @@ namespace SICREE
                     {
                         assembleiaNegocio.Gravar(assembleiaPropriedades);
                         MessageBox.Show("Assembleia registada com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ListarAssembleias();
+                        
                         TxtAssembleia.Text = "";
                         TxtEndereco.Text = "";
                         TxtAssembleia.Focus();
+
+                        ListarAssembleias();
                     }
                 }
 
@@ -809,6 +809,43 @@ namespace SICREE
 
             actualizarAssembleia = 1;
             tabControl1.SelectTab(tabPage4);
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                // Change the color of the link text by setting LinkVisited
+                // to true.
+                linkLabel1.LinkVisited = true;
+                //Call the Process.Start method to open the default browser
+                //with a URL:
+                System.Diagnostics.Process.Start("https://www.google.com/maps");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to open link that was clicked."+ex);
+            }
+        }
+
+        private void TxtNumEleitores_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtNumEleitores_OnValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Convert.ToInt32(TxtNumEleitores.Text) > 5000)
+                {
+                    TxtNumEleitores.Text = "5000";
+                }
+            }
+            catch { }
         }
     }
 }

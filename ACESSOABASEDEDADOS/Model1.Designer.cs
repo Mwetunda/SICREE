@@ -776,6 +776,78 @@ namespace ACESSOABASEDEDADOS
         private Nullable<global::System.Int32> _VotosValidos;
         partial void OnVotosValidosChanging(Nullable<global::System.Int32> value);
         partial void OnVotosValidosChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BoletinsRecebidos
+        {
+            get
+            {
+                return _BoletinsRecebidos;
+            }
+            set
+            {
+                OnBoletinsRecebidosChanging(value);
+                ReportPropertyChanging("BoletinsRecebidos");
+                _BoletinsRecebidos = StructuralObject.SetValidValue(value, "BoletinsRecebidos");
+                ReportPropertyChanged("BoletinsRecebidos");
+                OnBoletinsRecebidosChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BoletinsRecebidos;
+        partial void OnBoletinsRecebidosChanging(Nullable<global::System.Int32> value);
+        partial void OnBoletinsRecebidosChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BoletinsUtilizados
+        {
+            get
+            {
+                return _BoletinsUtilizados;
+            }
+            set
+            {
+                OnBoletinsUtilizadosChanging(value);
+                ReportPropertyChanging("BoletinsUtilizados");
+                _BoletinsUtilizados = StructuralObject.SetValidValue(value, "BoletinsUtilizados");
+                ReportPropertyChanged("BoletinsUtilizados");
+                OnBoletinsUtilizadosChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BoletinsUtilizados;
+        partial void OnBoletinsUtilizadosChanging(Nullable<global::System.Int32> value);
+        partial void OnBoletinsUtilizadosChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BoletinsInutilizados
+        {
+            get
+            {
+                return _BoletinsInutilizados;
+            }
+            set
+            {
+                OnBoletinsInutilizadosChanging(value);
+                ReportPropertyChanging("BoletinsInutilizados");
+                _BoletinsInutilizados = StructuralObject.SetValidValue(value, "BoletinsInutilizados");
+                ReportPropertyChanged("BoletinsInutilizados");
+                OnBoletinsInutilizadosChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BoletinsInutilizados;
+        partial void OnBoletinsInutilizadosChanging(Nullable<global::System.Int32> value);
+        partial void OnBoletinsInutilizadosChanged();
 
         #endregion
 
@@ -982,6 +1054,54 @@ namespace ACESSOABASEDEDADOS
         private global::System.String _Endereco;
         partial void OnEnderecoChanging(global::System.String value);
         partial void OnEnderecoChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CoordenadasGeograficas
+        {
+            get
+            {
+                return _CoordenadasGeograficas;
+            }
+            set
+            {
+                OnCoordenadasGeograficasChanging(value);
+                ReportPropertyChanging("CoordenadasGeograficas");
+                _CoordenadasGeograficas = StructuralObject.SetValidValue(value, true, "CoordenadasGeograficas");
+                ReportPropertyChanged("CoordenadasGeograficas");
+                OnCoordenadasGeograficasChanged();
+            }
+        }
+        private global::System.String _CoordenadasGeograficas;
+        partial void OnCoordenadasGeograficasChanging(global::System.String value);
+        partial void OnCoordenadasGeograficasChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> NumEleitores
+        {
+            get
+            {
+                return _NumEleitores;
+            }
+            set
+            {
+                OnNumEleitoresChanging(value);
+                ReportPropertyChanging("NumEleitores");
+                _NumEleitores = StructuralObject.SetValidValue(value, "NumEleitores");
+                ReportPropertyChanged("NumEleitores");
+                OnNumEleitoresChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _NumEleitores;
+        partial void OnNumEleitoresChanging(Nullable<global::System.Int32> value);
+        partial void OnNumEleitoresChanged();
 
         #endregion
 
@@ -2553,6 +2673,126 @@ namespace ACESSOABASEDEDADOS
         private Nullable<global::System.Int32> _VotosValidos;
         partial void OnVotosValidosChanging(Nullable<global::System.Int32> value);
         partial void OnVotosValidosChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CoordenadasGeograficas
+        {
+            get
+            {
+                return _CoordenadasGeograficas;
+            }
+            set
+            {
+                OnCoordenadasGeograficasChanging(value);
+                ReportPropertyChanging("CoordenadasGeograficas");
+                _CoordenadasGeograficas = StructuralObject.SetValidValue(value, true, "CoordenadasGeograficas");
+                ReportPropertyChanged("CoordenadasGeograficas");
+                OnCoordenadasGeograficasChanged();
+            }
+        }
+        private global::System.String _CoordenadasGeograficas;
+        partial void OnCoordenadasGeograficasChanging(global::System.String value);
+        partial void OnCoordenadasGeograficasChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> NumEleitores
+        {
+            get
+            {
+                return _NumEleitores;
+            }
+            set
+            {
+                OnNumEleitoresChanging(value);
+                ReportPropertyChanging("NumEleitores");
+                _NumEleitores = StructuralObject.SetValidValue(value, "NumEleitores");
+                ReportPropertyChanged("NumEleitores");
+                OnNumEleitoresChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _NumEleitores;
+        partial void OnNumEleitoresChanging(Nullable<global::System.Int32> value);
+        partial void OnNumEleitoresChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BoletinsRecebidos
+        {
+            get
+            {
+                return _BoletinsRecebidos;
+            }
+            set
+            {
+                OnBoletinsRecebidosChanging(value);
+                ReportPropertyChanging("BoletinsRecebidos");
+                _BoletinsRecebidos = StructuralObject.SetValidValue(value, "BoletinsRecebidos");
+                ReportPropertyChanged("BoletinsRecebidos");
+                OnBoletinsRecebidosChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BoletinsRecebidos;
+        partial void OnBoletinsRecebidosChanging(Nullable<global::System.Int32> value);
+        partial void OnBoletinsRecebidosChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BoletinsUtilizados
+        {
+            get
+            {
+                return _BoletinsUtilizados;
+            }
+            set
+            {
+                OnBoletinsUtilizadosChanging(value);
+                ReportPropertyChanging("BoletinsUtilizados");
+                _BoletinsUtilizados = StructuralObject.SetValidValue(value, "BoletinsUtilizados");
+                ReportPropertyChanged("BoletinsUtilizados");
+                OnBoletinsUtilizadosChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BoletinsUtilizados;
+        partial void OnBoletinsUtilizadosChanging(Nullable<global::System.Int32> value);
+        partial void OnBoletinsUtilizadosChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BoletinsInutilizados
+        {
+            get
+            {
+                return _BoletinsInutilizados;
+            }
+            set
+            {
+                OnBoletinsInutilizadosChanging(value);
+                ReportPropertyChanging("BoletinsInutilizados");
+                _BoletinsInutilizados = StructuralObject.SetValidValue(value, "BoletinsInutilizados");
+                ReportPropertyChanged("BoletinsInutilizados");
+                OnBoletinsInutilizadosChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BoletinsInutilizados;
+        partial void OnBoletinsInutilizadosChanging(Nullable<global::System.Int32> value);
+        partial void OnBoletinsInutilizadosChanged();
 
         #endregion
 
@@ -2739,6 +2979,54 @@ namespace ACESSOABASEDEDADOS
         private global::System.Int32 _ProvinciaID;
         partial void OnProvinciaIDChanging(global::System.Int32 value);
         partial void OnProvinciaIDChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CoordenadasGeograficas
+        {
+            get
+            {
+                return _CoordenadasGeograficas;
+            }
+            set
+            {
+                OnCoordenadasGeograficasChanging(value);
+                ReportPropertyChanging("CoordenadasGeograficas");
+                _CoordenadasGeograficas = StructuralObject.SetValidValue(value, true, "CoordenadasGeograficas");
+                ReportPropertyChanged("CoordenadasGeograficas");
+                OnCoordenadasGeograficasChanged();
+            }
+        }
+        private global::System.String _CoordenadasGeograficas;
+        partial void OnCoordenadasGeograficasChanging(global::System.String value);
+        partial void OnCoordenadasGeograficasChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> NumEleitores
+        {
+            get
+            {
+                return _NumEleitores;
+            }
+            set
+            {
+                OnNumEleitoresChanging(value);
+                ReportPropertyChanging("NumEleitores");
+                _NumEleitores = StructuralObject.SetValidValue(value, "NumEleitores");
+                ReportPropertyChanged("NumEleitores");
+                OnNumEleitoresChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _NumEleitores;
+        partial void OnNumEleitoresChanging(Nullable<global::System.Int32> value);
+        partial void OnNumEleitoresChanged();
 
         #endregion
 

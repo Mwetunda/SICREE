@@ -49,6 +49,8 @@ namespace SICREE
         public string qtdAssembleias;
         public string qtdMesas;
         public string provincia;
+        public string municipio;
+        public string numero;
 
         public FrmRelatorio()
         {
@@ -67,7 +69,7 @@ namespace SICREE
                 {
                     SetandoParametros();
                 }
-                if(path == "SICREE.Relatorios.EstatisticaNacional.rdlc" || path == "SICREE.Relatorios.EstatisticaProvincial.rdlc")
+                if(path == "SICREE.Relatorios.EstatisticaNacional.rdlc" || path == "SICREE.Relatorios.EstatisticaProvincial.rdlc" || path == "SICREE.Relatorios.EstatisticaMunicipal.rdlc" || path == "SICREE.Relatorios.EstatisticaDaAssembleia.rdlc")
                 {
                     SetandoParametros2();
                 }
@@ -102,7 +104,7 @@ namespace SICREE
         }
         void SetandoParametros2()
         {
-            Microsoft.Reporting.WinForms.ReportParameter[] Parametros2 = new ReportParameter[19];
+            Microsoft.Reporting.WinForms.ReportParameter[] Parametros2 = new ReportParameter[21];
 
             Parametros2[0] = new ReportParameter("QtdEleitores", qtdEleitores);
             Parametros2[1] = new ReportParameter("QtdVotantes", qtdVotantes);
@@ -123,6 +125,8 @@ namespace SICREE
             Parametros2[16] = new ReportParameter("QtdAssembleias", qtdAssembleias);
             Parametros2[17] = new ReportParameter("QtdMesas", qtdMesas);
             Parametros2[18] = new ReportParameter("Provincia", provincia);
+            Parametros2[19] = new ReportParameter("Municipio", municipio);
+            Parametros2[20] = new ReportParameter("Numero", numero);
 
 
             ReportViewer1.LocalReport.SetParameters(Parametros2);

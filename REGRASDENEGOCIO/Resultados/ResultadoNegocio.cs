@@ -1,10 +1,8 @@
-﻿using System;
+﻿using ACESSOABASEDEDADOS;
+using PROPRIEDADES;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PROPRIEDADES;
-using ACESSOABASEDEDADOS;
 
 namespace REGRASDENEGOCIO
 {

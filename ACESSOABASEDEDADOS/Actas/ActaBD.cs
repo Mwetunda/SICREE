@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,9 @@ namespace ACESSOABASEDEDADOS
             tbEntidade.VotosReclamados = entidadePropriedades.VotosReclamados;
             tbEntidade.VotosValidos = entidadePropriedades.VotosValidos;
             tbEntidade.UsuarioID = entidadePropriedades.UsuarioID;
+            tbEntidade.BoletinsRecebidos = entidadePropriedades.BoletinsRecebidos;
+            tbEntidade.BoletinsUtilizados = entidadePropriedades.BoletinsNaoUtilizados;
+            tbEntidade.BoletinsInutilizados = entidadePropriedades.BoletinsInutilizados;
 
             conexao.BD.AddToTbActa(tbEntidade);
             conexao.Abrir();
@@ -45,6 +49,9 @@ namespace ACESSOABASEDEDADOS
             tbEntidade.VotosNulos = entidadePropriedades.VotosNulos;
             tbEntidade.VotosReclamados = entidadePropriedades.VotosReclamados;
             tbEntidade.VotosValidos = entidadePropriedades.VotosValidos;
+            tbEntidade.BoletinsRecebidos = entidadePropriedades.BoletinsRecebidos;
+            tbEntidade.BoletinsUtilizados = entidadePropriedades.BoletinsNaoUtilizados;
+            tbEntidade.BoletinsInutilizados = entidadePropriedades.BoletinsInutilizados;
 
             conexao.Abrir();
             conexao.Salvar();
@@ -70,12 +77,50 @@ namespace ACESSOABASEDEDADOS
                 entidadePropriedades.VotosNulos = Convert.ToInt32(entidade.VotosNulos);
                 entidadePropriedades.VotosReclamados = Convert.ToInt32(entidade.VotosReclamados);
                 entidadePropriedades.VotosValidos = Convert.ToInt32(entidade.VotosValidos);
+                entidadePropriedades.BoletinsInutilizados = Convert.ToInt32(entidade.BoletinsInutilizados);
+                entidadePropriedades.BoletinsRecebidos = Convert.ToInt32(entidade.BoletinsRecebidos);
+                entidadePropriedades.BoletinsUtilizados = Convert.ToInt32(entidade.BoletinsUtilizados);
                 entidadePropriedades.MunicipioID = entidade.MunicipioID;
                 entidadePropriedades.ProvinciaID = entidade.ProvinciaID;
 
                 Registos.Add(entidadePropriedades);
             }
             return Registos;
+        }
+        public List<ViewActa> ListarDadosProvincial(int idProvincia)
+        {
+            var actas = conexao.BD.ViewActa
+                .AsNoTracking()
+                .Where(x => x.ProvinciaID == idProvincia)
+                .ToList();
+
+            return actas;
+        }
+        public List<ViewActa> ListarDadosNacional()
+        {
+            var actas = conexao.BD.ViewActa
+                .AsNoTracking()
+                .ToList();
+
+            return actas;
+        }
+        public List<ViewActa> ListarDadosMunicipal(int idMunicipio)
+        {
+            var actas = conexao.BD.ViewActa
+                .AsNoTracking()
+                .Where(x => x.MunicipioID == idMunicipio)
+                .ToList();
+
+            return actas;
+        }
+        public List<ViewActa> ListarDadosDaAssembleia(int idMunicipio, int idAssembleia)
+        {
+            var actas = conexao.BD.ViewActa
+                .AsNoTracking()
+                .Where(x => x.MunicipioID == idMunicipio && x.NumeroAssembleia == idAssembleia)
+                .ToList();
+
+            return actas;
         }
     }
 }
