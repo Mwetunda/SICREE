@@ -29,6 +29,8 @@ namespace SICREE
         public string percentagem4;
         public string percentagem5;
         public string percentagem6;
+        public string percentagem7;
+        public string percentagem8;
 
         public string qtdEleitores;
         public string qtdVotantes;
@@ -91,7 +93,7 @@ namespace SICREE
 
         void SetandoParametros()
         {
-            Microsoft.Reporting.WinForms.ReportParameter[] Parametros = new ReportParameter[6];
+            Microsoft.Reporting.WinForms.ReportParameter[] Parametros = new ReportParameter[8];
 
             Parametros[0] = new ReportParameter("Percentagem1", percentagem1);
             Parametros[1] = new ReportParameter("Percentagem2", percentagem2);
@@ -99,6 +101,8 @@ namespace SICREE
             Parametros[3] = new ReportParameter("Percentagem4", percentagem4);
             Parametros[4] = new ReportParameter("Percentagem5", percentagem5);
             Parametros[5] = new ReportParameter("Percentagem6", percentagem6);
+            Parametros[6] = new ReportParameter("Percentagem7", percentagem7);
+            Parametros[7] = new ReportParameter("Percentagem8", percentagem8);
 
             ReportViewer1.LocalReport.SetParameters(Parametros);
         }

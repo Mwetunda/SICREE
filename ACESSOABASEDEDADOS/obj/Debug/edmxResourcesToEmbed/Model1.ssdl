@@ -34,6 +34,9 @@
     <Property Name="Endereco" Type="varchar" MaxLength="70" />
     <Property Name="CoordenadasGeograficas" Type="varchar" MaxLength="100" />
     <Property Name="NumEleitores" Type="int" />
+    <Property Name="Delegado" Type="varchar" MaxLength="50" />
+    <Property Name="TelefoneDelegado" Type="varchar" MaxLength="25" />
+    <Property Name="Escrutinada" Type="bit" />
   </EntityType>
   <EntityType Name="TbConcorrente">
     <Key>
@@ -135,6 +138,9 @@ warning 6002: The table/view 'SICREE.dbo.ViewAssembleia' does not have a primary
     <Property Name="ProvinciaID" Type="int" Nullable="false" />
     <Property Name="CoordenadasGeograficas" Type="varchar" MaxLength="100" />
     <Property Name="NumEleitores" Type="int" />
+    <Property Name="Delegado" Type="varchar" MaxLength="50" />
+    <Property Name="TelefoneDelegado" Type="varchar" MaxLength="25" />
+    <Property Name="Escrutinada" Type="bit" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'SICREE.dbo.ViewGeral' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -307,7 +313,10 @@ FROM [dbo].[ViewActa] AS [ViewActa]</DefiningQuery>
 [ViewAssembleia].[MunicipioID] AS [MunicipioID], 
 [ViewAssembleia].[ProvinciaID] AS [ProvinciaID], 
 [ViewAssembleia].[CoordenadasGeograficas] AS [CoordenadasGeograficas], 
-[ViewAssembleia].[NumEleitores] AS [NumEleitores]
+[ViewAssembleia].[NumEleitores] AS [NumEleitores], 
+[ViewAssembleia].[Delegado] AS [Delegado], 
+[ViewAssembleia].[TelefoneDelegado] AS [TelefoneDelegado], 
+[ViewAssembleia].[Escrutinada] AS [Escrutinada]
 FROM [dbo].[ViewAssembleia] AS [ViewAssembleia]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="ViewGeral" EntityType="Self.ViewGeral" store:Type="Views" store:Schema="dbo">

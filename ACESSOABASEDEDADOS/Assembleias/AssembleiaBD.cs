@@ -26,6 +26,9 @@ namespace ACESSOABASEDEDADOS
             tbEntidade.Endereco = entidadePropriedades.Endereco;
             tbEntidade.CoordenadasGeograficas = entidadePropriedades.CoordenadasGeograficas;
             tbEntidade.NumEleitores = entidadePropriedades.NumeroEleitores;
+            tbEntidade.Delegado = entidadePropriedades.Delegado;
+            tbEntidade.TelefoneDelegado = entidadePropriedades.TelefoneDelegado;
+            tbEntidade.Escrutinada = false;
 
             conexao.BD.AddToTbAssembleia(tbEntidade);
             conexao.Abrir();
@@ -42,6 +45,8 @@ namespace ACESSOABASEDEDADOS
             tbEntidade.Endereco = entidadePropriedades.Endereco;
             tbEntidade.CoordenadasGeograficas = entidadePropriedades.CoordenadasGeograficas;
             tbEntidade.NumEleitores = entidadePropriedades.NumeroEleitores;
+            tbEntidade.Delegado = entidadePropriedades.Delegado;
+            tbEntidade.TelefoneDelegado = entidadePropriedades.TelefoneDelegado;
 
             conexao.Abrir();
             conexao.Salvar();
@@ -66,6 +71,9 @@ namespace ACESSOABASEDEDADOS
                 entidadePropriedades.Endereco = entidade.Endereco;
                 entidadePropriedades.CoordenadasGeograficas = entidade.CoordenadasGeograficas;
                 entidadePropriedades.NumeroEleitores =(int) entidade.NumEleitores;
+                entidadePropriedades.Delegado = entidade.Delegado;
+                entidadePropriedades.TelefoneDelegado = entidade.TelefoneDelegado;
+                entidadePropriedades.Escrutinada = entidade.Escrutinada;
 
                 Registos.Add(entidadePropriedades);
             }
@@ -74,9 +82,17 @@ namespace ACESSOABASEDEDADOS
 
         public ViewAssembleia Verificar(int numeroAssembleia)
         {
-            
             var assembleia = conexao.BD.ViewAssembleia.FirstOrDefault(x=>x.NumeroAssembleia== numeroAssembleia);
             return assembleia;
+        }
+        public bool Estrutinada(int numeroAssembleia)
+        {
+            //TbAssembleia tbEntidade = conexao.BD.TbAssembleia.First(Entidade => Entidade.NumeroAssembleia == entidadePropriedades.Numero);
+            var assembleia = conexao.BD.TbAssembleia.FirstOrDefault(x => x.NumeroAssembleia == numeroAssembleia);
+            assembleia.Escrutinada = true;
+            conexao.Salvar();
+
+            return true;
         }
     }
 }

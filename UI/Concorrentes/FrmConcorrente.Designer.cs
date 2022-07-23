@@ -755,6 +755,7 @@
             this.BtnImprimir.Size = new System.Drawing.Size(167, 55);
             this.BtnImprimir.TabIndex = 4390;
             this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnImprimir.Visible = false;
             // 
             // pictureBox1
             // 

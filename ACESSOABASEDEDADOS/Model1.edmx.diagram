@@ -18,7 +18,7 @@
         <EntityTypeShape EntityType="SICREEModel.ViewAssembleia" Width="1.5" PointX="4.75" PointY="8.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SICREEModel.ViewGeral" Width="1.5" PointX="6.75" PointY="8.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SICREEModel.ViewMunicipio" Width="1.5" PointX="8.75" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="SICREEModel.ViewResultados" Width="1.5" PointX="4.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICREEModel.ViewResultados" Width="1.5" PointX="6.75" PointY="10.75" IsExpanded="true" />
         <AssociationConnector Association="SICREEModel.FK_TbActa_TbAssembleia" ManuallyRouted="false" />
         <AssociationConnector Association="SICREEModel.FK_TbActa_TbUsuario" ManuallyRouted="false" />
         <AssociationConnector Association="SICREEModel.FK_TbResultadoConcorrente_TbActa" ManuallyRouted="false" />

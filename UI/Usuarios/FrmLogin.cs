@@ -46,9 +46,11 @@ namespace SICREE
                 }
                 else
                 {
-                    if(entidadeNegocio.Autenticacao(TxtNome.Text,TxtSenha.Text)!= null)
+                    var autenticar = entidadeNegocio.Autenticacao(TxtNome.Text, TxtSenha.Text);
+                    
+                    if (autenticar != null)
                     {
-                        entidadePropriedades = entidadeNegocio.Autenticacao(TxtNome.Text, TxtSenha.Text);
+                        entidadePropriedades = autenticar;
 
                         codigo = entidadePropriedades.Codigo;
                         acesso = entidadePropriedades.Previlegio;
@@ -58,9 +60,18 @@ namespace SICREE
 
                         if(estado)
                         {
-                            this.Hide();
-                            MENU form = new MENU();
-                            form.Show();
+                           if(acesso.Equals("Administrador"))
+                           {
+                                this.Hide();
+                                MENU form = new MENU();
+                                form.Show();
+                           }
+                           else
+                            {
+                                this.Hide();
+                                FrmActa formActa = new FrmActa();
+                                formActa.Show();
+                            }
                         }
                         else
                         {
@@ -88,7 +99,7 @@ namespace SICREE
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
         private void BtnOk_Click(object sender, EventArgs e)
@@ -110,6 +121,16 @@ namespace SICREE
             {
                 Login();
             }
+        }
+
+        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

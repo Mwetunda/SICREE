@@ -109,12 +109,16 @@ namespace SICREE
                 GraficNacional.Series[1].XValueMember = "Partido";
                 GraficNacional.Series[1].YValueMembers = "Votos";
 
-                LblUNITA.Text = Lista.Where(x => x.ConcorrenteID == 1).Max(x => x.Percentagem);
-                LblAPN.Text = Lista.Where(x => x.ConcorrenteID == 2).Max(x => x.Percentagem);
-                LblPRS.Text = Lista.Where(x => x.ConcorrenteID == 3).Max(x => x.Percentagem);
-                LblMPLA.Text = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
-                LblFNLA.Text = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
-                LblCASA.Text = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                LblPHA.Text = Lista.Where(x => x.ConcorrenteID == 1).Max(x => x.Percentagem);
+                LblPNJANGO.Text = Lista.Where(x => x.ConcorrenteID == 2).Max(x => x.Percentagem);
+                LblUNITA.Text = Lista.Where(x => x.ConcorrenteID == 3).Max(x => x.Percentagem);
+                LblFNLA.Text = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
+                LblCASA.Text = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
+                LblAPN.Text = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                LblPRS.Text = Lista.Where(x => x.ConcorrenteID == 7).Max(x => x.Percentagem);
+                LblMPLA.Text = Lista.Where(x => x.ConcorrenteID == 8).Max(x => x.Percentagem);
+                
+                
 
                 viewActa acta = new viewActa();
                 acta = actaNegocio.DadosNacionais();
@@ -135,10 +139,12 @@ namespace SICREE
                 var percentagemAssembleia = Convert.ToDecimal(qtdAssembleia * 100) / Convert.ToDecimal(qtdAssembleiaGeral);
                 var PercentagemAssembleia = Math.Round(percentagemAssembleia, 2).ToString() + " %";
 
-                lbAssembleias.Text = "Assembleias escrutinadas: " + qtdAssembleia + ", Correspondentes a " + PercentagemAssembleia;
+                lbAssembleias.Text = "Assembleias escrutinadas: " + qtdAssembleia + ", Correspondentes a " + PercentagemAssembleia + " de " + qtdAssembleiaGeral + " Assembleias registadas";
             }
             else
             {
+                LblPHA.Text = "";
+                LblPNJANGO.Text = "";
                 LblUNITA.Text = "";
                 LblAPN.Text = "";
                 LblPRS.Text = "";
@@ -175,12 +181,14 @@ namespace SICREE
                 GraficProvincial.Series[1].XValueMember = "Partido";
                 GraficProvincial.Series[1].YValueMembers = "Votos";
 
-                LblUNITA1.Text = Lista.Where(x => x.ConcorrenteID == 1).Max(x => x.Percentagem);
-                LblAPN1.Text = Lista.Where(x => x.ConcorrenteID == 2).Max(x => x.Percentagem);
-                LblPRS1.Text = Lista.Where(x => x.ConcorrenteID == 3).Max(x => x.Percentagem);
-                LblMPLA1.Text = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
-                LblFNLA1.Text = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
-                LblCASA1.Text = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                LblPHA1.Text = Lista.Where(x => x.ConcorrenteID == 1).Max(x => x.Percentagem);
+                LblPNJANGO1.Text = Lista.Where(x => x.ConcorrenteID == 2).Max(x => x.Percentagem);
+                LblUNITA1.Text = Lista.Where(x => x.ConcorrenteID == 3).Max(x => x.Percentagem);
+                LblFNLA1.Text = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
+                LblCASA1.Text = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
+                LblAPN1.Text = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                LblPRS1.Text = Lista.Where(x => x.ConcorrenteID == 7).Max(x => x.Percentagem);
+                LblMPLA1.Text = Lista.Where(x => x.ConcorrenteID == 8).Max(x => x.Percentagem);
 
                 viewActa acta = new viewActa();
                 acta = actaNegocio.BuscarDadosMesaProvincial(Convert.ToInt32(CbxProvinciaG.SelectedValue));
@@ -201,14 +209,15 @@ namespace SICREE
                 var percentagemAssembleia = Convert.ToDecimal(qtdAssembleia * 100) / Convert.ToDecimal(qtdAssembleiaGeral);
                 var PercentagemAssembleia = Math.Round(percentagemAssembleia, 2).ToString() + " %";
 
-                lbAssembleias2.Text = "Assembleias escrutinadas: " + qtdAssembleia + ", Correspondentes a " + PercentagemAssembleia;
+                lbAssembleias2.Text = "Assembleias escrutinadas: " + qtdAssembleia + ", Correspondentes a " + PercentagemAssembleia + " de " + qtdAssembleiaGeral + " Assembleias registadas";
             }
             else
             {
                 GraficProvincial.Visible = false;
                 Titlo.Visible = true;
 
-
+                LblPHA1.Text = "";
+                LblPNJANGO1.Text = "";
                 LblUNITA1.Text = "";
                 LblAPN1.Text = "";
                 LblPRS1.Text = "";
@@ -247,12 +256,14 @@ namespace SICREE
                 GraficProvincial.Series[1].XValueMember = "Partido";
                 GraficProvincial.Series[1].YValueMembers = "Votos";
 
-                LblUNITA1.Text = Lista.Where(x => x.ConcorrenteID == 1).Max(x => x.Percentagem);
-                LblAPN1.Text = Lista.Where(x => x.ConcorrenteID == 2).Max(x => x.Percentagem);
-                LblPRS1.Text = Lista.Where(x => x.ConcorrenteID == 3).Max(x => x.Percentagem);
-                LblMPLA1.Text = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
-                LblFNLA1.Text = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
-                LblCASA1.Text = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                LblPHA1.Text = Lista.Where(x => x.ConcorrenteID == 1).Max(x => x.Percentagem);
+                LblPNJANGO1.Text = Lista.Where(x => x.ConcorrenteID == 2).Max(x => x.Percentagem);
+                LblUNITA1.Text = Lista.Where(x => x.ConcorrenteID == 3).Max(x => x.Percentagem);
+                LblFNLA1.Text = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
+                LblCASA1.Text = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
+                LblAPN1.Text = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                LblPRS1.Text = Lista.Where(x => x.ConcorrenteID == 7).Max(x => x.Percentagem);
+                LblMPLA1.Text = Lista.Where(x => x.ConcorrenteID == 8).Max(x => x.Percentagem);
 
                 viewActa acta = new viewActa();
                 acta = actaNegocio.BuscarDadosMesaMunicipal(Convert.ToInt32(CbxMunicipioG.SelectedValue));
@@ -264,7 +275,17 @@ namespace SICREE
 
                 qtdAssembleia = acta.QtdAssembleia;
 
-                lbAssembleias2.Text = "";
+                viewAssembleia geral = new viewAssembleia();
+                geral = assembleiaNegocio.EstatisticaMunicipal(Convert.ToInt32(CbxMunicipioG.SelectedValue));
+
+                qtdAssembleiaGeral = geral.Numero;
+                qtdEleitoresGeral = geral.NumeroEleitores;
+
+
+                var percentagemAssembleia = Convert.ToDecimal(qtdAssembleia * 100) / Convert.ToDecimal(qtdAssembleiaGeral);
+                var PercentagemAssembleia = Math.Round(percentagemAssembleia, 2).ToString() + " %";
+
+                lbAssembleias2.Text = "Assembleias escrutinadas: " + qtdAssembleia + ", Correspondentes a " + PercentagemAssembleia +" de "+ qtdAssembleiaGeral +" Assembleias registadas";
 
             }
             else
@@ -274,6 +295,8 @@ namespace SICREE
 
                 MessageBox.Show("Não há informações sobre este Município de momento", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
+                LblPHA1.Text = "";
+                LblPNJANGO1.Text = "";
                 LblUNITA1.Text = "";
                 LblAPN1.Text = "";
                 LblPRS1.Text = "";
@@ -309,12 +332,14 @@ namespace SICREE
                 GraficProvincial.Series[1].XValueMember = "Partido";
                 GraficProvincial.Series[1].YValueMembers = "Votos";
 
-                LblUNITA1.Text = Lista.Where(x => x.ConcorrenteID == 1).Max(x => x.Percentagem);
-                LblAPN1.Text = Lista.Where(x => x.ConcorrenteID == 2).Max(x => x.Percentagem);
-                LblPRS1.Text = Lista.Where(x => x.ConcorrenteID == 3).Max(x => x.Percentagem);
-                LblMPLA1.Text = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
-                LblFNLA1.Text = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
-                LblCASA1.Text = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                LblPHA1.Text = Lista.Where(x => x.ConcorrenteID == 1).Max(x => x.Percentagem);
+                LblPNJANGO1.Text = Lista.Where(x => x.ConcorrenteID == 2).Max(x => x.Percentagem);
+                LblUNITA1.Text = Lista.Where(x => x.ConcorrenteID == 3).Max(x => x.Percentagem);
+                LblFNLA1.Text = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
+                LblCASA1.Text = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
+                LblAPN1.Text = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                LblPRS1.Text = Lista.Where(x => x.ConcorrenteID == 7).Max(x => x.Percentagem);
+                LblMPLA1.Text = Lista.Where(x => x.ConcorrenteID == 8).Max(x => x.Percentagem);
 
                 viewActa acta = new viewActa();
                 acta = actaNegocio.BuscarDadosMesaAssembleia(Convert.ToInt32(CbxMunicipioG.SelectedValue), Convert.ToInt32(TxtAssembleiaG.Text));
@@ -332,6 +357,8 @@ namespace SICREE
                 GraficProvincial.Visible = false;
                 Titlo.Visible = true;
 
+                LblPHA1.Text = "";
+                LblPNJANGO1.Text = "";
                 LblUNITA1.Text = "";
                 LblAPN1.Text = "";
                 LblPRS1.Text = "";
@@ -1136,6 +1163,8 @@ namespace SICREE
                     rel.percentagem4 = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
                     rel.percentagem5 = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
                     rel.percentagem6 = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                    rel.percentagem7 = Lista.Where(x => x.ConcorrenteID == 7).Max(x => x.Percentagem);
+                    rel.percentagem8 = Lista.Where(x => x.ConcorrenteID == 8).Max(x => x.Percentagem);
 
                     rel.ShowDialog();
                 }
@@ -1169,6 +1198,8 @@ namespace SICREE
                         rel.percentagem4 = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
                         rel.percentagem5 = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
                         rel.percentagem6 = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                        rel.percentagem7 = Lista.Where(x => x.ConcorrenteID == 7).Max(x => x.Percentagem);
+                        rel.percentagem8 = Lista.Where(x => x.ConcorrenteID == 8).Max(x => x.Percentagem);
 
                         rel.ShowDialog();
                     }
@@ -1199,6 +1230,8 @@ namespace SICREE
                         rel.percentagem4 = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
                         rel.percentagem5 = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
                         rel.percentagem6 = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                        rel.percentagem7 = Lista.Where(x => x.ConcorrenteID == 7).Max(x => x.Percentagem);
+                        rel.percentagem8 = Lista.Where(x => x.ConcorrenteID == 8).Max(x => x.Percentagem);
 
                         rel.ShowDialog();
                     }
@@ -1229,6 +1262,8 @@ namespace SICREE
                         rel.percentagem4 = Lista.Where(x => x.ConcorrenteID == 4).Max(x => x.Percentagem);
                         rel.percentagem5 = Lista.Where(x => x.ConcorrenteID == 5).Max(x => x.Percentagem);
                         rel.percentagem6 = Lista.Where(x => x.ConcorrenteID == 6).Max(x => x.Percentagem);
+                        rel.percentagem7 = Lista.Where(x => x.ConcorrenteID == 7).Max(x => x.Percentagem);
+                        rel.percentagem8 = Lista.Where(x => x.ConcorrenteID == 8).Max(x => x.Percentagem);
 
                         rel.ShowDialog();
                     }

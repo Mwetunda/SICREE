@@ -59,5 +59,25 @@ namespace SICREE.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap diadosanimais_natureza {
+            get {
+                object obj = ResourceManager.GetObject("diadosanimais-natureza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rotate_pulsating_loading_animation {
+            get {
+                object obj = ResourceManager.GetObject("rotate-pulsating-loading-animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

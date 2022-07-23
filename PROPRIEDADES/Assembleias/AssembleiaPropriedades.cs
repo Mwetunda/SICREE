@@ -14,6 +14,8 @@ namespace PROPRIEDADES
         public string CoordenadasGeograficas { get; set; }
         public string CodAssembleia { get; set; }
         public int NumeroEleitores { get; set; }
+        public string Delegado { get; set; }
+        public string TelefoneDelegado { get; set; }
     }
 
     public class viewAssembleia
@@ -26,5 +28,8 @@ namespace PROPRIEDADES
         public int ProvinciaId { get; set; }
         public string CoordenadasGeograficas { get; set; }
         public int NumeroEleitores { get; set; }
+        public string Delegado { get; set; }
+        public string TelefoneDelegado { get; set; }
+        public bool? Escrutinada { get; set; }
     }
 }

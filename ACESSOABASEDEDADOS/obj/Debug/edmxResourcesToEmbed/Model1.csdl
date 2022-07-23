@@ -39,6 +39,9 @@
     <NavigationProperty Name="TbMunicipio" Relationship="Self.FK_TbAssembleia_TbMunicipio" FromRole="TbAssembleia" ToRole="TbMunicipio" />
     <Property Name="CoordenadasGeograficas" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="NumEleitores" Type="Int32" />
+    <Property Name="Delegado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TelefoneDelegado" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Escrutinada" Type="Boolean" />
   </EntityType>
   <EntityType Name="TbConcorrente">
     <Key>
@@ -145,6 +148,9 @@
     <Property Name="ProvinciaID" Type="Int32" Nullable="false" />
     <Property Name="CoordenadasGeograficas" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="NumEleitores" Type="Int32" />
+    <Property Name="Delegado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TelefoneDelegado" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Escrutinada" Type="Boolean" />
   </EntityType>
   <EntityType Name="ViewGeral">
     <Key>

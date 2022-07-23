@@ -35,13 +35,13 @@ namespace REGRASDENEGOCIO
         }
 
         //Metodo Listar
-        public List<viewAssembleia> ListaMunicipio(int municipioId)
+        public List<viewAssembleia> ListaMunicipio(int municipioId, bool escrutinada)
         {
-            return EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipioId).ToList();
+            return EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipioId && x.Escrutinada == escrutinada).ToList();
         }
 
         //Metodo Listar
-        public List<viewAssembleia> ListaProvincia(int provinciaId)
+        public List<viewAssembleia> ListaProvincia(int provinciaId, bool escrutinada)
         {
             List<viewAssembleia> Lista = new List<viewAssembleia>();
 
@@ -49,22 +49,9 @@ namespace REGRASDENEGOCIO
 
             foreach(var municipio in Municipios)
             {
-              var Assembleias =  EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio.MunicipioID).ToList();
+              var Assembleias =  EntidadeBD.BuscaTotal().Where(x => x.MunicipioID == municipio.MunicipioID && x.Escrutinada == escrutinada).ToList();
 
-                foreach(var assembleia in Assembleias)
-                {
-                    Lista.Add(new viewAssembleia
-                    {
-                        Numero = assembleia.Numero,
-                        Endereco = assembleia.Endereco,
-                        Municipio = assembleia.Municipio,
-                        MunicipioID = assembleia.MunicipioID,
-                        Provincia = assembleia.Provincia,
-                        ProvinciaId = assembleia.ProvinciaId,
-                        CoordenadasGeograficas = assembleia.CoordenadasGeograficas,
-                        NumeroEleitores = assembleia.NumeroEleitores
-                    });
-                }
+              Lista.AddRange(Assembleias);
             }
 
             return Lista;
@@ -73,23 +60,7 @@ namespace REGRASDENEGOCIO
         //Busca Pelo ID
         public viewAssembleia BuscaID(int ID)
         {
-            viewAssembleia EntidadePropriedades = null;
-            var Entidade = EntidadeBD.BuscaTotal().Where(entidade => entidade.Numero == ID).ToList();
-
-            foreach (var entidade in Entidade)
-            {
-                EntidadePropriedades = new viewAssembleia();
-
-                EntidadePropriedades.MunicipioID = entidade.MunicipioID;
-                EntidadePropriedades.Municipio = entidade.Municipio;
-                EntidadePropriedades.Provincia = entidade.Provincia;
-                EntidadePropriedades.ProvinciaId = entidade.ProvinciaId;
-                EntidadePropriedades.Numero = entidade.Numero;
-                EntidadePropriedades.Endereco = entidade.Endereco;
-                EntidadePropriedades.CoordenadasGeograficas = entidade.CoordenadasGeograficas;
-                EntidadePropriedades.NumeroEleitores = entidade.NumeroEleitores;
-            }
-            return EntidadePropriedades;
+            return  EntidadeBD.BuscaTotal().FirstOrDefault(entidade => entidade.Numero == ID);
         }
 
         //Verificar
@@ -107,6 +78,19 @@ namespace REGRASDENEGOCIO
             }
         }
 
+        public bool Escrutinada(int numero)
+        {
+            var Entidade = EntidadeBD.Estrutinada(numero);
+
+            if (Entidade == false)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
         //Busca
         public viewAssembleia EstatisticaNacional()

@@ -104,5 +104,12 @@ namespace SICREE
             FrmActasLista form = new FrmActasLista();
             form.Show();
         }
+
+        private void bunifuCustomLabel40_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmLogin form = new FrmLogin();
+            form.Show();
+        }
     }
 }

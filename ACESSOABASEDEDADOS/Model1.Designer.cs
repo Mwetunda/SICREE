@@ -1102,6 +1102,78 @@ namespace ACESSOABASEDEDADOS
         private Nullable<global::System.Int32> _NumEleitores;
         partial void OnNumEleitoresChanging(Nullable<global::System.Int32> value);
         partial void OnNumEleitoresChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Delegado
+        {
+            get
+            {
+                return _Delegado;
+            }
+            set
+            {
+                OnDelegadoChanging(value);
+                ReportPropertyChanging("Delegado");
+                _Delegado = StructuralObject.SetValidValue(value, true, "Delegado");
+                ReportPropertyChanged("Delegado");
+                OnDelegadoChanged();
+            }
+        }
+        private global::System.String _Delegado;
+        partial void OnDelegadoChanging(global::System.String value);
+        partial void OnDelegadoChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TelefoneDelegado
+        {
+            get
+            {
+                return _TelefoneDelegado;
+            }
+            set
+            {
+                OnTelefoneDelegadoChanging(value);
+                ReportPropertyChanging("TelefoneDelegado");
+                _TelefoneDelegado = StructuralObject.SetValidValue(value, true, "TelefoneDelegado");
+                ReportPropertyChanged("TelefoneDelegado");
+                OnTelefoneDelegadoChanged();
+            }
+        }
+        private global::System.String _TelefoneDelegado;
+        partial void OnTelefoneDelegadoChanging(global::System.String value);
+        partial void OnTelefoneDelegadoChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Boolean> Escrutinada
+        {
+            get
+            {
+                return _Escrutinada;
+            }
+            set
+            {
+                OnEscrutinadaChanging(value);
+                ReportPropertyChanging("Escrutinada");
+                _Escrutinada = StructuralObject.SetValidValue(value, "Escrutinada");
+                ReportPropertyChanged("Escrutinada");
+                OnEscrutinadaChanged();
+            }
+        }
+        private Nullable<global::System.Boolean> _Escrutinada;
+        partial void OnEscrutinadaChanging(Nullable<global::System.Boolean> value);
+        partial void OnEscrutinadaChanged();
 
         #endregion
 
@@ -3027,6 +3099,78 @@ namespace ACESSOABASEDEDADOS
         private Nullable<global::System.Int32> _NumEleitores;
         partial void OnNumEleitoresChanging(Nullable<global::System.Int32> value);
         partial void OnNumEleitoresChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Delegado
+        {
+            get
+            {
+                return _Delegado;
+            }
+            set
+            {
+                OnDelegadoChanging(value);
+                ReportPropertyChanging("Delegado");
+                _Delegado = StructuralObject.SetValidValue(value, true, "Delegado");
+                ReportPropertyChanged("Delegado");
+                OnDelegadoChanged();
+            }
+        }
+        private global::System.String _Delegado;
+        partial void OnDelegadoChanging(global::System.String value);
+        partial void OnDelegadoChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TelefoneDelegado
+        {
+            get
+            {
+                return _TelefoneDelegado;
+            }
+            set
+            {
+                OnTelefoneDelegadoChanging(value);
+                ReportPropertyChanging("TelefoneDelegado");
+                _TelefoneDelegado = StructuralObject.SetValidValue(value, true, "TelefoneDelegado");
+                ReportPropertyChanged("TelefoneDelegado");
+                OnTelefoneDelegadoChanged();
+            }
+        }
+        private global::System.String _TelefoneDelegado;
+        partial void OnTelefoneDelegadoChanging(global::System.String value);
+        partial void OnTelefoneDelegadoChanged();
+    
+        /// <summary>
+        /// Nenhuma Documentação de Metadados disponível.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Boolean> Escrutinada
+        {
+            get
+            {
+                return _Escrutinada;
+            }
+            set
+            {
+                OnEscrutinadaChanging(value);
+                ReportPropertyChanging("Escrutinada");
+                _Escrutinada = StructuralObject.SetValidValue(value, "Escrutinada");
+                ReportPropertyChanged("Escrutinada");
+                OnEscrutinadaChanged();
+            }
+        }
+        private Nullable<global::System.Boolean> _Escrutinada;
+        partial void OnEscrutinadaChanging(Nullable<global::System.Boolean> value);
+        partial void OnEscrutinadaChanged();
 
         #endregion
 

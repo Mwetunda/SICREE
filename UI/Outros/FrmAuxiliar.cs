@@ -89,7 +89,7 @@ namespace SICREE
 
         private void BtnMunicipio_Click(object sender, EventArgs e)
         {
-            
+            ListarProvinciaCombo();
             ListarMunicipio();
             TxtMunicipio.Focus();
             tabControl1.SelectTab(tabPage3);
@@ -450,6 +450,8 @@ namespace SICREE
                     assembleiaPropriedades.Endereco = TxtEndereco.Text;
                     assembleiaPropriedades.CoordenadasGeograficas = TxtGeolocalizacao.Text;
                     assembleiaPropriedades.NumeroEleitores = Convert.ToInt32(TxtNumEleitores.Text);
+                    assembleiaPropriedades.Delegado = TxtNomeDelegado.Text;
+                    assembleiaPropriedades.TelefoneDelegado = TxtTelefoneDelegado.Text;
 
                     if (assembleiaNegocio.Verificar(Convert.ToInt32(TxtAssembleia.Text)))
                     {
@@ -490,6 +492,10 @@ namespace SICREE
                     assembleiaPropriedades.Numero = Convert.ToInt32(TxtAssembleia.Text);
                     assembleiaPropriedades.MunicipioID = Convert.ToInt32(CbxMunicipioAssembleia.SelectedValue);
                     assembleiaPropriedades.Endereco = TxtEndereco.Text;
+                    assembleiaPropriedades.CoordenadasGeograficas = TxtGeolocalizacao.Text;
+                    assembleiaPropriedades.NumeroEleitores = Convert.ToInt32(TxtNumEleitores.Text);
+                    assembleiaPropriedades.Delegado = TxtNomeDelegado.Text;
+                    assembleiaPropriedades.TelefoneDelegado = TxtTelefoneDelegado.Text;
 
                     assembleiaNegocio.Actualizar(assembleiaPropriedades);
                     MessageBox.Show("Assembleia actualizada com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -512,11 +518,14 @@ namespace SICREE
             DGVAssembleia.Columns[1].HeaderText = "Endereço";
             DGVAssembleia.Columns[2].HeaderText = "Município";
             DGVAssembleia.Columns[3].Visible = false;
+            DGVAssembleia.Columns[4].Visible = false;
+            DGVAssembleia.Columns[5].Visible = false;
+            DGVAssembleia.Columns[6].Visible = false;
         }
 
         void ListarAssembleias()
         {
-            var lista = assembleiaNegocio.ListaMunicipio(Convert.ToInt32(CbxMunAss.SelectedValue)).ToList();
+            var lista = assembleiaNegocio.ListaMunicipio(Convert.ToInt32(CbxMunAss.SelectedValue), CbxEscrutinada.Text == "Sim" ? true : false).ToList();
             DGVAssembleia.DataSource = lista;
 
             DGVAssembleias();
@@ -533,7 +542,7 @@ namespace SICREE
 
         void ListarAssembleiasProvincia()
         {
-            var lista = assembleiaNegocio.ListaProvincia(Convert.ToInt32(CbxProvAss.SelectedValue)).ToList();
+            var lista = assembleiaNegocio.ListaProvincia(Convert.ToInt32(CbxProvAss.SelectedValue), CbxEscrutinada.Text == "Sim" ? true : false).ToList();
             DGVAssembleia.DataSource = lista;
 
             DGVAssembleias();
@@ -806,6 +815,10 @@ namespace SICREE
             TxtEndereco.Text = DGVAssembleia.CurrentRow.Cells[1].Value.ToString();
             CbxMunicipioAssembleia.Text = DGVAssembleia.CurrentRow.Cells[2].Value.ToString();
             CbxProvinciaAssembleia.Text = DGVAssembleia.CurrentRow.Cells[3].Value.ToString();
+            TxtGeolocalizacao.Text = DGVAssembleia.CurrentRow.Cells[6].Value.ToString();
+            TxtNumEleitores.Text = DGVAssembleia.CurrentRow.Cells[7].Value.ToString();
+            TxtNomeDelegado.Text = DGVAssembleia.CurrentRow.Cells[8].Value.ToString();
+            TxtTelefoneDelegado.Text = DGVAssembleia.CurrentRow.Cells[9].Value.ToString();
 
             actualizarAssembleia = 1;
             tabControl1.SelectTab(tabPage4);
