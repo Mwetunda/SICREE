@@ -385,7 +385,7 @@ namespace SICREE
                 var Lista = actaNegocio.DadosNacionais();
                 var Lista2 = assembleiaNegocio.EstatisticaNacional();
 
-                if (Lista != null)
+                if (Lista2 != null)
                 {
                     GraficoEstatisticaNacional.DataSource = Lista;
                     GraficoEstatisticaNacionalVotos.DataSource = Lista;
@@ -400,22 +400,28 @@ namespace SICREE
                     GraficoEstatisticaNacionalVotantes.Visible = true;
                     //Titlo.Visible = false;
 
-                    var TotalVotantes = Lista.VotosBrancos + Lista.VotosNulos + Lista.VotosReclamados + Lista.VotosValidos;
+                    var TotalVotantes = (Lista != null? Lista.VotosBrancos : 0) 
+                        +(Lista != null ? Lista.VotosNulos : 0) 
+                        +(Lista != null ? Lista.VotosReclamados : 0) 
+                        +(Lista != null ? Lista.VotosValidos : 0);
+
                     var Abstecoes = Lista2.NumeroEleitores - TotalVotantes;
-                    var NaoValidos = Lista.VotosBrancos + Lista.VotosNulos + Lista.VotosReclamados;
+                    var NaoValidos = (Lista != null ? Lista.VotosBrancos : 0) 
+                        +(Lista != null ? Lista.VotosNulos : 0)
+                        +(Lista != null ? Lista.VotosReclamados : 0);
 
                     GraficoEstatisticaNacional.Series[0].Points[0].LegendText = "VOTOS BRANCOS";
                     GraficoEstatisticaNacional.Series[0].Points[1].LegendText = "VOTOS RECLAMADOS";
                     GraficoEstatisticaNacional.Series[0].Points[2].LegendText = "VOTOS NULOS";
-                    GraficoEstatisticaNacional.Series[0].Points[0].SetValueY(Lista.VotosBrancos);
-                    GraficoEstatisticaNacional.Series[0].Points[1].SetValueY(Lista.VotosReclamados);
-                    GraficoEstatisticaNacional.Series[0].Points[2].SetValueY(Lista.VotosNulos);
+                    GraficoEstatisticaNacional.Series[0].Points[0].SetValueY(Lista != null ? Lista.VotosBrancos : 0);
+                    GraficoEstatisticaNacional.Series[0].Points[1].SetValueY(Lista != null ? Lista.VotosReclamados : 0);
+                    GraficoEstatisticaNacional.Series[0].Points[2].SetValueY(Lista != null ? Lista.VotosNulos : 0);
 
 
-                    GraficoEstatisticaNacionalVotos.Series[0].Points[0].SetValueY(Lista.VotosValidos);
-                    GraficoEstatisticaNacionalVotos.Series[0].Points[1].SetValueY(Lista.VotosBrancos);
-                    GraficoEstatisticaNacionalVotos.Series[0].Points[2].SetValueY(Lista.VotosReclamados);
-                    GraficoEstatisticaNacionalVotos.Series[0].Points[3].SetValueY(Lista.VotosNulos);
+                    GraficoEstatisticaNacionalVotos.Series[0].Points[0].SetValueY(Lista != null ? Lista.VotosValidos : 0);
+                    GraficoEstatisticaNacionalVotos.Series[0].Points[1].SetValueY(Lista != null ? Lista.VotosBrancos : 0);
+                    GraficoEstatisticaNacionalVotos.Series[0].Points[2].SetValueY(Lista != null ? Lista.VotosReclamados : 0);
+                    GraficoEstatisticaNacionalVotos.Series[0].Points[3].SetValueY(Lista != null ? Lista.VotosNulos : 0);
 
 
 
@@ -430,16 +436,16 @@ namespace SICREE
                     GraficoEstatisticaNacionalVotantes.Series[0].Points[1].SetValueY(Abstecoes);
 
 
-                    var percentagemVbrancos = Convert.ToDecimal(Lista.VotosBrancos * 100) / TotalVotantes;
+                    var percentagemVbrancos = Lista != null ? Convert.ToDecimal(Lista.VotosBrancos * 100) / TotalVotantes : 0;
                     var PercentagemVBrancos = Math.Round(percentagemVbrancos, 2).ToString() + " %";
 
-                    var percentagemVnulos = Convert.ToDecimal(Lista.VotosNulos * 100) / TotalVotantes;
+                    var percentagemVnulos = Lista != null ? Convert.ToDecimal(Lista.VotosNulos * 100) / TotalVotantes : 0;
                     var PercentagemVNulos = Math.Round(percentagemVnulos, 2).ToString() + " %";
 
-                    var percentagemVreclamados = Convert.ToDecimal(Lista.VotosReclamados * 100) / TotalVotantes;
+                    var percentagemVreclamados = Lista != null ? Convert.ToDecimal(Lista.VotosReclamados * 100) / TotalVotantes : 0;
                     var PercentagemVReclamados = Math.Round(percentagemVreclamados, 2).ToString() + " %";
 
-                    var percentagemVvalidos = Convert.ToDecimal(Lista.VotosValidos * 100) / TotalVotantes;
+                    var percentagemVvalidos = Lista != null ? Convert.ToDecimal(Lista.VotosValidos * 100) / TotalVotantes : 0;
                     var PercentagemVValidos = Math.Round(percentagemVvalidos, 2).ToString() + " %";
 
                     var percentagemV = Convert.ToDecimal(TotalVotantes * 100) / Lista2.NumeroEleitores;
@@ -448,7 +454,7 @@ namespace SICREE
                     var percentagemA = Convert.ToDecimal(Abstecoes * 100) / Lista2.NumeroEleitores;
                     var PercentagemA = Math.Round(percentagemA, 2).ToString() + " %";
 
-                    var percentagemNv = Convert.ToDecimal(NaoValidos * 100) / TotalVotantes;
+                    var percentagemNv = TotalVotantes != 0 ? Convert.ToDecimal(NaoValidos * 100) / TotalVotantes : 0;
                     var PercentagemNV = Math.Round(percentagemNv, 2).ToString() + " %";
 
                     lbPVB.Text = PercentagemVBrancos;
@@ -458,7 +464,7 @@ namespace SICREE
                     lbPV.Text = PercentagemV;
                     lbPA.Text = PercentagemA;
                     lbPTotalN.Text = PercentagemNV;
-                    lbTotalN.Text = NaoValidos.ToString("N2");
+                    lbTotalN.Text = NaoValidos.ToString("N0");
                 }
                 else
                 {
@@ -479,7 +485,7 @@ namespace SICREE
                     MessageBox.Show("Sem dados estatísticos de momento  ", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            catch(Exception)
+            catch(Exception ex)
             {
 
             }
@@ -492,7 +498,7 @@ namespace SICREE
                 var Lista = actaNegocio.BuscarDadosMesaProvincial(Convert.ToInt32(CbxProvinciaL.SelectedValue));
                 var Lista2 = assembleiaNegocio.EstatisticaProvincial(Convert.ToInt32(CbxProvinciaL.SelectedValue));
 
-                if (Lista != null)
+                if (Lista2 != null)
                 {
                     GraficoEstatisticaProvincial.DataSource = Lista;
                     GraficoEstatisticaProvincialVotos.DataSource = Lista;
@@ -507,27 +513,29 @@ namespace SICREE
                     GraficoEstatisticaProvincialVotantes.Visible = true;
                     //Titlo.Visible = false;
 
-                    var TotalVotantes = Lista.VotosBrancos + Lista.VotosNulos + Lista.VotosReclamados + Lista.VotosValidos;
+                    var TotalVotantes = (Lista != null ? Lista.VotosBrancos : 0)
+                        + (Lista != null ? Lista.VotosNulos : 0)
+                        + (Lista != null ? Lista.VotosReclamados : 0)
+                        + (Lista != null ? Lista.VotosValidos : 0);
+
                     var Abstecoes = Lista2.NumeroEleitores - TotalVotantes;
-                    var NaoValidos = Lista.VotosBrancos + Lista.VotosNulos + Lista.VotosReclamados;
+                    var NaoValidos = (Lista != null ? Lista.VotosBrancos : 0)
+                        + (Lista != null ? Lista.VotosNulos : 0)
+                        + (Lista != null ? Lista.VotosReclamados : 0);
 
                     GraficoEstatisticaProvincial.Series[0].Points[0].LegendText = "VOTOS BRANCOS";
                     GraficoEstatisticaProvincial.Series[0].Points[1].LegendText = "VOTOS RECLAMADOS";
                     GraficoEstatisticaProvincial.Series[0].Points[2].LegendText = "VOTOS NULOS";
-                    GraficoEstatisticaProvincial.Series[0].Points[0].SetValueY(Lista.VotosBrancos);
-                    GraficoEstatisticaProvincial.Series[0].Points[1].SetValueY(Lista.VotosReclamados);
-                    GraficoEstatisticaProvincial.Series[0].Points[2].SetValueY(Lista.VotosNulos);
-
+                    GraficoEstatisticaProvincial.Series[0].Points[0].SetValueY(Lista != null ? Lista.VotosBrancos : 0);
+                    GraficoEstatisticaProvincial.Series[0].Points[1].SetValueY(Lista != null ? Lista.VotosReclamados : 0);
+                    GraficoEstatisticaProvincial.Series[0].Points[2].SetValueY(Lista != null ? Lista.VotosNulos : 0);
 
                     GraficoEstatisticaProvincialVotos.ResetAutoValues();
 
-
-
-
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[0].SetValueY(Lista.VotosValidos);
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[1].SetValueY(Lista.VotosBrancos);
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[2].SetValueY(Lista.VotosReclamados);
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[3].SetValueY(Lista.VotosNulos);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[0].SetValueY(Lista != null ? Lista.VotosValidos : 0);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[1].SetValueY(Lista != null ? Lista.VotosBrancos : 0);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[2].SetValueY(Lista != null ? Lista.VotosReclamados : 0);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[3].SetValueY(Lista != null ? Lista.VotosNulos : 0);
 
 
 
@@ -542,16 +550,16 @@ namespace SICREE
                     GraficoEstatisticaProvincialVotantes.Series[0].Points[1].SetValueY(Abstecoes);
 
 
-                    var percentagemVbrancos = Convert.ToDecimal(Lista.VotosBrancos * 100) / TotalVotantes;
+                    var percentagemVbrancos = Lista != null ? Convert.ToDecimal(Lista.VotosBrancos * 100) / TotalVotantes : 0;
                     var PercentagemVBrancos = Math.Round(percentagemVbrancos, 2).ToString() + " %";
 
-                    var percentagemVnulos = Convert.ToDecimal(Lista.VotosNulos * 100) / TotalVotantes;
+                    var percentagemVnulos = Lista != null ? Convert.ToDecimal(Lista.VotosNulos * 100) / TotalVotantes : 0;
                     var PercentagemVNulos = Math.Round(percentagemVnulos, 2).ToString() + " %";
 
-                    var percentagemVreclamados = Convert.ToDecimal(Lista.VotosReclamados * 100) / TotalVotantes;
+                    var percentagemVreclamados = Lista != null ? Convert.ToDecimal(Lista.VotosReclamados * 100) / TotalVotantes : 0;
                     var PercentagemVReclamados = Math.Round(percentagemVreclamados, 2).ToString() + " %";
 
-                    var percentagemVvalidos = Convert.ToDecimal(Lista.VotosValidos * 100) / TotalVotantes;
+                    var percentagemVvalidos = Lista != null ? Convert.ToDecimal(Lista.VotosValidos * 100) / TotalVotantes : 0;
                     var PercentagemVValidos = Math.Round(percentagemVvalidos, 2).ToString() + " %";
 
                     var percentagemV = Convert.ToDecimal(TotalVotantes * 100) / Lista2.NumeroEleitores;
@@ -560,7 +568,7 @@ namespace SICREE
                     var percentagemA = Convert.ToDecimal(Abstecoes * 100) / Lista2.NumeroEleitores;
                     var PercentagemA = Math.Round(percentagemA, 2).ToString() + " %";
 
-                    var percentagemNv = Convert.ToDecimal(NaoValidos * 100) / TotalVotantes;
+                    var percentagemNv = TotalVotantes != 0 ? Convert.ToDecimal(NaoValidos * 100) / TotalVotantes : 0;
                     var PercentagemNV = Math.Round(percentagemNv, 2).ToString() + " %";
 
                     lbPVB2.Text = PercentagemVBrancos;
@@ -570,7 +578,7 @@ namespace SICREE
                     lbPV2.Text = PercentagemV;
                     lbPA2.Text = PercentagemA;
                     lbPTotal.Text = PercentagemNV;
-                    lbTotal.Text = NaoValidos.ToString("N2");
+                    lbTotal.Text = NaoValidos.ToString("N0");
                 }
                 else
                 {
@@ -612,7 +620,7 @@ namespace SICREE
                 var Lista = actaNegocio.BuscarDadosMesaMunicipal(Convert.ToInt32(CbxMunicipioEstatistica.SelectedValue));
                 var Lista2 = assembleiaNegocio.EstatisticaMunicipal(Convert.ToInt32(CbxMunicipioEstatistica.SelectedValue));
 
-                if (Lista != null)
+                if (Lista2 != null)
                 {
                     GraficoEstatisticaProvincial.DataSource = Lista;
                     GraficoEstatisticaProvincialVotos.DataSource = Lista;
@@ -627,27 +635,29 @@ namespace SICREE
                     GraficoEstatisticaProvincialVotantes.Visible = true;
                     //Titlo.Visible = false;
 
-                    var TotalVotantes = Lista.VotosBrancos + Lista.VotosNulos + Lista.VotosReclamados + Lista.VotosValidos;
+                    var TotalVotantes = (Lista != null ? Lista.VotosBrancos : 0)
+                        + (Lista != null ? Lista.VotosNulos : 0)
+                        + (Lista != null ? Lista.VotosReclamados : 0)
+                        + (Lista != null ? Lista.VotosValidos : 0);
+
                     var Abstecoes = Lista2.NumeroEleitores - TotalVotantes;
-                    var NaoValidos = Lista.VotosBrancos + Lista.VotosNulos + Lista.VotosReclamados;
+                    var NaoValidos = (Lista != null ? Lista.VotosBrancos : 0)
+                        + (Lista != null ? Lista.VotosNulos : 0)
+                        + (Lista != null ? Lista.VotosReclamados : 0);
 
                     GraficoEstatisticaProvincial.Series[0].Points[0].LegendText = "VOTOS BRANCOS";
                     GraficoEstatisticaProvincial.Series[0].Points[1].LegendText = "VOTOS RECLAMADOS";
                     GraficoEstatisticaProvincial.Series[0].Points[2].LegendText = "VOTOS NULOS";
-                    GraficoEstatisticaProvincial.Series[0].Points[0].SetValueY(Lista.VotosBrancos);
-                    GraficoEstatisticaProvincial.Series[0].Points[1].SetValueY(Lista.VotosReclamados);
-                    GraficoEstatisticaProvincial.Series[0].Points[2].SetValueY(Lista.VotosNulos);
-
+                    GraficoEstatisticaProvincial.Series[0].Points[0].SetValueY(Lista != null ? Lista.VotosBrancos : 0);
+                    GraficoEstatisticaProvincial.Series[0].Points[1].SetValueY(Lista != null ? Lista.VotosReclamados : 0);
+                    GraficoEstatisticaProvincial.Series[0].Points[2].SetValueY(Lista != null ? Lista.VotosNulos : 0);
 
                     GraficoEstatisticaProvincialVotos.ResetAutoValues();
 
-
-
-
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[0].SetValueY(Lista.VotosValidos);
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[1].SetValueY(Lista.VotosBrancos);
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[2].SetValueY(Lista.VotosReclamados);
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[3].SetValueY(Lista.VotosNulos);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[0].SetValueY(Lista != null ? Lista.VotosValidos : 0);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[1].SetValueY(Lista != null ? Lista.VotosBrancos : 0);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[2].SetValueY(Lista != null ? Lista.VotosReclamados : 0);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[3].SetValueY(Lista != null ? Lista.VotosNulos : 0);
 
 
 
@@ -662,16 +672,16 @@ namespace SICREE
                     GraficoEstatisticaProvincialVotantes.Series[0].Points[1].SetValueY(Abstecoes);
 
 
-                    var percentagemVbrancos = Convert.ToDecimal(Lista.VotosBrancos * 100) / TotalVotantes;
+                    var percentagemVbrancos = Lista != null ? Convert.ToDecimal(Lista.VotosBrancos * 100) / TotalVotantes : 0;
                     var PercentagemVBrancos = Math.Round(percentagemVbrancos, 2).ToString() + " %";
 
-                    var percentagemVnulos = Convert.ToDecimal(Lista.VotosNulos * 100) / TotalVotantes;
+                    var percentagemVnulos = Lista != null ? Convert.ToDecimal(Lista.VotosNulos * 100) / TotalVotantes : 0;
                     var PercentagemVNulos = Math.Round(percentagemVnulos, 2).ToString() + " %";
 
-                    var percentagemVreclamados = Convert.ToDecimal(Lista.VotosReclamados * 100) / TotalVotantes;
+                    var percentagemVreclamados = Lista != null ? Convert.ToDecimal(Lista.VotosReclamados * 100) / TotalVotantes : 0;
                     var PercentagemVReclamados = Math.Round(percentagemVreclamados, 2).ToString() + " %";
 
-                    var percentagemVvalidos = Convert.ToDecimal(Lista.VotosValidos * 100) / TotalVotantes;
+                    var percentagemVvalidos = Lista != null ? Convert.ToDecimal(Lista.VotosValidos * 100) / TotalVotantes : 0;
                     var PercentagemVValidos = Math.Round(percentagemVvalidos, 2).ToString() + " %";
 
                     var percentagemV = Convert.ToDecimal(TotalVotantes * 100) / Lista2.NumeroEleitores;
@@ -680,7 +690,7 @@ namespace SICREE
                     var percentagemA = Convert.ToDecimal(Abstecoes * 100) / Lista2.NumeroEleitores;
                     var PercentagemA = Math.Round(percentagemA, 2).ToString() + " %";
 
-                    var percentagemNv = Convert.ToDecimal(NaoValidos * 100) / TotalVotantes;
+                    var percentagemNv = TotalVotantes != 0 ? Convert.ToDecimal(NaoValidos * 100) / TotalVotantes : 0;
                     var PercentagemNV = Math.Round(percentagemNv, 2).ToString() + " %";
 
                     lbPVB2.Text = PercentagemVBrancos;
@@ -690,7 +700,7 @@ namespace SICREE
                     lbPV2.Text = PercentagemV;
                     lbPA2.Text = PercentagemA;
                     lbPTotal.Text = PercentagemNV;
-                    lbTotal.Text = NaoValidos.ToString("N2");
+                    lbTotal.Text = NaoValidos.ToString("N0");
                 }
                 else
                 {
@@ -732,7 +742,7 @@ namespace SICREE
                 var Lista = actaNegocio.BuscarDadosMesaAssembleia(Convert.ToInt32(CbxMunicipioEstatistica.SelectedValue), Convert.ToInt32(TxtNumAssembleia.Text));
                 var Lista2 = assembleiaNegocio.BuscaID(Convert.ToInt32(TxtNumAssembleia.Text));
 
-                if (Lista != null)
+                if (Lista2 != null)
                 {
                     GraficoEstatisticaProvincial.DataSource = Lista;
                     GraficoEstatisticaProvincialVotos.DataSource = Lista;
@@ -747,27 +757,29 @@ namespace SICREE
                     GraficoEstatisticaProvincialVotantes.Visible = true;
                     //Titlo.Visible = false;
 
-                    var TotalVotantes = Lista.VotosBrancos + Lista.VotosNulos + Lista.VotosReclamados + Lista.VotosValidos;
+                    var TotalVotantes = (Lista != null ? Lista.VotosBrancos : 0)
+                        + (Lista != null ? Lista.VotosNulos : 0)
+                        + (Lista != null ? Lista.VotosReclamados : 0)
+                        + (Lista != null ? Lista.VotosValidos : 0);
+
                     var Abstecoes = Lista2.NumeroEleitores - TotalVotantes;
-                    var NaoValidos = Lista.VotosBrancos + Lista.VotosNulos + Lista.VotosReclamados;
+                    var NaoValidos = (Lista != null ? Lista.VotosBrancos : 0)
+                        + (Lista != null ? Lista.VotosNulos : 0)
+                        + (Lista != null ? Lista.VotosReclamados : 0);
 
                     GraficoEstatisticaProvincial.Series[0].Points[0].LegendText = "VOTOS BRANCOS";
                     GraficoEstatisticaProvincial.Series[0].Points[1].LegendText = "VOTOS RECLAMADOS";
                     GraficoEstatisticaProvincial.Series[0].Points[2].LegendText = "VOTOS NULOS";
-                    GraficoEstatisticaProvincial.Series[0].Points[0].SetValueY(Lista.VotosBrancos);
-                    GraficoEstatisticaProvincial.Series[0].Points[1].SetValueY(Lista.VotosReclamados);
-                    GraficoEstatisticaProvincial.Series[0].Points[2].SetValueY(Lista.VotosNulos);
-
+                    GraficoEstatisticaProvincial.Series[0].Points[0].SetValueY(Lista != null ? Lista.VotosBrancos : 0);
+                    GraficoEstatisticaProvincial.Series[0].Points[1].SetValueY(Lista != null ? Lista.VotosReclamados : 0);
+                    GraficoEstatisticaProvincial.Series[0].Points[2].SetValueY(Lista != null ? Lista.VotosNulos : 0);
 
                     GraficoEstatisticaProvincialVotos.ResetAutoValues();
 
-
-
-
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[0].SetValueY(Lista.VotosValidos);
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[1].SetValueY(Lista.VotosBrancos);
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[2].SetValueY(Lista.VotosReclamados);
-                    GraficoEstatisticaProvincialVotos.Series[0].Points[3].SetValueY(Lista.VotosNulos);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[0].SetValueY(Lista != null ? Lista.VotosValidos : 0);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[1].SetValueY(Lista != null ? Lista.VotosBrancos : 0);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[2].SetValueY(Lista != null ? Lista.VotosReclamados : 0);
+                    GraficoEstatisticaProvincialVotos.Series[0].Points[3].SetValueY(Lista != null ? Lista.VotosNulos : 0);
 
 
 
@@ -782,16 +794,16 @@ namespace SICREE
                     GraficoEstatisticaProvincialVotantes.Series[0].Points[1].SetValueY(Abstecoes);
 
 
-                    var percentagemVbrancos = Convert.ToDecimal(Lista.VotosBrancos * 100) / TotalVotantes;
+                    var percentagemVbrancos = Lista != null ? Convert.ToDecimal(Lista.VotosBrancos * 100) / TotalVotantes : 0;
                     var PercentagemVBrancos = Math.Round(percentagemVbrancos, 2).ToString() + " %";
 
-                    var percentagemVnulos = Convert.ToDecimal(Lista.VotosNulos * 100) / TotalVotantes;
+                    var percentagemVnulos = Lista != null ? Convert.ToDecimal(Lista.VotosNulos * 100) / TotalVotantes : 0;
                     var PercentagemVNulos = Math.Round(percentagemVnulos, 2).ToString() + " %";
 
-                    var percentagemVreclamados = Convert.ToDecimal(Lista.VotosReclamados * 100) / TotalVotantes;
+                    var percentagemVreclamados = Lista != null ? Convert.ToDecimal(Lista.VotosReclamados * 100) / TotalVotantes : 0;
                     var PercentagemVReclamados = Math.Round(percentagemVreclamados, 2).ToString() + " %";
 
-                    var percentagemVvalidos = Convert.ToDecimal(Lista.VotosValidos * 100) / TotalVotantes;
+                    var percentagemVvalidos = Lista != null ? Convert.ToDecimal(Lista.VotosValidos * 100) / TotalVotantes : 0;
                     var PercentagemVValidos = Math.Round(percentagemVvalidos, 2).ToString() + " %";
 
                     var percentagemV = Convert.ToDecimal(TotalVotantes * 100) / Lista2.NumeroEleitores;
@@ -800,7 +812,7 @@ namespace SICREE
                     var percentagemA = Convert.ToDecimal(Abstecoes * 100) / Lista2.NumeroEleitores;
                     var PercentagemA = Math.Round(percentagemA, 2).ToString() + " %";
 
-                    var percentagemNv = Convert.ToDecimal(NaoValidos * 100) / TotalVotantes;
+                    var percentagemNv = TotalVotantes != 0 ? Convert.ToDecimal(NaoValidos * 100) / TotalVotantes : 0;
                     var PercentagemNV = Math.Round(percentagemNv, 2).ToString() + " %";
 
                     lbPVB2.Text = PercentagemVBrancos;
@@ -810,7 +822,7 @@ namespace SICREE
                     lbPV2.Text = PercentagemV;
                     lbPA2.Text = PercentagemA;
                     lbPTotal.Text = PercentagemNV;
-                    lbTotal.Text = NaoValidos.ToString("N2");
+                    lbTotal.Text = NaoValidos.ToString("N0");
                 }
                 else
                 {
@@ -965,27 +977,6 @@ namespace SICREE
                 
                 GraficoAssembleia();
             }
-        }
-
-        private void bunifuThinButton26_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void bunifuThinButton29_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void bunifuThinButton28_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void bunifuThinButton27_Click(object sender, EventArgs e)
-        {
-            
-            
         }
 
         private void bunifuImageButton4_Click(object sender, EventArgs e)

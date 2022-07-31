@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmActa));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -55,6 +55,51 @@
             this.TxtAssembleia = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.Mesa1 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel23 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.TxtVotoBrancoM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoReclamadoM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoNuloM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsRecebidosM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsNaoUtilizadosM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoValidoM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsInutilizadosM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.Mesa2 = new System.Windows.Forms.Panel();
+            this.TxtBoletinsRecebidosM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoBrancoM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoReclamadoM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoNuloM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsNaoUtilizadosM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoValidoM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsInutilizadosM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuCustomLabel24 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Mesa3 = new System.Windows.Forms.Panel();
+            this.TxtBoletinsInutilizadosM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoBrancoM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoReclamadoM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoNuloM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsRecebidosM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsNaoUtilizadosM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoValidoM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuCustomLabel27 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Mesa4 = new System.Windows.Forms.Panel();
+            this.TxtBoletinsRecebidosM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoBrancoM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuCustomLabel29 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.TxtBoletinsInutilizadosM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoReclamadoM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoValidoM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsNaoUtilizadosM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoNuloM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.Mesa5 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel31 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.TxtVotoBrancoM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsInutilizadosM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoReclamadoM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoValidoM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtVotoNuloM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsNaoUtilizadosM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TxtBoletinsRecebidosM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel33 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtBoletinsInutilizados = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.TxtVotoValido = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -63,64 +108,16 @@
             this.TxtVotoNulo = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.TxtVotoReclamado = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.TxtVotoBranco = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel32 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtBoletinsInutilizadosM6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoValidoM6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsNaoUtilizadosM6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsRecebidosM6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoNuloM6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoReclamadoM6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoBrancoM6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel31 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtBoletinsInutilizadosM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoValidoM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsNaoUtilizadosM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsRecebidosM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoNuloM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoReclamadoM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoBrancoM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel29 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtBoletinsInutilizadosM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoValidoM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsNaoUtilizadosM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsRecebidosM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoNuloM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoReclamadoM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoBrancoM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel27 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtBoletinsInutilizadosM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoValidoM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsNaoUtilizadosM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsRecebidosM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoNuloM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoReclamadoM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoBrancoM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel24 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtBoletinsInutilizadosM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoValidoM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsNaoUtilizadosM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsRecebidosM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoNuloM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoReclamadoM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoBrancoM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel23 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtBoletinsInutilizadosM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtVotoValidoM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtBoletinsNaoUtilizadosM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel19 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtBoletinsRecebidosM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoNuloM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.TxtVotoReclamadoM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.BtnVoltar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BtnContinuar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtVotoBrancoM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.LblCabecalho = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -149,17 +146,15 @@
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel39 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtVotosM6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel34 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LbM5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtVotosM5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel35 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LbM4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtVotosM4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel36 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LbM3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtVotosM3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel37 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LbM2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtVotosM2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel38 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LbM1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtVotosM1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel18 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -193,6 +188,11 @@
             this.panel19.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.Mesa1.SuspendLayout();
+            this.Mesa2.SuspendLayout();
+            this.Mesa3.SuspendLayout();
+            this.Mesa4.SuspendLayout();
+            this.Mesa5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.PanelCabecalho.SuspendLayout();
@@ -358,13 +358,12 @@
             this.bunifuCustomLabel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(-3, 139);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(6, 141);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(243, 25);
             this.bunifuCustomLabel2.TabIndex = 4390;
             this.bunifuCustomLabel2.Text = "N° de mesas de voto:";
             this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuCustomLabel2.Visible = false;
             // 
             // BtnOk
             // 
@@ -384,7 +383,7 @@
             this.BtnOk.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
             this.BtnOk.IdleForecolor = System.Drawing.Color.White;
             this.BtnOk.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.BtnOk.Location = new System.Drawing.Point(284, 172);
+            this.BtnOk.Location = new System.Drawing.Point(284, 176);
             this.BtnOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.Size = new System.Drawing.Size(265, 63);
@@ -401,9 +400,9 @@
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(6, 98);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(271, 25);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(265, 25);
             this.bunifuCustomLabel5.TabIndex = 20;
-            this.bunifuCustomLabel5.Text = "Número da Assembleia:";
+            this.bunifuCustomLabel5.Text = "Código da Assembleia:";
             this.bunifuCustomLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TxtNumMesas
@@ -417,13 +416,12 @@
             this.TxtNumMesas.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNumMesas.ForeColor = System.Drawing.Color.Black;
             this.TxtNumMesas.isPassword = false;
-            this.TxtNumMesas.Location = new System.Drawing.Point(239, 131);
+            this.TxtNumMesas.Location = new System.Drawing.Point(284, 135);
             this.TxtNumMesas.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNumMesas.Name = "TxtNumMesas";
-            this.TxtNumMesas.Size = new System.Drawing.Size(301, 40);
+            this.TxtNumMesas.Size = new System.Drawing.Size(265, 40);
             this.TxtNumMesas.TabIndex = 4391;
             this.TxtNumMesas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtNumMesas.Visible = false;
             this.TxtNumMesas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNumMesas_KeyPress);
             this.TxtNumMesas.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtNumMesas_KeyUp);
             // 
@@ -463,6 +461,11 @@
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.Mesa1);
+            this.panel5.Controls.Add(this.Mesa2);
+            this.panel5.Controls.Add(this.Mesa3);
+            this.panel5.Controls.Add(this.Mesa4);
+            this.panel5.Controls.Add(this.Mesa5);
             this.panel5.Controls.Add(this.bunifuCustomLabel33);
             this.panel5.Controls.Add(this.TxtBoletinsInutilizados);
             this.panel5.Controls.Add(this.TxtVotoValido);
@@ -471,64 +474,16 @@
             this.panel5.Controls.Add(this.TxtVotoNulo);
             this.panel5.Controls.Add(this.TxtVotoReclamado);
             this.panel5.Controls.Add(this.TxtVotoBranco);
-            this.panel5.Controls.Add(this.bunifuCustomLabel32);
-            this.panel5.Controls.Add(this.TxtBoletinsInutilizadosM6);
-            this.panel5.Controls.Add(this.TxtVotoValidoM6);
-            this.panel5.Controls.Add(this.TxtBoletinsNaoUtilizadosM6);
-            this.panel5.Controls.Add(this.TxtBoletinsRecebidosM6);
-            this.panel5.Controls.Add(this.TxtVotoNuloM6);
-            this.panel5.Controls.Add(this.TxtVotoReclamadoM6);
-            this.panel5.Controls.Add(this.TxtVotoBrancoM6);
-            this.panel5.Controls.Add(this.bunifuCustomLabel31);
-            this.panel5.Controls.Add(this.TxtBoletinsInutilizadosM5);
-            this.panel5.Controls.Add(this.TxtVotoValidoM5);
-            this.panel5.Controls.Add(this.TxtBoletinsNaoUtilizadosM5);
-            this.panel5.Controls.Add(this.TxtBoletinsRecebidosM5);
-            this.panel5.Controls.Add(this.TxtVotoNuloM5);
-            this.panel5.Controls.Add(this.TxtVotoReclamadoM5);
-            this.panel5.Controls.Add(this.TxtVotoBrancoM5);
-            this.panel5.Controls.Add(this.bunifuCustomLabel29);
-            this.panel5.Controls.Add(this.TxtBoletinsInutilizadosM4);
-            this.panel5.Controls.Add(this.TxtVotoValidoM4);
-            this.panel5.Controls.Add(this.TxtBoletinsNaoUtilizadosM4);
-            this.panel5.Controls.Add(this.TxtBoletinsRecebidosM4);
-            this.panel5.Controls.Add(this.TxtVotoNuloM4);
-            this.panel5.Controls.Add(this.TxtVotoReclamadoM4);
-            this.panel5.Controls.Add(this.TxtVotoBrancoM4);
-            this.panel5.Controls.Add(this.bunifuCustomLabel27);
-            this.panel5.Controls.Add(this.TxtBoletinsInutilizadosM3);
-            this.panel5.Controls.Add(this.TxtVotoValidoM3);
-            this.panel5.Controls.Add(this.TxtBoletinsNaoUtilizadosM3);
-            this.panel5.Controls.Add(this.TxtBoletinsRecebidosM3);
-            this.panel5.Controls.Add(this.TxtVotoNuloM3);
-            this.panel5.Controls.Add(this.TxtVotoReclamadoM3);
-            this.panel5.Controls.Add(this.TxtVotoBrancoM3);
-            this.panel5.Controls.Add(this.bunifuCustomLabel24);
-            this.panel5.Controls.Add(this.TxtBoletinsInutilizadosM2);
-            this.panel5.Controls.Add(this.TxtVotoValidoM2);
-            this.panel5.Controls.Add(this.TxtBoletinsNaoUtilizadosM2);
-            this.panel5.Controls.Add(this.TxtBoletinsRecebidosM2);
-            this.panel5.Controls.Add(this.TxtVotoNuloM2);
-            this.panel5.Controls.Add(this.TxtVotoReclamadoM2);
-            this.panel5.Controls.Add(this.TxtVotoBrancoM2);
-            this.panel5.Controls.Add(this.bunifuCustomLabel23);
             this.panel5.Controls.Add(this.bunifuCustomLabel6);
             this.panel5.Controls.Add(this.bunifuCustomLabel13);
-            this.panel5.Controls.Add(this.TxtBoletinsInutilizadosM1);
             this.panel5.Controls.Add(this.bunifuCustomLabel9);
             this.panel5.Controls.Add(this.bunifuCustomLabel10);
-            this.panel5.Controls.Add(this.TxtVotoValidoM1);
-            this.panel5.Controls.Add(this.TxtBoletinsNaoUtilizadosM1);
             this.panel5.Controls.Add(this.bunifuCustomLabel7);
             this.panel5.Controls.Add(this.bunifuCustomLabel19);
             this.panel5.Controls.Add(this.bunifuCustomLabel8);
-            this.panel5.Controls.Add(this.TxtBoletinsRecebidosM1);
-            this.panel5.Controls.Add(this.TxtVotoNuloM1);
-            this.panel5.Controls.Add(this.TxtVotoReclamadoM1);
             this.panel5.Controls.Add(this.BtnVoltar);
             this.panel5.Controls.Add(this.BtnContinuar);
             this.panel5.Controls.Add(this.bunifuCustomLabel3);
-            this.panel5.Controls.Add(this.TxtVotoBrancoM1);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel5.Location = new System.Drawing.Point(198, 37);
@@ -536,504 +491,642 @@
             this.panel5.Size = new System.Drawing.Size(968, 630);
             this.panel5.TabIndex = 2;
             // 
-            // bunifuCustomLabel33
+            // Mesa1
             // 
-            this.bunifuCustomLabel33.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel33.AutoSize = true;
-            this.bunifuCustomLabel33.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel33.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel33.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel33.Location = new System.Drawing.Point(829, 96);
-            this.bunifuCustomLabel33.Name = "bunifuCustomLabel33";
-            this.bunifuCustomLabel33.Size = new System.Drawing.Size(74, 26);
-            this.bunifuCustomLabel33.TabIndex = 4464;
-            this.bunifuCustomLabel33.Text = "TOTAL";
-            this.bunifuCustomLabel33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Mesa1.Controls.Add(this.bunifuCustomLabel23);
+            this.Mesa1.Controls.Add(this.TxtVotoBrancoM1);
+            this.Mesa1.Controls.Add(this.TxtVotoReclamadoM1);
+            this.Mesa1.Controls.Add(this.TxtVotoNuloM1);
+            this.Mesa1.Controls.Add(this.TxtBoletinsRecebidosM1);
+            this.Mesa1.Controls.Add(this.TxtBoletinsNaoUtilizadosM1);
+            this.Mesa1.Controls.Add(this.TxtVotoValidoM1);
+            this.Mesa1.Controls.Add(this.TxtBoletinsInutilizadosM1);
+            this.Mesa1.Location = new System.Drawing.Point(281, 91);
+            this.Mesa1.Name = "Mesa1";
+            this.Mesa1.Size = new System.Drawing.Size(83, 394);
+            this.Mesa1.TabIndex = 4470;
+            this.Mesa1.Visible = false;
             // 
-            // TxtBoletinsInutilizados
+            // bunifuCustomLabel23
             // 
-            this.TxtBoletinsInutilizados.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsInutilizados.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsInutilizados.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsInutilizados.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsInutilizados.BorderThickness = 3;
-            this.TxtBoletinsInutilizados.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsInutilizados.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsInutilizados.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsInutilizados.isPassword = false;
-            this.TxtBoletinsInutilizados.Location = new System.Drawing.Point(800, 177);
-            this.TxtBoletinsInutilizados.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsInutilizados.Name = "TxtBoletinsInutilizados";
-            this.TxtBoletinsInutilizados.Size = new System.Drawing.Size(129, 45);
-            this.TxtBoletinsInutilizados.TabIndex = 4463;
-            this.TxtBoletinsInutilizados.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsInutilizados.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizados_KeyPress_1);
+            this.bunifuCustomLabel23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCustomLabel23.AutoSize = true;
+            this.bunifuCustomLabel23.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuCustomLabel23.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel23.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel23.Location = new System.Drawing.Point(5, 4);
+            this.bunifuCustomLabel23.Name = "bunifuCustomLabel23";
+            this.bunifuCustomLabel23.Size = new System.Drawing.Size(73, 22);
+            this.bunifuCustomLabel23.TabIndex = 4416;
+            this.bunifuCustomLabel23.Text = "Mesa 1";
+            this.bunifuCustomLabel23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtVotoValido
+            // TxtVotoBrancoM1
             // 
-            this.TxtVotoValido.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoValido.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoValido.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoValido.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoValido.BorderThickness = 3;
-            this.TxtVotoValido.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoValido.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoValido.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoValido.isPassword = false;
-            this.TxtVotoValido.Location = new System.Drawing.Point(800, 435);
-            this.TxtVotoValido.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoValido.Name = "TxtVotoValido";
-            this.TxtVotoValido.Size = new System.Drawing.Size(129, 45);
-            this.TxtVotoValido.TabIndex = 4460;
-            this.TxtVotoValido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoValido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValido_KeyPress_1);
+            this.TxtVotoBrancoM1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoBrancoM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoBrancoM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoBrancoM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoBrancoM1.BorderThickness = 3;
+            this.TxtVotoBrancoM1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoBrancoM1.Enabled = false;
+            this.TxtVotoBrancoM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoBrancoM1.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoBrancoM1.isPassword = false;
+            this.TxtVotoBrancoM1.Location = new System.Drawing.Point(7, 189);
+            this.TxtVotoBrancoM1.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoBrancoM1.Name = "TxtVotoBrancoM1";
+            this.TxtVotoBrancoM1.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoBrancoM1.TabIndex = 17;
+            this.TxtVotoBrancoM1.Text = "0";
+            this.TxtVotoBrancoM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoBrancoM1.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM1_OnValueChanged);
+            this.TxtVotoBrancoM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBranco_KeyPress);
+            this.TxtVotoBrancoM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBranco_KeyUp);
             // 
-            // TxtBoletinsNaoUtilizados
+            // TxtVotoReclamadoM1
             // 
-            this.TxtBoletinsNaoUtilizados.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsNaoUtilizados.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsNaoUtilizados.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsNaoUtilizados.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsNaoUtilizados.BorderThickness = 3;
-            this.TxtBoletinsNaoUtilizados.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsNaoUtilizados.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsNaoUtilizados.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsNaoUtilizados.isPassword = false;
-            this.TxtBoletinsNaoUtilizados.Location = new System.Drawing.Point(800, 229);
-            this.TxtBoletinsNaoUtilizados.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsNaoUtilizados.Name = "TxtBoletinsNaoUtilizados";
-            this.TxtBoletinsNaoUtilizados.Size = new System.Drawing.Size(129, 45);
-            this.TxtBoletinsNaoUtilizados.TabIndex = 4461;
-            this.TxtBoletinsNaoUtilizados.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsNaoUtilizados.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizados_KeyPress_1);
+            this.TxtVotoReclamadoM1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoReclamadoM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoReclamadoM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoReclamadoM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoReclamadoM1.BorderThickness = 3;
+            this.TxtVotoReclamadoM1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoReclamadoM1.Enabled = false;
+            this.TxtVotoReclamadoM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoReclamadoM1.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoReclamadoM1.isPassword = false;
+            this.TxtVotoReclamadoM1.Location = new System.Drawing.Point(7, 293);
+            this.TxtVotoReclamadoM1.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoReclamadoM1.Name = "TxtVotoReclamadoM1";
+            this.TxtVotoReclamadoM1.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoReclamadoM1.TabIndex = 26;
+            this.TxtVotoReclamadoM1.Text = "0";
+            this.TxtVotoReclamadoM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoReclamadoM1.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM1_OnValueChanged);
+            this.TxtVotoReclamadoM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamado_KeyPress);
+            this.TxtVotoReclamadoM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamado_KeyUp);
             // 
-            // TxtBoletinsRecebidos
+            // TxtVotoNuloM1
             // 
-            this.TxtBoletinsRecebidos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsRecebidos.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsRecebidos.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsRecebidos.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsRecebidos.BorderThickness = 3;
-            this.TxtBoletinsRecebidos.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsRecebidos.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsRecebidos.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsRecebidos.isPassword = false;
-            this.TxtBoletinsRecebidos.Location = new System.Drawing.Point(800, 126);
-            this.TxtBoletinsRecebidos.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsRecebidos.Name = "TxtBoletinsRecebidos";
-            this.TxtBoletinsRecebidos.Size = new System.Drawing.Size(129, 45);
-            this.TxtBoletinsRecebidos.TabIndex = 4462;
-            this.TxtBoletinsRecebidos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsRecebidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidos_KeyPress_1);
+            this.TxtVotoNuloM1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoNuloM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoNuloM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoNuloM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoNuloM1.BorderThickness = 3;
+            this.TxtVotoNuloM1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoNuloM1.Enabled = false;
+            this.TxtVotoNuloM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoNuloM1.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoNuloM1.isPassword = false;
+            this.TxtVotoNuloM1.Location = new System.Drawing.Point(7, 240);
+            this.TxtVotoNuloM1.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoNuloM1.Name = "TxtVotoNuloM1";
+            this.TxtVotoNuloM1.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoNuloM1.TabIndex = 27;
+            this.TxtVotoNuloM1.Text = "0";
+            this.TxtVotoNuloM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoNuloM1.OnValueChanged += new System.EventHandler(this.TxtVotoNuloM1_OnValueChanged);
+            this.TxtVotoNuloM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNulo_KeyPress);
+            this.TxtVotoNuloM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNulo_KeyUp);
             // 
-            // TxtVotoNulo
+            // TxtBoletinsRecebidosM1
             // 
-            this.TxtVotoNulo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoNulo.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoNulo.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoNulo.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoNulo.BorderThickness = 3;
-            this.TxtVotoNulo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoNulo.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoNulo.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoNulo.isPassword = false;
-            this.TxtVotoNulo.Location = new System.Drawing.Point(800, 331);
-            this.TxtVotoNulo.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoNulo.Name = "TxtVotoNulo";
-            this.TxtVotoNulo.Size = new System.Drawing.Size(129, 45);
-            this.TxtVotoNulo.TabIndex = 4459;
-            this.TxtVotoNulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoNulo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNulo_KeyPress_1);
+            this.TxtBoletinsRecebidosM1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsRecebidosM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsRecebidosM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsRecebidosM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsRecebidosM1.BorderThickness = 3;
+            this.TxtBoletinsRecebidosM1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsRecebidosM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsRecebidosM1.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsRecebidosM1.isPassword = false;
+            this.TxtBoletinsRecebidosM1.Location = new System.Drawing.Point(7, 35);
+            this.TxtBoletinsRecebidosM1.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsRecebidosM1.Name = "TxtBoletinsRecebidosM1";
+            this.TxtBoletinsRecebidosM1.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsRecebidosM1.TabIndex = 4411;
+            this.TxtBoletinsRecebidosM1.Text = "0";
+            this.TxtBoletinsRecebidosM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsRecebidosM1.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM1_OnValueChanged);
+            this.TxtBoletinsRecebidosM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidos_KeyPress);
+            this.TxtBoletinsRecebidosM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM1_KeyUp);
             // 
-            // TxtVotoReclamado
+            // TxtBoletinsNaoUtilizadosM1
             // 
-            this.TxtVotoReclamado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoReclamado.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoReclamado.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoReclamado.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoReclamado.BorderThickness = 3;
-            this.TxtVotoReclamado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoReclamado.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoReclamado.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoReclamado.isPassword = false;
-            this.TxtVotoReclamado.Location = new System.Drawing.Point(800, 384);
-            this.TxtVotoReclamado.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoReclamado.Name = "TxtVotoReclamado";
-            this.TxtVotoReclamado.Size = new System.Drawing.Size(129, 45);
-            this.TxtVotoReclamado.TabIndex = 4458;
-            this.TxtVotoReclamado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoReclamado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamado_KeyPress_1);
+            this.TxtBoletinsNaoUtilizadosM1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsNaoUtilizadosM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsNaoUtilizadosM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsNaoUtilizadosM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsNaoUtilizadosM1.BorderThickness = 3;
+            this.TxtBoletinsNaoUtilizadosM1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsNaoUtilizadosM1.Enabled = false;
+            this.TxtBoletinsNaoUtilizadosM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsNaoUtilizadosM1.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsNaoUtilizadosM1.isPassword = false;
+            this.TxtBoletinsNaoUtilizadosM1.Location = new System.Drawing.Point(7, 138);
+            this.TxtBoletinsNaoUtilizadosM1.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsNaoUtilizadosM1.Name = "TxtBoletinsNaoUtilizadosM1";
+            this.TxtBoletinsNaoUtilizadosM1.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsNaoUtilizadosM1.TabIndex = 4410;
+            this.TxtBoletinsNaoUtilizadosM1.Text = "0";
+            this.TxtBoletinsNaoUtilizadosM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsNaoUtilizadosM1.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM1_OnValueChanged);
+            this.TxtBoletinsNaoUtilizadosM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizados_KeyPress);
+            this.TxtBoletinsNaoUtilizadosM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM1_KeyUp);
             // 
-            // TxtVotoBranco
+            // TxtVotoValidoM1
             // 
-            this.TxtVotoBranco.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoBranco.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoBranco.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoBranco.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoBranco.BorderThickness = 3;
-            this.TxtVotoBranco.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoBranco.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoBranco.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoBranco.isPassword = false;
-            this.TxtVotoBranco.Location = new System.Drawing.Point(800, 280);
-            this.TxtVotoBranco.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoBranco.Name = "TxtVotoBranco";
-            this.TxtVotoBranco.Size = new System.Drawing.Size(129, 45);
-            this.TxtVotoBranco.TabIndex = 4457;
-            this.TxtVotoBranco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoBranco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBranco_KeyPress_1);
+            this.TxtVotoValidoM1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoValidoM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoValidoM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoValidoM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoValidoM1.BorderThickness = 3;
+            this.TxtVotoValidoM1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoValidoM1.Enabled = false;
+            this.TxtVotoValidoM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoValidoM1.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoValidoM1.isPassword = false;
+            this.TxtVotoValidoM1.Location = new System.Drawing.Point(7, 344);
+            this.TxtVotoValidoM1.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoValidoM1.Name = "TxtVotoValidoM1";
+            this.TxtVotoValidoM1.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoValidoM1.TabIndex = 31;
+            this.TxtVotoValidoM1.Text = "0";
+            this.TxtVotoValidoM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoValidoM1.OnValueChanged += new System.EventHandler(this.TxtVotoValidoM1_OnValueChanged);
+            this.TxtVotoValidoM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValido_KeyPress);
+            this.TxtVotoValidoM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoValido_KeyUp);
             // 
-            // bunifuCustomLabel32
+            // TxtBoletinsInutilizadosM1
             // 
-            this.bunifuCustomLabel32.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel32.AutoSize = true;
-            this.bunifuCustomLabel32.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel32.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel32.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel32.Location = new System.Drawing.Point(664, 95);
-            this.bunifuCustomLabel32.Name = "bunifuCustomLabel32";
-            this.bunifuCustomLabel32.Size = new System.Drawing.Size(73, 22);
-            this.bunifuCustomLabel32.TabIndex = 4456;
-            this.bunifuCustomLabel32.Text = "Mesa 6";
-            this.bunifuCustomLabel32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TxtBoletinsInutilizadosM1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsInutilizadosM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsInutilizadosM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsInutilizadosM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsInutilizadosM1.BorderThickness = 3;
+            this.TxtBoletinsInutilizadosM1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsInutilizadosM1.Enabled = false;
+            this.TxtBoletinsInutilizadosM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsInutilizadosM1.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsInutilizadosM1.isPassword = false;
+            this.TxtBoletinsInutilizadosM1.Location = new System.Drawing.Point(7, 86);
+            this.TxtBoletinsInutilizadosM1.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsInutilizadosM1.Name = "TxtBoletinsInutilizadosM1";
+            this.TxtBoletinsInutilizadosM1.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsInutilizadosM1.TabIndex = 4414;
+            this.TxtBoletinsInutilizadosM1.Text = "0";
+            this.TxtBoletinsInutilizadosM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsInutilizadosM1.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM1_OnValueChanged);
+            this.TxtBoletinsInutilizadosM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizados_KeyPress);
+            this.TxtBoletinsInutilizadosM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM1_KeyUp);
             // 
-            // TxtBoletinsInutilizadosM6
+            // Mesa2
             // 
-            this.TxtBoletinsInutilizadosM6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsInutilizadosM6.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsInutilizadosM6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsInutilizadosM6.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsInutilizadosM6.BorderThickness = 3;
-            this.TxtBoletinsInutilizadosM6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsInutilizadosM6.Enabled = false;
-            this.TxtBoletinsInutilizadosM6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsInutilizadosM6.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsInutilizadosM6.isPassword = false;
-            this.TxtBoletinsInutilizadosM6.Location = new System.Drawing.Point(666, 177);
-            this.TxtBoletinsInutilizadosM6.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsInutilizadosM6.Name = "TxtBoletinsInutilizadosM6";
-            this.TxtBoletinsInutilizadosM6.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsInutilizadosM6.TabIndex = 4455;
-            this.TxtBoletinsInutilizadosM6.Text = "0";
-            this.TxtBoletinsInutilizadosM6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsInutilizadosM6.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM6_OnValueChanged);
-            this.TxtBoletinsInutilizadosM6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizadosM6_KeyPress);
-            this.TxtBoletinsInutilizadosM6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM6_KeyUp);
+            this.Mesa2.Controls.Add(this.TxtBoletinsRecebidosM2);
+            this.Mesa2.Controls.Add(this.TxtVotoBrancoM2);
+            this.Mesa2.Controls.Add(this.TxtVotoReclamadoM2);
+            this.Mesa2.Controls.Add(this.TxtVotoNuloM2);
+            this.Mesa2.Controls.Add(this.TxtBoletinsNaoUtilizadosM2);
+            this.Mesa2.Controls.Add(this.TxtVotoValidoM2);
+            this.Mesa2.Controls.Add(this.TxtBoletinsInutilizadosM2);
+            this.Mesa2.Controls.Add(this.bunifuCustomLabel24);
+            this.Mesa2.Location = new System.Drawing.Point(364, 91);
+            this.Mesa2.Name = "Mesa2";
+            this.Mesa2.Size = new System.Drawing.Size(83, 394);
+            this.Mesa2.TabIndex = 4469;
+            this.Mesa2.Visible = false;
             // 
-            // TxtVotoValidoM6
+            // TxtBoletinsRecebidosM2
             // 
-            this.TxtVotoValidoM6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoValidoM6.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoValidoM6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoValidoM6.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoValidoM6.BorderThickness = 3;
-            this.TxtVotoValidoM6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoValidoM6.Enabled = false;
-            this.TxtVotoValidoM6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoValidoM6.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoValidoM6.isPassword = false;
-            this.TxtVotoValidoM6.Location = new System.Drawing.Point(666, 435);
-            this.TxtVotoValidoM6.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoValidoM6.Name = "TxtVotoValidoM6";
-            this.TxtVotoValidoM6.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoValidoM6.TabIndex = 4452;
-            this.TxtVotoValidoM6.Text = "0";
-            this.TxtVotoValidoM6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoValidoM6.OnValueChanged += new System.EventHandler(this.TxtVotoValidoM6_OnValueChanged);
-            this.TxtVotoValidoM6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValidoM6_KeyPress);
+            this.TxtBoletinsRecebidosM2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsRecebidosM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsRecebidosM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsRecebidosM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsRecebidosM2.BorderThickness = 3;
+            this.TxtBoletinsRecebidosM2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsRecebidosM2.Enabled = false;
+            this.TxtBoletinsRecebidosM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsRecebidosM2.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsRecebidosM2.isPassword = false;
+            this.TxtBoletinsRecebidosM2.Location = new System.Drawing.Point(7, 35);
+            this.TxtBoletinsRecebidosM2.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsRecebidosM2.Name = "TxtBoletinsRecebidosM2";
+            this.TxtBoletinsRecebidosM2.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsRecebidosM2.TabIndex = 4422;
+            this.TxtBoletinsRecebidosM2.Text = "0";
+            this.TxtBoletinsRecebidosM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsRecebidosM2.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM2_OnValueChanged);
+            this.TxtBoletinsRecebidosM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidosM2_KeyPress);
+            this.TxtBoletinsRecebidosM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM2_KeyUp);
             // 
-            // TxtBoletinsNaoUtilizadosM6
+            // TxtVotoBrancoM2
             // 
-            this.TxtBoletinsNaoUtilizadosM6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsNaoUtilizadosM6.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsNaoUtilizadosM6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsNaoUtilizadosM6.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsNaoUtilizadosM6.BorderThickness = 3;
-            this.TxtBoletinsNaoUtilizadosM6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsNaoUtilizadosM6.Enabled = false;
-            this.TxtBoletinsNaoUtilizadosM6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsNaoUtilizadosM6.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsNaoUtilizadosM6.isPassword = false;
-            this.TxtBoletinsNaoUtilizadosM6.Location = new System.Drawing.Point(666, 229);
-            this.TxtBoletinsNaoUtilizadosM6.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsNaoUtilizadosM6.Name = "TxtBoletinsNaoUtilizadosM6";
-            this.TxtBoletinsNaoUtilizadosM6.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsNaoUtilizadosM6.TabIndex = 4453;
-            this.TxtBoletinsNaoUtilizadosM6.Text = "0";
-            this.TxtBoletinsNaoUtilizadosM6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsNaoUtilizadosM6.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM6_OnValueChanged);
-            this.TxtBoletinsNaoUtilizadosM6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizadosM6_KeyPress);
-            this.TxtBoletinsNaoUtilizadosM6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM6_KeyUp);
+            this.TxtVotoBrancoM2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoBrancoM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoBrancoM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoBrancoM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoBrancoM2.BorderThickness = 3;
+            this.TxtVotoBrancoM2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoBrancoM2.Enabled = false;
+            this.TxtVotoBrancoM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoBrancoM2.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoBrancoM2.isPassword = false;
+            this.TxtVotoBrancoM2.Location = new System.Drawing.Point(7, 189);
+            this.TxtVotoBrancoM2.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoBrancoM2.Name = "TxtVotoBrancoM2";
+            this.TxtVotoBrancoM2.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoBrancoM2.TabIndex = 4417;
+            this.TxtVotoBrancoM2.Text = "0";
+            this.TxtVotoBrancoM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoBrancoM2.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM2_OnValueChanged);
+            this.TxtVotoBrancoM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBrancoM2_KeyPress);
+            this.TxtVotoBrancoM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBrancoM2_KeyUp);
             // 
-            // TxtBoletinsRecebidosM6
+            // TxtVotoReclamadoM2
             // 
-            this.TxtBoletinsRecebidosM6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsRecebidosM6.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsRecebidosM6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsRecebidosM6.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsRecebidosM6.BorderThickness = 3;
-            this.TxtBoletinsRecebidosM6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsRecebidosM6.Enabled = false;
-            this.TxtBoletinsRecebidosM6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsRecebidosM6.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsRecebidosM6.isPassword = false;
-            this.TxtBoletinsRecebidosM6.Location = new System.Drawing.Point(666, 126);
-            this.TxtBoletinsRecebidosM6.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsRecebidosM6.Name = "TxtBoletinsRecebidosM6";
-            this.TxtBoletinsRecebidosM6.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsRecebidosM6.TabIndex = 4454;
-            this.TxtBoletinsRecebidosM6.Text = "0";
-            this.TxtBoletinsRecebidosM6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsRecebidosM6.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM6_OnValueChanged);
-            this.TxtBoletinsRecebidosM6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidosM6_KeyPress);
-            this.TxtBoletinsRecebidosM6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM6_KeyUp);
+            this.TxtVotoReclamadoM2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoReclamadoM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoReclamadoM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoReclamadoM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoReclamadoM2.BorderThickness = 3;
+            this.TxtVotoReclamadoM2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoReclamadoM2.Enabled = false;
+            this.TxtVotoReclamadoM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoReclamadoM2.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoReclamadoM2.isPassword = false;
+            this.TxtVotoReclamadoM2.Location = new System.Drawing.Point(7, 293);
+            this.TxtVotoReclamadoM2.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoReclamadoM2.Name = "TxtVotoReclamadoM2";
+            this.TxtVotoReclamadoM2.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoReclamadoM2.TabIndex = 4418;
+            this.TxtVotoReclamadoM2.Text = "0";
+            this.TxtVotoReclamadoM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoReclamadoM2.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM2_OnValueChanged);
+            this.TxtVotoReclamadoM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamadoM2_KeyPress);
+            this.TxtVotoReclamadoM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamadoM2_KeyUp);
             // 
-            // TxtVotoNuloM6
+            // TxtVotoNuloM2
             // 
-            this.TxtVotoNuloM6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoNuloM6.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoNuloM6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoNuloM6.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoNuloM6.BorderThickness = 3;
-            this.TxtVotoNuloM6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoNuloM6.Enabled = false;
-            this.TxtVotoNuloM6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoNuloM6.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoNuloM6.isPassword = false;
-            this.TxtVotoNuloM6.Location = new System.Drawing.Point(666, 331);
-            this.TxtVotoNuloM6.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoNuloM6.Name = "TxtVotoNuloM6";
-            this.TxtVotoNuloM6.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoNuloM6.TabIndex = 4451;
-            this.TxtVotoNuloM6.Text = "0";
-            this.TxtVotoNuloM6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoNuloM6.OnValueChanged += new System.EventHandler(this.TxtVotoNuloM6_OnValueChanged);
-            this.TxtVotoNuloM6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNuloM6_KeyPress);
-            this.TxtVotoNuloM6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNuloM6_KeyUp);
+            this.TxtVotoNuloM2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoNuloM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoNuloM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoNuloM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoNuloM2.BorderThickness = 3;
+            this.TxtVotoNuloM2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoNuloM2.Enabled = false;
+            this.TxtVotoNuloM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoNuloM2.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoNuloM2.isPassword = false;
+            this.TxtVotoNuloM2.Location = new System.Drawing.Point(7, 240);
+            this.TxtVotoNuloM2.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoNuloM2.Name = "TxtVotoNuloM2";
+            this.TxtVotoNuloM2.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoNuloM2.TabIndex = 4419;
+            this.TxtVotoNuloM2.Text = "0";
+            this.TxtVotoNuloM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoNuloM2.OnValueChanged += new System.EventHandler(this.TxtVotoNuloM2_OnValueChanged);
+            this.TxtVotoNuloM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNuloM2_KeyPress);
+            this.TxtVotoNuloM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNuloM2_KeyUp);
             // 
-            // TxtVotoReclamadoM6
+            // TxtBoletinsNaoUtilizadosM2
             // 
-            this.TxtVotoReclamadoM6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoReclamadoM6.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoReclamadoM6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoReclamadoM6.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoReclamadoM6.BorderThickness = 3;
-            this.TxtVotoReclamadoM6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoReclamadoM6.Enabled = false;
-            this.TxtVotoReclamadoM6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoReclamadoM6.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoReclamadoM6.isPassword = false;
-            this.TxtVotoReclamadoM6.Location = new System.Drawing.Point(666, 384);
-            this.TxtVotoReclamadoM6.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoReclamadoM6.Name = "TxtVotoReclamadoM6";
-            this.TxtVotoReclamadoM6.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoReclamadoM6.TabIndex = 4450;
-            this.TxtVotoReclamadoM6.Text = "0";
-            this.TxtVotoReclamadoM6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoReclamadoM6.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM6_OnValueChanged);
-            this.TxtVotoReclamadoM6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamadoM6_KeyPress);
-            this.TxtVotoReclamadoM6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamadoM6_KeyUp);
+            this.TxtBoletinsNaoUtilizadosM2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsNaoUtilizadosM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsNaoUtilizadosM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsNaoUtilizadosM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsNaoUtilizadosM2.BorderThickness = 3;
+            this.TxtBoletinsNaoUtilizadosM2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsNaoUtilizadosM2.Enabled = false;
+            this.TxtBoletinsNaoUtilizadosM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsNaoUtilizadosM2.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsNaoUtilizadosM2.isPassword = false;
+            this.TxtBoletinsNaoUtilizadosM2.Location = new System.Drawing.Point(7, 138);
+            this.TxtBoletinsNaoUtilizadosM2.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsNaoUtilizadosM2.Name = "TxtBoletinsNaoUtilizadosM2";
+            this.TxtBoletinsNaoUtilizadosM2.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsNaoUtilizadosM2.TabIndex = 4421;
+            this.TxtBoletinsNaoUtilizadosM2.Text = "0";
+            this.TxtBoletinsNaoUtilizadosM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsNaoUtilizadosM2.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM2_OnValueChanged);
+            this.TxtBoletinsNaoUtilizadosM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizadosM2_KeyPress);
+            this.TxtBoletinsNaoUtilizadosM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM2_KeyUp);
             // 
-            // TxtVotoBrancoM6
+            // TxtVotoValidoM2
             // 
-            this.TxtVotoBrancoM6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoBrancoM6.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoBrancoM6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoBrancoM6.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoBrancoM6.BorderThickness = 3;
-            this.TxtVotoBrancoM6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoBrancoM6.Enabled = false;
-            this.TxtVotoBrancoM6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoBrancoM6.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoBrancoM6.isPassword = false;
-            this.TxtVotoBrancoM6.Location = new System.Drawing.Point(666, 280);
-            this.TxtVotoBrancoM6.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoBrancoM6.Name = "TxtVotoBrancoM6";
-            this.TxtVotoBrancoM6.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoBrancoM6.TabIndex = 4449;
-            this.TxtVotoBrancoM6.Text = "0";
-            this.TxtVotoBrancoM6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoBrancoM6.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM6_OnValueChanged);
-            this.TxtVotoBrancoM6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBrancoM6_KeyPress);
-            this.TxtVotoBrancoM6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBrancoM6_KeyUp);
+            this.TxtVotoValidoM2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoValidoM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoValidoM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoValidoM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoValidoM2.BorderThickness = 3;
+            this.TxtVotoValidoM2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoValidoM2.Enabled = false;
+            this.TxtVotoValidoM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoValidoM2.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoValidoM2.isPassword = false;
+            this.TxtVotoValidoM2.Location = new System.Drawing.Point(7, 344);
+            this.TxtVotoValidoM2.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoValidoM2.Name = "TxtVotoValidoM2";
+            this.TxtVotoValidoM2.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoValidoM2.TabIndex = 4420;
+            this.TxtVotoValidoM2.Text = "0";
+            this.TxtVotoValidoM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoValidoM2.OnValueChanged += new System.EventHandler(this.TxtVotoValidoM2_OnValueChanged);
+            this.TxtVotoValidoM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValidoM2_KeyPress);
+            this.TxtVotoValidoM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoValidoM2_KeyUp);
             // 
-            // bunifuCustomLabel31
+            // TxtBoletinsInutilizadosM2
             // 
-            this.bunifuCustomLabel31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel31.AutoSize = true;
-            this.bunifuCustomLabel31.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel31.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel31.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel31.Location = new System.Drawing.Point(581, 95);
-            this.bunifuCustomLabel31.Name = "bunifuCustomLabel31";
-            this.bunifuCustomLabel31.Size = new System.Drawing.Size(73, 22);
-            this.bunifuCustomLabel31.TabIndex = 4448;
-            this.bunifuCustomLabel31.Text = "Mesa 5";
-            this.bunifuCustomLabel31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TxtBoletinsInutilizadosM2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsInutilizadosM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsInutilizadosM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsInutilizadosM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsInutilizadosM2.BorderThickness = 3;
+            this.TxtBoletinsInutilizadosM2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsInutilizadosM2.Enabled = false;
+            this.TxtBoletinsInutilizadosM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsInutilizadosM2.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsInutilizadosM2.isPassword = false;
+            this.TxtBoletinsInutilizadosM2.Location = new System.Drawing.Point(7, 86);
+            this.TxtBoletinsInutilizadosM2.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsInutilizadosM2.Name = "TxtBoletinsInutilizadosM2";
+            this.TxtBoletinsInutilizadosM2.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsInutilizadosM2.TabIndex = 4423;
+            this.TxtBoletinsInutilizadosM2.Text = "0";
+            this.TxtBoletinsInutilizadosM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsInutilizadosM2.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM2_OnValueChanged);
+            this.TxtBoletinsInutilizadosM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizadosM2_KeyPress);
+            this.TxtBoletinsInutilizadosM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM2_KeyUp);
             // 
-            // TxtBoletinsInutilizadosM5
+            // bunifuCustomLabel24
             // 
-            this.TxtBoletinsInutilizadosM5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsInutilizadosM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsInutilizadosM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsInutilizadosM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsInutilizadosM5.BorderThickness = 3;
-            this.TxtBoletinsInutilizadosM5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsInutilizadosM5.Enabled = false;
-            this.TxtBoletinsInutilizadosM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsInutilizadosM5.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsInutilizadosM5.isPassword = false;
-            this.TxtBoletinsInutilizadosM5.Location = new System.Drawing.Point(583, 177);
-            this.TxtBoletinsInutilizadosM5.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsInutilizadosM5.Name = "TxtBoletinsInutilizadosM5";
-            this.TxtBoletinsInutilizadosM5.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsInutilizadosM5.TabIndex = 4447;
-            this.TxtBoletinsInutilizadosM5.Text = "0";
-            this.TxtBoletinsInutilizadosM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsInutilizadosM5.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM5_OnValueChanged);
-            this.TxtBoletinsInutilizadosM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizadosM5_KeyPress);
-            this.TxtBoletinsInutilizadosM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM5_KeyUp);
+            this.bunifuCustomLabel24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCustomLabel24.AutoSize = true;
+            this.bunifuCustomLabel24.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuCustomLabel24.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel24.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel24.Location = new System.Drawing.Point(5, 4);
+            this.bunifuCustomLabel24.Name = "bunifuCustomLabel24";
+            this.bunifuCustomLabel24.Size = new System.Drawing.Size(73, 22);
+            this.bunifuCustomLabel24.TabIndex = 4424;
+            this.bunifuCustomLabel24.Text = "Mesa 2";
+            this.bunifuCustomLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtVotoValidoM5
+            // Mesa3
             // 
-            this.TxtVotoValidoM5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoValidoM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoValidoM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoValidoM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoValidoM5.BorderThickness = 3;
-            this.TxtVotoValidoM5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoValidoM5.Enabled = false;
-            this.TxtVotoValidoM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoValidoM5.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoValidoM5.isPassword = false;
-            this.TxtVotoValidoM5.Location = new System.Drawing.Point(583, 435);
-            this.TxtVotoValidoM5.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoValidoM5.Name = "TxtVotoValidoM5";
-            this.TxtVotoValidoM5.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoValidoM5.TabIndex = 4444;
-            this.TxtVotoValidoM5.Text = "0";
-            this.TxtVotoValidoM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoValidoM5.OnValueChanged += new System.EventHandler(this.TxtVotoValidoM5_OnValueChanged);
-            this.TxtVotoValidoM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValidoM5_KeyPress);
-            this.TxtVotoValidoM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoValidoM5_KeyUp);
+            this.Mesa3.Controls.Add(this.TxtBoletinsInutilizadosM3);
+            this.Mesa3.Controls.Add(this.TxtVotoBrancoM3);
+            this.Mesa3.Controls.Add(this.TxtVotoReclamadoM3);
+            this.Mesa3.Controls.Add(this.TxtVotoNuloM3);
+            this.Mesa3.Controls.Add(this.TxtBoletinsRecebidosM3);
+            this.Mesa3.Controls.Add(this.TxtBoletinsNaoUtilizadosM3);
+            this.Mesa3.Controls.Add(this.TxtVotoValidoM3);
+            this.Mesa3.Controls.Add(this.bunifuCustomLabel27);
+            this.Mesa3.Location = new System.Drawing.Point(447, 91);
+            this.Mesa3.Name = "Mesa3";
+            this.Mesa3.Size = new System.Drawing.Size(83, 394);
+            this.Mesa3.TabIndex = 4468;
+            this.Mesa3.Visible = false;
             // 
-            // TxtBoletinsNaoUtilizadosM5
+            // TxtBoletinsInutilizadosM3
             // 
-            this.TxtBoletinsNaoUtilizadosM5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsNaoUtilizadosM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsNaoUtilizadosM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsNaoUtilizadosM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsNaoUtilizadosM5.BorderThickness = 3;
-            this.TxtBoletinsNaoUtilizadosM5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsNaoUtilizadosM5.Enabled = false;
-            this.TxtBoletinsNaoUtilizadosM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsNaoUtilizadosM5.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsNaoUtilizadosM5.isPassword = false;
-            this.TxtBoletinsNaoUtilizadosM5.Location = new System.Drawing.Point(583, 229);
-            this.TxtBoletinsNaoUtilizadosM5.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsNaoUtilizadosM5.Name = "TxtBoletinsNaoUtilizadosM5";
-            this.TxtBoletinsNaoUtilizadosM5.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsNaoUtilizadosM5.TabIndex = 4445;
-            this.TxtBoletinsNaoUtilizadosM5.Text = "0";
-            this.TxtBoletinsNaoUtilizadosM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsNaoUtilizadosM5.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM5_OnValueChanged);
-            this.TxtBoletinsNaoUtilizadosM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizadosM5_KeyPress);
-            this.TxtBoletinsNaoUtilizadosM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM5_KeyUp);
+            this.TxtBoletinsInutilizadosM3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsInutilizadosM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsInutilizadosM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsInutilizadosM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsInutilizadosM3.BorderThickness = 3;
+            this.TxtBoletinsInutilizadosM3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsInutilizadosM3.Enabled = false;
+            this.TxtBoletinsInutilizadosM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsInutilizadosM3.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsInutilizadosM3.isPassword = false;
+            this.TxtBoletinsInutilizadosM3.Location = new System.Drawing.Point(7, 87);
+            this.TxtBoletinsInutilizadosM3.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsInutilizadosM3.Name = "TxtBoletinsInutilizadosM3";
+            this.TxtBoletinsInutilizadosM3.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsInutilizadosM3.TabIndex = 4431;
+            this.TxtBoletinsInutilizadosM3.Text = "0";
+            this.TxtBoletinsInutilizadosM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsInutilizadosM3.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM3_OnValueChanged);
+            this.TxtBoletinsInutilizadosM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizadosM3_KeyPress);
+            this.TxtBoletinsInutilizadosM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM3_KeyUp);
             // 
-            // TxtBoletinsRecebidosM5
+            // TxtVotoBrancoM3
             // 
-            this.TxtBoletinsRecebidosM5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsRecebidosM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsRecebidosM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsRecebidosM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsRecebidosM5.BorderThickness = 3;
-            this.TxtBoletinsRecebidosM5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsRecebidosM5.Enabled = false;
-            this.TxtBoletinsRecebidosM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsRecebidosM5.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsRecebidosM5.isPassword = false;
-            this.TxtBoletinsRecebidosM5.Location = new System.Drawing.Point(583, 126);
-            this.TxtBoletinsRecebidosM5.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsRecebidosM5.Name = "TxtBoletinsRecebidosM5";
-            this.TxtBoletinsRecebidosM5.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsRecebidosM5.TabIndex = 4446;
-            this.TxtBoletinsRecebidosM5.Text = "0";
-            this.TxtBoletinsRecebidosM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsRecebidosM5.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM5_OnValueChanged);
-            this.TxtBoletinsRecebidosM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidosM5_KeyPress);
-            this.TxtBoletinsRecebidosM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM5_KeyUp);
+            this.TxtVotoBrancoM3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoBrancoM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoBrancoM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoBrancoM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoBrancoM3.BorderThickness = 3;
+            this.TxtVotoBrancoM3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoBrancoM3.Enabled = false;
+            this.TxtVotoBrancoM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoBrancoM3.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoBrancoM3.isPassword = false;
+            this.TxtVotoBrancoM3.Location = new System.Drawing.Point(7, 190);
+            this.TxtVotoBrancoM3.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoBrancoM3.Name = "TxtVotoBrancoM3";
+            this.TxtVotoBrancoM3.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoBrancoM3.TabIndex = 4425;
+            this.TxtVotoBrancoM3.Text = "0";
+            this.TxtVotoBrancoM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoBrancoM3.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM3_OnValueChanged);
+            this.TxtVotoBrancoM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBrancoM3_KeyPress);
+            this.TxtVotoBrancoM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBrancoM3_KeyUp);
             // 
-            // TxtVotoNuloM5
+            // TxtVotoReclamadoM3
             // 
-            this.TxtVotoNuloM5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoNuloM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoNuloM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoNuloM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoNuloM5.BorderThickness = 3;
-            this.TxtVotoNuloM5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoNuloM5.Enabled = false;
-            this.TxtVotoNuloM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoNuloM5.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoNuloM5.isPassword = false;
-            this.TxtVotoNuloM5.Location = new System.Drawing.Point(583, 331);
-            this.TxtVotoNuloM5.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoNuloM5.Name = "TxtVotoNuloM5";
-            this.TxtVotoNuloM5.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoNuloM5.TabIndex = 4443;
-            this.TxtVotoNuloM5.Text = "0";
-            this.TxtVotoNuloM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoNuloM5.OnValueChanged += new System.EventHandler(this.TxtVotoNuloM5_OnValueChanged);
-            this.TxtVotoNuloM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNuloM5_KeyPress);
-            this.TxtVotoNuloM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNuloM5_KeyUp);
+            this.TxtVotoReclamadoM3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoReclamadoM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoReclamadoM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoReclamadoM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoReclamadoM3.BorderThickness = 3;
+            this.TxtVotoReclamadoM3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoReclamadoM3.Enabled = false;
+            this.TxtVotoReclamadoM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoReclamadoM3.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoReclamadoM3.isPassword = false;
+            this.TxtVotoReclamadoM3.Location = new System.Drawing.Point(7, 294);
+            this.TxtVotoReclamadoM3.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoReclamadoM3.Name = "TxtVotoReclamadoM3";
+            this.TxtVotoReclamadoM3.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoReclamadoM3.TabIndex = 4426;
+            this.TxtVotoReclamadoM3.Text = "0";
+            this.TxtVotoReclamadoM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoReclamadoM3.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM3_OnValueChanged);
+            this.TxtVotoReclamadoM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamadoM3_KeyPress);
+            this.TxtVotoReclamadoM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamadoM3_KeyUp);
             // 
-            // TxtVotoReclamadoM5
+            // TxtVotoNuloM3
             // 
-            this.TxtVotoReclamadoM5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoReclamadoM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoReclamadoM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoReclamadoM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoReclamadoM5.BorderThickness = 3;
-            this.TxtVotoReclamadoM5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoReclamadoM5.Enabled = false;
-            this.TxtVotoReclamadoM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoReclamadoM5.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoReclamadoM5.isPassword = false;
-            this.TxtVotoReclamadoM5.Location = new System.Drawing.Point(583, 384);
-            this.TxtVotoReclamadoM5.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoReclamadoM5.Name = "TxtVotoReclamadoM5";
-            this.TxtVotoReclamadoM5.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoReclamadoM5.TabIndex = 4442;
-            this.TxtVotoReclamadoM5.Text = "0";
-            this.TxtVotoReclamadoM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoReclamadoM5.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM5_OnValueChanged);
-            this.TxtVotoReclamadoM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamadoM5_KeyPress);
-            this.TxtVotoReclamadoM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamadoM5_KeyUp);
+            this.TxtVotoNuloM3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoNuloM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoNuloM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoNuloM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoNuloM3.BorderThickness = 3;
+            this.TxtVotoNuloM3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoNuloM3.Enabled = false;
+            this.TxtVotoNuloM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoNuloM3.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoNuloM3.isPassword = false;
+            this.TxtVotoNuloM3.Location = new System.Drawing.Point(7, 241);
+            this.TxtVotoNuloM3.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoNuloM3.Name = "TxtVotoNuloM3";
+            this.TxtVotoNuloM3.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoNuloM3.TabIndex = 4427;
+            this.TxtVotoNuloM3.Text = "0";
+            this.TxtVotoNuloM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoNuloM3.OnValueChanged += new System.EventHandler(this.TxtVotoNuloM3_OnValueChanged);
+            this.TxtVotoNuloM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNuloM3_KeyPress);
+            this.TxtVotoNuloM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNuloM3_KeyUp);
             // 
-            // TxtVotoBrancoM5
+            // TxtBoletinsRecebidosM3
             // 
-            this.TxtVotoBrancoM5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoBrancoM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoBrancoM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoBrancoM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoBrancoM5.BorderThickness = 3;
-            this.TxtVotoBrancoM5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoBrancoM5.Enabled = false;
-            this.TxtVotoBrancoM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoBrancoM5.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoBrancoM5.isPassword = false;
-            this.TxtVotoBrancoM5.Location = new System.Drawing.Point(583, 280);
-            this.TxtVotoBrancoM5.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoBrancoM5.Name = "TxtVotoBrancoM5";
-            this.TxtVotoBrancoM5.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoBrancoM5.TabIndex = 4441;
-            this.TxtVotoBrancoM5.Text = "0";
-            this.TxtVotoBrancoM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoBrancoM5.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM5_OnValueChanged);
-            this.TxtVotoBrancoM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBrancoM5_KeyPress);
-            this.TxtVotoBrancoM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBrancoM5_KeyUp);
+            this.TxtBoletinsRecebidosM3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsRecebidosM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsRecebidosM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsRecebidosM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsRecebidosM3.BorderThickness = 3;
+            this.TxtBoletinsRecebidosM3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsRecebidosM3.Enabled = false;
+            this.TxtBoletinsRecebidosM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsRecebidosM3.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsRecebidosM3.isPassword = false;
+            this.TxtBoletinsRecebidosM3.Location = new System.Drawing.Point(7, 36);
+            this.TxtBoletinsRecebidosM3.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsRecebidosM3.Name = "TxtBoletinsRecebidosM3";
+            this.TxtBoletinsRecebidosM3.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsRecebidosM3.TabIndex = 4430;
+            this.TxtBoletinsRecebidosM3.Text = "0";
+            this.TxtBoletinsRecebidosM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsRecebidosM3.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM3_OnValueChanged);
+            this.TxtBoletinsRecebidosM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidosM3_KeyPress);
+            this.TxtBoletinsRecebidosM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM3_KeyUp);
+            // 
+            // TxtBoletinsNaoUtilizadosM3
+            // 
+            this.TxtBoletinsNaoUtilizadosM3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsNaoUtilizadosM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsNaoUtilizadosM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsNaoUtilizadosM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsNaoUtilizadosM3.BorderThickness = 3;
+            this.TxtBoletinsNaoUtilizadosM3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsNaoUtilizadosM3.Enabled = false;
+            this.TxtBoletinsNaoUtilizadosM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsNaoUtilizadosM3.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsNaoUtilizadosM3.isPassword = false;
+            this.TxtBoletinsNaoUtilizadosM3.Location = new System.Drawing.Point(7, 139);
+            this.TxtBoletinsNaoUtilizadosM3.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsNaoUtilizadosM3.Name = "TxtBoletinsNaoUtilizadosM3";
+            this.TxtBoletinsNaoUtilizadosM3.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsNaoUtilizadosM3.TabIndex = 4429;
+            this.TxtBoletinsNaoUtilizadosM3.Text = "0";
+            this.TxtBoletinsNaoUtilizadosM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsNaoUtilizadosM3.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM3_OnValueChanged);
+            this.TxtBoletinsNaoUtilizadosM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizadosM3_KeyPress);
+            this.TxtBoletinsNaoUtilizadosM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM3_KeyUp);
+            // 
+            // TxtVotoValidoM3
+            // 
+            this.TxtVotoValidoM3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoValidoM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoValidoM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoValidoM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoValidoM3.BorderThickness = 3;
+            this.TxtVotoValidoM3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoValidoM3.Enabled = false;
+            this.TxtVotoValidoM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoValidoM3.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoValidoM3.isPassword = false;
+            this.TxtVotoValidoM3.Location = new System.Drawing.Point(7, 345);
+            this.TxtVotoValidoM3.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoValidoM3.Name = "TxtVotoValidoM3";
+            this.TxtVotoValidoM3.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoValidoM3.TabIndex = 4428;
+            this.TxtVotoValidoM3.Text = "0";
+            this.TxtVotoValidoM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoValidoM3.OnValueChanged += new System.EventHandler(this.TxtVotoValidoM3_OnValueChanged);
+            this.TxtVotoValidoM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValidoM3_KeyPress);
+            this.TxtVotoValidoM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoValidoM3_KeyUp);
+            // 
+            // bunifuCustomLabel27
+            // 
+            this.bunifuCustomLabel27.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCustomLabel27.AutoSize = true;
+            this.bunifuCustomLabel27.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuCustomLabel27.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel27.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel27.Location = new System.Drawing.Point(5, 5);
+            this.bunifuCustomLabel27.Name = "bunifuCustomLabel27";
+            this.bunifuCustomLabel27.Size = new System.Drawing.Size(73, 22);
+            this.bunifuCustomLabel27.TabIndex = 4432;
+            this.bunifuCustomLabel27.Text = "Mesa 3";
+            this.bunifuCustomLabel27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Mesa4
+            // 
+            this.Mesa4.Controls.Add(this.TxtBoletinsRecebidosM4);
+            this.Mesa4.Controls.Add(this.TxtVotoBrancoM4);
+            this.Mesa4.Controls.Add(this.bunifuCustomLabel29);
+            this.Mesa4.Controls.Add(this.TxtBoletinsInutilizadosM4);
+            this.Mesa4.Controls.Add(this.TxtVotoReclamadoM4);
+            this.Mesa4.Controls.Add(this.TxtVotoValidoM4);
+            this.Mesa4.Controls.Add(this.TxtBoletinsNaoUtilizadosM4);
+            this.Mesa4.Controls.Add(this.TxtVotoNuloM4);
+            this.Mesa4.Location = new System.Drawing.Point(530, 91);
+            this.Mesa4.Name = "Mesa4";
+            this.Mesa4.Size = new System.Drawing.Size(83, 394);
+            this.Mesa4.TabIndex = 4467;
+            this.Mesa4.Visible = false;
+            // 
+            // TxtBoletinsRecebidosM4
+            // 
+            this.TxtBoletinsRecebidosM4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsRecebidosM4.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsRecebidosM4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsRecebidosM4.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsRecebidosM4.BorderThickness = 3;
+            this.TxtBoletinsRecebidosM4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsRecebidosM4.Enabled = false;
+            this.TxtBoletinsRecebidosM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsRecebidosM4.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsRecebidosM4.isPassword = false;
+            this.TxtBoletinsRecebidosM4.Location = new System.Drawing.Point(7, 35);
+            this.TxtBoletinsRecebidosM4.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsRecebidosM4.Name = "TxtBoletinsRecebidosM4";
+            this.TxtBoletinsRecebidosM4.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsRecebidosM4.TabIndex = 4438;
+            this.TxtBoletinsRecebidosM4.Text = "0";
+            this.TxtBoletinsRecebidosM4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsRecebidosM4.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM4_OnValueChanged);
+            this.TxtBoletinsRecebidosM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidosM4_KeyPress);
+            this.TxtBoletinsRecebidosM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM4_KeyUp);
+            // 
+            // TxtVotoBrancoM4
+            // 
+            this.TxtVotoBrancoM4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoBrancoM4.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoBrancoM4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoBrancoM4.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoBrancoM4.BorderThickness = 3;
+            this.TxtVotoBrancoM4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoBrancoM4.Enabled = false;
+            this.TxtVotoBrancoM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoBrancoM4.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoBrancoM4.isPassword = false;
+            this.TxtVotoBrancoM4.Location = new System.Drawing.Point(7, 189);
+            this.TxtVotoBrancoM4.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoBrancoM4.Name = "TxtVotoBrancoM4";
+            this.TxtVotoBrancoM4.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoBrancoM4.TabIndex = 4433;
+            this.TxtVotoBrancoM4.Text = "0";
+            this.TxtVotoBrancoM4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoBrancoM4.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM4_OnValueChanged);
+            this.TxtVotoBrancoM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBrancoM4_KeyPress);
+            this.TxtVotoBrancoM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBrancoM4_KeyUp);
             // 
             // bunifuCustomLabel29
             // 
@@ -1043,7 +1136,7 @@
             this.bunifuCustomLabel29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bunifuCustomLabel29.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel29.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel29.Location = new System.Drawing.Point(498, 95);
+            this.bunifuCustomLabel29.Location = new System.Drawing.Point(5, 4);
             this.bunifuCustomLabel29.Name = "bunifuCustomLabel29";
             this.bunifuCustomLabel29.Size = new System.Drawing.Size(73, 22);
             this.bunifuCustomLabel29.TabIndex = 4440;
@@ -1062,7 +1155,7 @@
             this.TxtBoletinsInutilizadosM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoletinsInutilizadosM4.ForeColor = System.Drawing.Color.Black;
             this.TxtBoletinsInutilizadosM4.isPassword = false;
-            this.TxtBoletinsInutilizadosM4.Location = new System.Drawing.Point(500, 177);
+            this.TxtBoletinsInutilizadosM4.Location = new System.Drawing.Point(7, 86);
             this.TxtBoletinsInutilizadosM4.Margin = new System.Windows.Forms.Padding(4);
             this.TxtBoletinsInutilizadosM4.Name = "TxtBoletinsInutilizadosM4";
             this.TxtBoletinsInutilizadosM4.Size = new System.Drawing.Size(66, 45);
@@ -1072,6 +1165,29 @@
             this.TxtBoletinsInutilizadosM4.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM4_OnValueChanged);
             this.TxtBoletinsInutilizadosM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizadosM4_KeyPress);
             this.TxtBoletinsInutilizadosM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM4_KeyUp);
+            // 
+            // TxtVotoReclamadoM4
+            // 
+            this.TxtVotoReclamadoM4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoReclamadoM4.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoReclamadoM4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoReclamadoM4.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoReclamadoM4.BorderThickness = 3;
+            this.TxtVotoReclamadoM4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoReclamadoM4.Enabled = false;
+            this.TxtVotoReclamadoM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoReclamadoM4.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoReclamadoM4.isPassword = false;
+            this.TxtVotoReclamadoM4.Location = new System.Drawing.Point(7, 293);
+            this.TxtVotoReclamadoM4.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoReclamadoM4.Name = "TxtVotoReclamadoM4";
+            this.TxtVotoReclamadoM4.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoReclamadoM4.TabIndex = 4434;
+            this.TxtVotoReclamadoM4.Text = "0";
+            this.TxtVotoReclamadoM4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoReclamadoM4.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM4_OnValueChanged);
+            this.TxtVotoReclamadoM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamadoM4_KeyPress);
+            this.TxtVotoReclamadoM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamadoM4_KeyUp);
             // 
             // TxtVotoValidoM4
             // 
@@ -1085,7 +1201,7 @@
             this.TxtVotoValidoM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVotoValidoM4.ForeColor = System.Drawing.Color.Black;
             this.TxtVotoValidoM4.isPassword = false;
-            this.TxtVotoValidoM4.Location = new System.Drawing.Point(500, 435);
+            this.TxtVotoValidoM4.Location = new System.Drawing.Point(7, 344);
             this.TxtVotoValidoM4.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVotoValidoM4.Name = "TxtVotoValidoM4";
             this.TxtVotoValidoM4.Size = new System.Drawing.Size(66, 45);
@@ -1108,7 +1224,7 @@
             this.TxtBoletinsNaoUtilizadosM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoletinsNaoUtilizadosM4.ForeColor = System.Drawing.Color.Black;
             this.TxtBoletinsNaoUtilizadosM4.isPassword = false;
-            this.TxtBoletinsNaoUtilizadosM4.Location = new System.Drawing.Point(500, 229);
+            this.TxtBoletinsNaoUtilizadosM4.Location = new System.Drawing.Point(7, 138);
             this.TxtBoletinsNaoUtilizadosM4.Margin = new System.Windows.Forms.Padding(4);
             this.TxtBoletinsNaoUtilizadosM4.Name = "TxtBoletinsNaoUtilizadosM4";
             this.TxtBoletinsNaoUtilizadosM4.Size = new System.Drawing.Size(66, 45);
@@ -1118,29 +1234,6 @@
             this.TxtBoletinsNaoUtilizadosM4.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM4_OnValueChanged);
             this.TxtBoletinsNaoUtilizadosM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizadosM4_KeyPress);
             this.TxtBoletinsNaoUtilizadosM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM4_KeyUp);
-            // 
-            // TxtBoletinsRecebidosM4
-            // 
-            this.TxtBoletinsRecebidosM4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsRecebidosM4.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsRecebidosM4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsRecebidosM4.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsRecebidosM4.BorderThickness = 3;
-            this.TxtBoletinsRecebidosM4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsRecebidosM4.Enabled = false;
-            this.TxtBoletinsRecebidosM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsRecebidosM4.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsRecebidosM4.isPassword = false;
-            this.TxtBoletinsRecebidosM4.Location = new System.Drawing.Point(500, 126);
-            this.TxtBoletinsRecebidosM4.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsRecebidosM4.Name = "TxtBoletinsRecebidosM4";
-            this.TxtBoletinsRecebidosM4.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsRecebidosM4.TabIndex = 4438;
-            this.TxtBoletinsRecebidosM4.Text = "0";
-            this.TxtBoletinsRecebidosM4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsRecebidosM4.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM4_OnValueChanged);
-            this.TxtBoletinsRecebidosM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidosM4_KeyPress);
-            this.TxtBoletinsRecebidosM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM4_KeyUp);
             // 
             // TxtVotoNuloM4
             // 
@@ -1154,7 +1247,7 @@
             this.TxtVotoNuloM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVotoNuloM4.ForeColor = System.Drawing.Color.Black;
             this.TxtVotoNuloM4.isPassword = false;
-            this.TxtVotoNuloM4.Location = new System.Drawing.Point(500, 331);
+            this.TxtVotoNuloM4.Location = new System.Drawing.Point(7, 240);
             this.TxtVotoNuloM4.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVotoNuloM4.Name = "TxtVotoNuloM4";
             this.TxtVotoNuloM4.Size = new System.Drawing.Size(66, 45);
@@ -1165,418 +1258,351 @@
             this.TxtVotoNuloM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNuloM4_KeyPress);
             this.TxtVotoNuloM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNuloM4_KeyUp);
             // 
-            // TxtVotoReclamadoM4
+            // Mesa5
             // 
-            this.TxtVotoReclamadoM4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoReclamadoM4.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoReclamadoM4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoReclamadoM4.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoReclamadoM4.BorderThickness = 3;
-            this.TxtVotoReclamadoM4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoReclamadoM4.Enabled = false;
-            this.TxtVotoReclamadoM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoReclamadoM4.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoReclamadoM4.isPassword = false;
-            this.TxtVotoReclamadoM4.Location = new System.Drawing.Point(500, 384);
-            this.TxtVotoReclamadoM4.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoReclamadoM4.Name = "TxtVotoReclamadoM4";
-            this.TxtVotoReclamadoM4.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoReclamadoM4.TabIndex = 4434;
-            this.TxtVotoReclamadoM4.Text = "0";
-            this.TxtVotoReclamadoM4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoReclamadoM4.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM4_OnValueChanged);
-            this.TxtVotoReclamadoM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamadoM4_KeyPress);
-            this.TxtVotoReclamadoM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamadoM4_KeyUp);
+            this.Mesa5.Controls.Add(this.bunifuCustomLabel31);
+            this.Mesa5.Controls.Add(this.TxtVotoBrancoM5);
+            this.Mesa5.Controls.Add(this.TxtBoletinsInutilizadosM5);
+            this.Mesa5.Controls.Add(this.TxtVotoReclamadoM5);
+            this.Mesa5.Controls.Add(this.TxtVotoValidoM5);
+            this.Mesa5.Controls.Add(this.TxtVotoNuloM5);
+            this.Mesa5.Controls.Add(this.TxtBoletinsNaoUtilizadosM5);
+            this.Mesa5.Controls.Add(this.TxtBoletinsRecebidosM5);
+            this.Mesa5.Location = new System.Drawing.Point(613, 91);
+            this.Mesa5.Name = "Mesa5";
+            this.Mesa5.Size = new System.Drawing.Size(83, 394);
+            this.Mesa5.TabIndex = 4466;
+            this.Mesa5.Visible = false;
             // 
-            // TxtVotoBrancoM4
+            // bunifuCustomLabel31
             // 
-            this.TxtVotoBrancoM4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoBrancoM4.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoBrancoM4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoBrancoM4.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoBrancoM4.BorderThickness = 3;
-            this.TxtVotoBrancoM4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoBrancoM4.Enabled = false;
-            this.TxtVotoBrancoM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoBrancoM4.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoBrancoM4.isPassword = false;
-            this.TxtVotoBrancoM4.Location = new System.Drawing.Point(500, 280);
-            this.TxtVotoBrancoM4.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoBrancoM4.Name = "TxtVotoBrancoM4";
-            this.TxtVotoBrancoM4.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoBrancoM4.TabIndex = 4433;
-            this.TxtVotoBrancoM4.Text = "0";
-            this.TxtVotoBrancoM4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoBrancoM4.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM4_OnValueChanged);
-            this.TxtVotoBrancoM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBrancoM4_KeyPress);
-            this.TxtVotoBrancoM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBrancoM4_KeyUp);
+            this.bunifuCustomLabel31.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCustomLabel31.AutoSize = true;
+            this.bunifuCustomLabel31.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuCustomLabel31.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel31.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel31.Location = new System.Drawing.Point(5, 5);
+            this.bunifuCustomLabel31.Name = "bunifuCustomLabel31";
+            this.bunifuCustomLabel31.Size = new System.Drawing.Size(73, 22);
+            this.bunifuCustomLabel31.TabIndex = 4448;
+            this.bunifuCustomLabel31.Text = "Mesa 5";
+            this.bunifuCustomLabel31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuCustomLabel27
+            // TxtVotoBrancoM5
             // 
-            this.bunifuCustomLabel27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel27.AutoSize = true;
-            this.bunifuCustomLabel27.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel27.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel27.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel27.Location = new System.Drawing.Point(415, 95);
-            this.bunifuCustomLabel27.Name = "bunifuCustomLabel27";
-            this.bunifuCustomLabel27.Size = new System.Drawing.Size(73, 22);
-            this.bunifuCustomLabel27.TabIndex = 4432;
-            this.bunifuCustomLabel27.Text = "Mesa 3";
-            this.bunifuCustomLabel27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TxtVotoBrancoM5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoBrancoM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoBrancoM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoBrancoM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoBrancoM5.BorderThickness = 3;
+            this.TxtVotoBrancoM5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoBrancoM5.Enabled = false;
+            this.TxtVotoBrancoM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoBrancoM5.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoBrancoM5.isPassword = false;
+            this.TxtVotoBrancoM5.Location = new System.Drawing.Point(7, 190);
+            this.TxtVotoBrancoM5.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoBrancoM5.Name = "TxtVotoBrancoM5";
+            this.TxtVotoBrancoM5.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoBrancoM5.TabIndex = 4441;
+            this.TxtVotoBrancoM5.Text = "0";
+            this.TxtVotoBrancoM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoBrancoM5.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM5_OnValueChanged);
+            this.TxtVotoBrancoM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBrancoM5_KeyPress);
+            this.TxtVotoBrancoM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBrancoM5_KeyUp);
             // 
-            // TxtBoletinsInutilizadosM3
+            // TxtBoletinsInutilizadosM5
             // 
-            this.TxtBoletinsInutilizadosM3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsInutilizadosM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsInutilizadosM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsInutilizadosM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsInutilizadosM3.BorderThickness = 3;
-            this.TxtBoletinsInutilizadosM3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsInutilizadosM3.Enabled = false;
-            this.TxtBoletinsInutilizadosM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsInutilizadosM3.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsInutilizadosM3.isPassword = false;
-            this.TxtBoletinsInutilizadosM3.Location = new System.Drawing.Point(417, 177);
-            this.TxtBoletinsInutilizadosM3.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsInutilizadosM3.Name = "TxtBoletinsInutilizadosM3";
-            this.TxtBoletinsInutilizadosM3.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsInutilizadosM3.TabIndex = 4431;
-            this.TxtBoletinsInutilizadosM3.Text = "0";
-            this.TxtBoletinsInutilizadosM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsInutilizadosM3.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM3_OnValueChanged);
-            this.TxtBoletinsInutilizadosM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizadosM3_KeyPress);
-            this.TxtBoletinsInutilizadosM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM3_KeyUp);
+            this.TxtBoletinsInutilizadosM5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsInutilizadosM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsInutilizadosM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsInutilizadosM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsInutilizadosM5.BorderThickness = 3;
+            this.TxtBoletinsInutilizadosM5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsInutilizadosM5.Enabled = false;
+            this.TxtBoletinsInutilizadosM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsInutilizadosM5.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsInutilizadosM5.isPassword = false;
+            this.TxtBoletinsInutilizadosM5.Location = new System.Drawing.Point(7, 87);
+            this.TxtBoletinsInutilizadosM5.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsInutilizadosM5.Name = "TxtBoletinsInutilizadosM5";
+            this.TxtBoletinsInutilizadosM5.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsInutilizadosM5.TabIndex = 4447;
+            this.TxtBoletinsInutilizadosM5.Text = "0";
+            this.TxtBoletinsInutilizadosM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsInutilizadosM5.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM5_OnValueChanged);
+            this.TxtBoletinsInutilizadosM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizadosM5_KeyPress);
+            this.TxtBoletinsInutilizadosM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM5_KeyUp);
             // 
-            // TxtVotoValidoM3
+            // TxtVotoReclamadoM5
             // 
-            this.TxtVotoValidoM3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoValidoM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoValidoM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoValidoM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoValidoM3.BorderThickness = 3;
-            this.TxtVotoValidoM3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoValidoM3.Enabled = false;
-            this.TxtVotoValidoM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoValidoM3.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoValidoM3.isPassword = false;
-            this.TxtVotoValidoM3.Location = new System.Drawing.Point(417, 435);
-            this.TxtVotoValidoM3.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoValidoM3.Name = "TxtVotoValidoM3";
-            this.TxtVotoValidoM3.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoValidoM3.TabIndex = 4428;
-            this.TxtVotoValidoM3.Text = "0";
-            this.TxtVotoValidoM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoValidoM3.OnValueChanged += new System.EventHandler(this.TxtVotoValidoM3_OnValueChanged);
-            this.TxtVotoValidoM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValidoM3_KeyPress);
-            this.TxtVotoValidoM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoValidoM3_KeyUp);
+            this.TxtVotoReclamadoM5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoReclamadoM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoReclamadoM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoReclamadoM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoReclamadoM5.BorderThickness = 3;
+            this.TxtVotoReclamadoM5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoReclamadoM5.Enabled = false;
+            this.TxtVotoReclamadoM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoReclamadoM5.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoReclamadoM5.isPassword = false;
+            this.TxtVotoReclamadoM5.Location = new System.Drawing.Point(7, 294);
+            this.TxtVotoReclamadoM5.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoReclamadoM5.Name = "TxtVotoReclamadoM5";
+            this.TxtVotoReclamadoM5.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoReclamadoM5.TabIndex = 4442;
+            this.TxtVotoReclamadoM5.Text = "0";
+            this.TxtVotoReclamadoM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoReclamadoM5.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM5_OnValueChanged);
+            this.TxtVotoReclamadoM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamadoM5_KeyPress);
+            this.TxtVotoReclamadoM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamadoM5_KeyUp);
             // 
-            // TxtBoletinsNaoUtilizadosM3
+            // TxtVotoValidoM5
             // 
-            this.TxtBoletinsNaoUtilizadosM3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsNaoUtilizadosM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsNaoUtilizadosM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsNaoUtilizadosM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsNaoUtilizadosM3.BorderThickness = 3;
-            this.TxtBoletinsNaoUtilizadosM3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsNaoUtilizadosM3.Enabled = false;
-            this.TxtBoletinsNaoUtilizadosM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsNaoUtilizadosM3.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsNaoUtilizadosM3.isPassword = false;
-            this.TxtBoletinsNaoUtilizadosM3.Location = new System.Drawing.Point(417, 229);
-            this.TxtBoletinsNaoUtilizadosM3.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsNaoUtilizadosM3.Name = "TxtBoletinsNaoUtilizadosM3";
-            this.TxtBoletinsNaoUtilizadosM3.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsNaoUtilizadosM3.TabIndex = 4429;
-            this.TxtBoletinsNaoUtilizadosM3.Text = "0";
-            this.TxtBoletinsNaoUtilizadosM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsNaoUtilizadosM3.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM3_OnValueChanged);
-            this.TxtBoletinsNaoUtilizadosM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizadosM3_KeyPress);
-            this.TxtBoletinsNaoUtilizadosM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM3_KeyUp);
+            this.TxtVotoValidoM5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoValidoM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoValidoM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoValidoM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoValidoM5.BorderThickness = 3;
+            this.TxtVotoValidoM5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoValidoM5.Enabled = false;
+            this.TxtVotoValidoM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoValidoM5.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoValidoM5.isPassword = false;
+            this.TxtVotoValidoM5.Location = new System.Drawing.Point(7, 345);
+            this.TxtVotoValidoM5.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoValidoM5.Name = "TxtVotoValidoM5";
+            this.TxtVotoValidoM5.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoValidoM5.TabIndex = 4444;
+            this.TxtVotoValidoM5.Text = "0";
+            this.TxtVotoValidoM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoValidoM5.OnValueChanged += new System.EventHandler(this.TxtVotoValidoM5_OnValueChanged);
+            this.TxtVotoValidoM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValidoM5_KeyPress);
             // 
-            // TxtBoletinsRecebidosM3
+            // TxtVotoNuloM5
             // 
-            this.TxtBoletinsRecebidosM3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsRecebidosM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsRecebidosM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsRecebidosM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsRecebidosM3.BorderThickness = 3;
-            this.TxtBoletinsRecebidosM3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsRecebidosM3.Enabled = false;
-            this.TxtBoletinsRecebidosM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsRecebidosM3.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsRecebidosM3.isPassword = false;
-            this.TxtBoletinsRecebidosM3.Location = new System.Drawing.Point(417, 126);
-            this.TxtBoletinsRecebidosM3.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsRecebidosM3.Name = "TxtBoletinsRecebidosM3";
-            this.TxtBoletinsRecebidosM3.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsRecebidosM3.TabIndex = 4430;
-            this.TxtBoletinsRecebidosM3.Text = "0";
-            this.TxtBoletinsRecebidosM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsRecebidosM3.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM3_OnValueChanged);
-            this.TxtBoletinsRecebidosM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidosM3_KeyPress);
-            this.TxtBoletinsRecebidosM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM3_KeyUp);
+            this.TxtVotoNuloM5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoNuloM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoNuloM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoNuloM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoNuloM5.BorderThickness = 3;
+            this.TxtVotoNuloM5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoNuloM5.Enabled = false;
+            this.TxtVotoNuloM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoNuloM5.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoNuloM5.isPassword = false;
+            this.TxtVotoNuloM5.Location = new System.Drawing.Point(7, 241);
+            this.TxtVotoNuloM5.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoNuloM5.Name = "TxtVotoNuloM5";
+            this.TxtVotoNuloM5.Size = new System.Drawing.Size(66, 45);
+            this.TxtVotoNuloM5.TabIndex = 4443;
+            this.TxtVotoNuloM5.Text = "0";
+            this.TxtVotoNuloM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoNuloM5.OnValueChanged += new System.EventHandler(this.TxtVotoNuloM5_OnValueChanged);
+            this.TxtVotoNuloM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNuloM5_KeyPress);
+            this.TxtVotoNuloM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNuloM5_KeyUp);
             // 
-            // TxtVotoNuloM3
+            // TxtBoletinsNaoUtilizadosM5
             // 
-            this.TxtVotoNuloM3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoNuloM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoNuloM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoNuloM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoNuloM3.BorderThickness = 3;
-            this.TxtVotoNuloM3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoNuloM3.Enabled = false;
-            this.TxtVotoNuloM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoNuloM3.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoNuloM3.isPassword = false;
-            this.TxtVotoNuloM3.Location = new System.Drawing.Point(417, 331);
-            this.TxtVotoNuloM3.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoNuloM3.Name = "TxtVotoNuloM3";
-            this.TxtVotoNuloM3.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoNuloM3.TabIndex = 4427;
-            this.TxtVotoNuloM3.Text = "0";
-            this.TxtVotoNuloM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoNuloM3.OnValueChanged += new System.EventHandler(this.TxtVotoNuloM3_OnValueChanged);
-            this.TxtVotoNuloM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNuloM3_KeyPress);
-            this.TxtVotoNuloM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNuloM3_KeyUp);
+            this.TxtBoletinsNaoUtilizadosM5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsNaoUtilizadosM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsNaoUtilizadosM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsNaoUtilizadosM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsNaoUtilizadosM5.BorderThickness = 3;
+            this.TxtBoletinsNaoUtilizadosM5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsNaoUtilizadosM5.Enabled = false;
+            this.TxtBoletinsNaoUtilizadosM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsNaoUtilizadosM5.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsNaoUtilizadosM5.isPassword = false;
+            this.TxtBoletinsNaoUtilizadosM5.Location = new System.Drawing.Point(7, 139);
+            this.TxtBoletinsNaoUtilizadosM5.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsNaoUtilizadosM5.Name = "TxtBoletinsNaoUtilizadosM5";
+            this.TxtBoletinsNaoUtilizadosM5.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsNaoUtilizadosM5.TabIndex = 4445;
+            this.TxtBoletinsNaoUtilizadosM5.Text = "0";
+            this.TxtBoletinsNaoUtilizadosM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsNaoUtilizadosM5.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM5_OnValueChanged);
+            this.TxtBoletinsNaoUtilizadosM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizadosM5_KeyPress);
+            this.TxtBoletinsNaoUtilizadosM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM5_KeyUp);
             // 
-            // TxtVotoReclamadoM3
+            // TxtBoletinsRecebidosM5
             // 
-            this.TxtVotoReclamadoM3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoReclamadoM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoReclamadoM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoReclamadoM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoReclamadoM3.BorderThickness = 3;
-            this.TxtVotoReclamadoM3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoReclamadoM3.Enabled = false;
-            this.TxtVotoReclamadoM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoReclamadoM3.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoReclamadoM3.isPassword = false;
-            this.TxtVotoReclamadoM3.Location = new System.Drawing.Point(417, 384);
-            this.TxtVotoReclamadoM3.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoReclamadoM3.Name = "TxtVotoReclamadoM3";
-            this.TxtVotoReclamadoM3.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoReclamadoM3.TabIndex = 4426;
-            this.TxtVotoReclamadoM3.Text = "0";
-            this.TxtVotoReclamadoM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoReclamadoM3.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM3_OnValueChanged);
-            this.TxtVotoReclamadoM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamadoM3_KeyPress);
-            this.TxtVotoReclamadoM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamadoM3_KeyUp);
+            this.TxtBoletinsRecebidosM5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsRecebidosM5.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsRecebidosM5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsRecebidosM5.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsRecebidosM5.BorderThickness = 3;
+            this.TxtBoletinsRecebidosM5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsRecebidosM5.Enabled = false;
+            this.TxtBoletinsRecebidosM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsRecebidosM5.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsRecebidosM5.isPassword = false;
+            this.TxtBoletinsRecebidosM5.Location = new System.Drawing.Point(7, 36);
+            this.TxtBoletinsRecebidosM5.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsRecebidosM5.Name = "TxtBoletinsRecebidosM5";
+            this.TxtBoletinsRecebidosM5.Size = new System.Drawing.Size(66, 45);
+            this.TxtBoletinsRecebidosM5.TabIndex = 4446;
+            this.TxtBoletinsRecebidosM5.Text = "0";
+            this.TxtBoletinsRecebidosM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsRecebidosM5.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM5_OnValueChanged);
+            this.TxtBoletinsRecebidosM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidosM5_KeyPress);
+            this.TxtBoletinsRecebidosM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM5_KeyUp);
             // 
-            // TxtVotoBrancoM3
+            // bunifuCustomLabel33
             // 
-            this.TxtVotoBrancoM3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoBrancoM3.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoBrancoM3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoBrancoM3.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoBrancoM3.BorderThickness = 3;
-            this.TxtVotoBrancoM3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoBrancoM3.Enabled = false;
-            this.TxtVotoBrancoM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoBrancoM3.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoBrancoM3.isPassword = false;
-            this.TxtVotoBrancoM3.Location = new System.Drawing.Point(417, 280);
-            this.TxtVotoBrancoM3.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoBrancoM3.Name = "TxtVotoBrancoM3";
-            this.TxtVotoBrancoM3.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoBrancoM3.TabIndex = 4425;
-            this.TxtVotoBrancoM3.Text = "0";
-            this.TxtVotoBrancoM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoBrancoM3.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM3_OnValueChanged);
-            this.TxtVotoBrancoM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBrancoM3_KeyPress);
-            this.TxtVotoBrancoM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBrancoM3_KeyUp);
+            this.bunifuCustomLabel33.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCustomLabel33.AutoSize = true;
+            this.bunifuCustomLabel33.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuCustomLabel33.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel33.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel33.Location = new System.Drawing.Point(796, 96);
+            this.bunifuCustomLabel33.Name = "bunifuCustomLabel33";
+            this.bunifuCustomLabel33.Size = new System.Drawing.Size(74, 26);
+            this.bunifuCustomLabel33.TabIndex = 4464;
+            this.bunifuCustomLabel33.Text = "TOTAL";
+            this.bunifuCustomLabel33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuCustomLabel24
+            // TxtBoletinsInutilizados
             // 
-            this.bunifuCustomLabel24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel24.AutoSize = true;
-            this.bunifuCustomLabel24.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel24.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel24.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel24.Location = new System.Drawing.Point(332, 95);
-            this.bunifuCustomLabel24.Name = "bunifuCustomLabel24";
-            this.bunifuCustomLabel24.Size = new System.Drawing.Size(73, 22);
-            this.bunifuCustomLabel24.TabIndex = 4424;
-            this.bunifuCustomLabel24.Text = "Mesa 2";
-            this.bunifuCustomLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TxtBoletinsInutilizados.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsInutilizados.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsInutilizados.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsInutilizados.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsInutilizados.BorderThickness = 3;
+            this.TxtBoletinsInutilizados.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsInutilizados.Enabled = false;
+            this.TxtBoletinsInutilizados.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsInutilizados.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsInutilizados.isPassword = false;
+            this.TxtBoletinsInutilizados.Location = new System.Drawing.Point(767, 177);
+            this.TxtBoletinsInutilizados.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsInutilizados.Name = "TxtBoletinsInutilizados";
+            this.TxtBoletinsInutilizados.Size = new System.Drawing.Size(129, 45);
+            this.TxtBoletinsInutilizados.TabIndex = 4463;
+            this.TxtBoletinsInutilizados.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsInutilizados.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizados_KeyPress_1);
             // 
-            // TxtBoletinsInutilizadosM2
+            // TxtVotoValido
             // 
-            this.TxtBoletinsInutilizadosM2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsInutilizadosM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsInutilizadosM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsInutilizadosM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsInutilizadosM2.BorderThickness = 3;
-            this.TxtBoletinsInutilizadosM2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsInutilizadosM2.Enabled = false;
-            this.TxtBoletinsInutilizadosM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsInutilizadosM2.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsInutilizadosM2.isPassword = false;
-            this.TxtBoletinsInutilizadosM2.Location = new System.Drawing.Point(334, 177);
-            this.TxtBoletinsInutilizadosM2.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsInutilizadosM2.Name = "TxtBoletinsInutilizadosM2";
-            this.TxtBoletinsInutilizadosM2.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsInutilizadosM2.TabIndex = 4423;
-            this.TxtBoletinsInutilizadosM2.Text = "0";
-            this.TxtBoletinsInutilizadosM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsInutilizadosM2.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM2_OnValueChanged);
-            this.TxtBoletinsInutilizadosM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizadosM2_KeyPress);
-            this.TxtBoletinsInutilizadosM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM2_KeyUp);
+            this.TxtVotoValido.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoValido.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoValido.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoValido.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoValido.BorderThickness = 3;
+            this.TxtVotoValido.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoValido.Enabled = false;
+            this.TxtVotoValido.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoValido.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoValido.isPassword = false;
+            this.TxtVotoValido.Location = new System.Drawing.Point(767, 435);
+            this.TxtVotoValido.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoValido.Name = "TxtVotoValido";
+            this.TxtVotoValido.Size = new System.Drawing.Size(129, 45);
+            this.TxtVotoValido.TabIndex = 4460;
+            this.TxtVotoValido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoValido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValido_KeyPress_1);
             // 
-            // TxtVotoValidoM2
+            // TxtBoletinsNaoUtilizados
             // 
-            this.TxtVotoValidoM2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoValidoM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoValidoM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoValidoM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoValidoM2.BorderThickness = 3;
-            this.TxtVotoValidoM2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoValidoM2.Enabled = false;
-            this.TxtVotoValidoM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoValidoM2.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoValidoM2.isPassword = false;
-            this.TxtVotoValidoM2.Location = new System.Drawing.Point(334, 435);
-            this.TxtVotoValidoM2.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoValidoM2.Name = "TxtVotoValidoM2";
-            this.TxtVotoValidoM2.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoValidoM2.TabIndex = 4420;
-            this.TxtVotoValidoM2.Text = "0";
-            this.TxtVotoValidoM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoValidoM2.OnValueChanged += new System.EventHandler(this.TxtVotoValidoM2_OnValueChanged);
-            this.TxtVotoValidoM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValidoM2_KeyPress);
-            this.TxtVotoValidoM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoValidoM2_KeyUp);
+            this.TxtBoletinsNaoUtilizados.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsNaoUtilizados.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsNaoUtilizados.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsNaoUtilizados.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsNaoUtilizados.BorderThickness = 3;
+            this.TxtBoletinsNaoUtilizados.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsNaoUtilizados.Enabled = false;
+            this.TxtBoletinsNaoUtilizados.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsNaoUtilizados.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsNaoUtilizados.isPassword = false;
+            this.TxtBoletinsNaoUtilizados.Location = new System.Drawing.Point(767, 229);
+            this.TxtBoletinsNaoUtilizados.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsNaoUtilizados.Name = "TxtBoletinsNaoUtilizados";
+            this.TxtBoletinsNaoUtilizados.Size = new System.Drawing.Size(129, 45);
+            this.TxtBoletinsNaoUtilizados.TabIndex = 4461;
+            this.TxtBoletinsNaoUtilizados.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsNaoUtilizados.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizados_KeyPress_1);
             // 
-            // TxtBoletinsNaoUtilizadosM2
+            // TxtBoletinsRecebidos
             // 
-            this.TxtBoletinsNaoUtilizadosM2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsNaoUtilizadosM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsNaoUtilizadosM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsNaoUtilizadosM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsNaoUtilizadosM2.BorderThickness = 3;
-            this.TxtBoletinsNaoUtilizadosM2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsNaoUtilizadosM2.Enabled = false;
-            this.TxtBoletinsNaoUtilizadosM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsNaoUtilizadosM2.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsNaoUtilizadosM2.isPassword = false;
-            this.TxtBoletinsNaoUtilizadosM2.Location = new System.Drawing.Point(334, 229);
-            this.TxtBoletinsNaoUtilizadosM2.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsNaoUtilizadosM2.Name = "TxtBoletinsNaoUtilizadosM2";
-            this.TxtBoletinsNaoUtilizadosM2.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsNaoUtilizadosM2.TabIndex = 4421;
-            this.TxtBoletinsNaoUtilizadosM2.Text = "0";
-            this.TxtBoletinsNaoUtilizadosM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsNaoUtilizadosM2.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM2_OnValueChanged);
-            this.TxtBoletinsNaoUtilizadosM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizadosM2_KeyPress);
-            this.TxtBoletinsNaoUtilizadosM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM2_KeyUp);
+            this.TxtBoletinsRecebidos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtBoletinsRecebidos.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtBoletinsRecebidos.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtBoletinsRecebidos.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtBoletinsRecebidos.BorderThickness = 3;
+            this.TxtBoletinsRecebidos.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoletinsRecebidos.Enabled = false;
+            this.TxtBoletinsRecebidos.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoletinsRecebidos.ForeColor = System.Drawing.Color.Black;
+            this.TxtBoletinsRecebidos.isPassword = false;
+            this.TxtBoletinsRecebidos.Location = new System.Drawing.Point(767, 126);
+            this.TxtBoletinsRecebidos.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoletinsRecebidos.Name = "TxtBoletinsRecebidos";
+            this.TxtBoletinsRecebidos.Size = new System.Drawing.Size(129, 45);
+            this.TxtBoletinsRecebidos.TabIndex = 4462;
+            this.TxtBoletinsRecebidos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoletinsRecebidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidos_KeyPress_1);
             // 
-            // TxtBoletinsRecebidosM2
+            // TxtVotoNulo
             // 
-            this.TxtBoletinsRecebidosM2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsRecebidosM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsRecebidosM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsRecebidosM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsRecebidosM2.BorderThickness = 3;
-            this.TxtBoletinsRecebidosM2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsRecebidosM2.Enabled = false;
-            this.TxtBoletinsRecebidosM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsRecebidosM2.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsRecebidosM2.isPassword = false;
-            this.TxtBoletinsRecebidosM2.Location = new System.Drawing.Point(334, 126);
-            this.TxtBoletinsRecebidosM2.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsRecebidosM2.Name = "TxtBoletinsRecebidosM2";
-            this.TxtBoletinsRecebidosM2.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsRecebidosM2.TabIndex = 4422;
-            this.TxtBoletinsRecebidosM2.Text = "0";
-            this.TxtBoletinsRecebidosM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsRecebidosM2.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM2_OnValueChanged);
-            this.TxtBoletinsRecebidosM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidosM2_KeyPress);
-            this.TxtBoletinsRecebidosM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM2_KeyUp);
+            this.TxtVotoNulo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoNulo.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoNulo.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoNulo.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoNulo.BorderThickness = 3;
+            this.TxtVotoNulo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoNulo.Enabled = false;
+            this.TxtVotoNulo.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoNulo.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoNulo.isPassword = false;
+            this.TxtVotoNulo.Location = new System.Drawing.Point(767, 331);
+            this.TxtVotoNulo.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoNulo.Name = "TxtVotoNulo";
+            this.TxtVotoNulo.Size = new System.Drawing.Size(129, 45);
+            this.TxtVotoNulo.TabIndex = 4459;
+            this.TxtVotoNulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoNulo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNulo_KeyPress_1);
             // 
-            // TxtVotoNuloM2
+            // TxtVotoReclamado
             // 
-            this.TxtVotoNuloM2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoNuloM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoNuloM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoNuloM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoNuloM2.BorderThickness = 3;
-            this.TxtVotoNuloM2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoNuloM2.Enabled = false;
-            this.TxtVotoNuloM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoNuloM2.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoNuloM2.isPassword = false;
-            this.TxtVotoNuloM2.Location = new System.Drawing.Point(334, 331);
-            this.TxtVotoNuloM2.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoNuloM2.Name = "TxtVotoNuloM2";
-            this.TxtVotoNuloM2.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoNuloM2.TabIndex = 4419;
-            this.TxtVotoNuloM2.Text = "0";
-            this.TxtVotoNuloM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoNuloM2.OnValueChanged += new System.EventHandler(this.TxtVotoNuloM2_OnValueChanged);
-            this.TxtVotoNuloM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNuloM2_KeyPress);
-            this.TxtVotoNuloM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNuloM2_KeyUp);
+            this.TxtVotoReclamado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoReclamado.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoReclamado.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoReclamado.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoReclamado.BorderThickness = 3;
+            this.TxtVotoReclamado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoReclamado.Enabled = false;
+            this.TxtVotoReclamado.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoReclamado.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoReclamado.isPassword = false;
+            this.TxtVotoReclamado.Location = new System.Drawing.Point(767, 384);
+            this.TxtVotoReclamado.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoReclamado.Name = "TxtVotoReclamado";
+            this.TxtVotoReclamado.Size = new System.Drawing.Size(129, 45);
+            this.TxtVotoReclamado.TabIndex = 4458;
+            this.TxtVotoReclamado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoReclamado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamado_KeyPress_1);
             // 
-            // TxtVotoReclamadoM2
+            // TxtVotoBranco
             // 
-            this.TxtVotoReclamadoM2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoReclamadoM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoReclamadoM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoReclamadoM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoReclamadoM2.BorderThickness = 3;
-            this.TxtVotoReclamadoM2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoReclamadoM2.Enabled = false;
-            this.TxtVotoReclamadoM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoReclamadoM2.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoReclamadoM2.isPassword = false;
-            this.TxtVotoReclamadoM2.Location = new System.Drawing.Point(334, 384);
-            this.TxtVotoReclamadoM2.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoReclamadoM2.Name = "TxtVotoReclamadoM2";
-            this.TxtVotoReclamadoM2.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoReclamadoM2.TabIndex = 4418;
-            this.TxtVotoReclamadoM2.Text = "0";
-            this.TxtVotoReclamadoM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoReclamadoM2.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM2_OnValueChanged);
-            this.TxtVotoReclamadoM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamadoM2_KeyPress);
-            this.TxtVotoReclamadoM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamadoM2_KeyUp);
-            // 
-            // TxtVotoBrancoM2
-            // 
-            this.TxtVotoBrancoM2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoBrancoM2.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoBrancoM2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoBrancoM2.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoBrancoM2.BorderThickness = 3;
-            this.TxtVotoBrancoM2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoBrancoM2.Enabled = false;
-            this.TxtVotoBrancoM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoBrancoM2.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoBrancoM2.isPassword = false;
-            this.TxtVotoBrancoM2.Location = new System.Drawing.Point(334, 280);
-            this.TxtVotoBrancoM2.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoBrancoM2.Name = "TxtVotoBrancoM2";
-            this.TxtVotoBrancoM2.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoBrancoM2.TabIndex = 4417;
-            this.TxtVotoBrancoM2.Text = "0";
-            this.TxtVotoBrancoM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoBrancoM2.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM2_OnValueChanged);
-            this.TxtVotoBrancoM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBrancoM2_KeyPress);
-            this.TxtVotoBrancoM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBrancoM2_KeyUp);
-            // 
-            // bunifuCustomLabel23
-            // 
-            this.bunifuCustomLabel23.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel23.AutoSize = true;
-            this.bunifuCustomLabel23.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel23.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel23.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel23.Location = new System.Drawing.Point(248, 95);
-            this.bunifuCustomLabel23.Name = "bunifuCustomLabel23";
-            this.bunifuCustomLabel23.Size = new System.Drawing.Size(73, 22);
-            this.bunifuCustomLabel23.TabIndex = 4416;
-            this.bunifuCustomLabel23.Text = "Mesa 1";
-            this.bunifuCustomLabel23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TxtVotoBranco.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtVotoBranco.BorderColorFocused = System.Drawing.Color.OrangeRed;
+            this.TxtVotoBranco.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.TxtVotoBranco.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.TxtVotoBranco.BorderThickness = 3;
+            this.TxtVotoBranco.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtVotoBranco.Enabled = false;
+            this.TxtVotoBranco.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVotoBranco.ForeColor = System.Drawing.Color.Black;
+            this.TxtVotoBranco.isPassword = false;
+            this.TxtVotoBranco.Location = new System.Drawing.Point(767, 280);
+            this.TxtVotoBranco.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVotoBranco.Name = "TxtVotoBranco";
+            this.TxtVotoBranco.Size = new System.Drawing.Size(129, 45);
+            this.TxtVotoBranco.TabIndex = 4457;
+            this.TxtVotoBranco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotoBranco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBranco_KeyPress_1);
             // 
             // bunifuCustomLabel6
             // 
@@ -1597,37 +1623,14 @@
             this.bunifuCustomLabel13.AutoSize = true;
             this.bunifuCustomLabel13.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomLabel13.Location = new System.Drawing.Point(-1, 91);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
-            this.bunifuCustomLabel13.Size = new System.Drawing.Size(178, 25);
+            this.bunifuCustomLabel13.Size = new System.Drawing.Size(175, 26);
             this.bunifuCustomLabel13.TabIndex = 35;
             this.bunifuCustomLabel13.Text = "Mesas de voto:";
             this.bunifuCustomLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtBoletinsInutilizadosM1
-            // 
-            this.TxtBoletinsInutilizadosM1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsInutilizadosM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsInutilizadosM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsInutilizadosM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsInutilizadosM1.BorderThickness = 3;
-            this.TxtBoletinsInutilizadosM1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsInutilizadosM1.Enabled = false;
-            this.TxtBoletinsInutilizadosM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsInutilizadosM1.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsInutilizadosM1.isPassword = false;
-            this.TxtBoletinsInutilizadosM1.Location = new System.Drawing.Point(250, 177);
-            this.TxtBoletinsInutilizadosM1.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsInutilizadosM1.Name = "TxtBoletinsInutilizadosM1";
-            this.TxtBoletinsInutilizadosM1.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsInutilizadosM1.TabIndex = 4414;
-            this.TxtBoletinsInutilizadosM1.Text = "0";
-            this.TxtBoletinsInutilizadosM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsInutilizadosM1.OnValueChanged += new System.EventHandler(this.TxtBoletinsInutilizadosM1_OnValueChanged);
-            this.TxtBoletinsInutilizadosM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsInutilizados_KeyPress);
-            this.TxtBoletinsInutilizadosM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsInutilizadosM1_KeyUp);
             // 
             // bunifuCustomLabel9
             // 
@@ -1656,52 +1659,6 @@
             this.bunifuCustomLabel10.TabIndex = 4413;
             this.bunifuCustomLabel10.Text = "Boletins recebibos:";
             this.bunifuCustomLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtVotoValidoM1
-            // 
-            this.TxtVotoValidoM1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoValidoM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoValidoM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoValidoM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoValidoM1.BorderThickness = 3;
-            this.TxtVotoValidoM1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoValidoM1.Enabled = false;
-            this.TxtVotoValidoM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoValidoM1.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoValidoM1.isPassword = false;
-            this.TxtVotoValidoM1.Location = new System.Drawing.Point(250, 435);
-            this.TxtVotoValidoM1.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoValidoM1.Name = "TxtVotoValidoM1";
-            this.TxtVotoValidoM1.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoValidoM1.TabIndex = 31;
-            this.TxtVotoValidoM1.Text = "0";
-            this.TxtVotoValidoM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoValidoM1.OnValueChanged += new System.EventHandler(this.TxtVotoValidoM1_OnValueChanged);
-            this.TxtVotoValidoM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoValido_KeyPress);
-            this.TxtVotoValidoM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoValido_KeyUp);
-            // 
-            // TxtBoletinsNaoUtilizadosM1
-            // 
-            this.TxtBoletinsNaoUtilizadosM1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsNaoUtilizadosM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsNaoUtilizadosM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsNaoUtilizadosM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsNaoUtilizadosM1.BorderThickness = 3;
-            this.TxtBoletinsNaoUtilizadosM1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsNaoUtilizadosM1.Enabled = false;
-            this.TxtBoletinsNaoUtilizadosM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsNaoUtilizadosM1.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsNaoUtilizadosM1.isPassword = false;
-            this.TxtBoletinsNaoUtilizadosM1.Location = new System.Drawing.Point(250, 229);
-            this.TxtBoletinsNaoUtilizadosM1.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsNaoUtilizadosM1.Name = "TxtBoletinsNaoUtilizadosM1";
-            this.TxtBoletinsNaoUtilizadosM1.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsNaoUtilizadosM1.TabIndex = 4410;
-            this.TxtBoletinsNaoUtilizadosM1.Text = "0";
-            this.TxtBoletinsNaoUtilizadosM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsNaoUtilizadosM1.OnValueChanged += new System.EventHandler(this.TxtBoletinsNaoUtilizadosM1_OnValueChanged);
-            this.TxtBoletinsNaoUtilizadosM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsNaoUtilizados_KeyPress);
-            this.TxtBoletinsNaoUtilizadosM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsNaoUtilizadosM1_KeyUp);
             // 
             // bunifuCustomLabel7
             // 
@@ -1745,74 +1702,6 @@
             this.bunifuCustomLabel8.Text = "Votos reclamados:";
             this.bunifuCustomLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtBoletinsRecebidosM1
-            // 
-            this.TxtBoletinsRecebidosM1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtBoletinsRecebidosM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtBoletinsRecebidosM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtBoletinsRecebidosM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtBoletinsRecebidosM1.BorderThickness = 3;
-            this.TxtBoletinsRecebidosM1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBoletinsRecebidosM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoletinsRecebidosM1.ForeColor = System.Drawing.Color.Black;
-            this.TxtBoletinsRecebidosM1.isPassword = false;
-            this.TxtBoletinsRecebidosM1.Location = new System.Drawing.Point(250, 126);
-            this.TxtBoletinsRecebidosM1.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBoletinsRecebidosM1.Name = "TxtBoletinsRecebidosM1";
-            this.TxtBoletinsRecebidosM1.Size = new System.Drawing.Size(66, 45);
-            this.TxtBoletinsRecebidosM1.TabIndex = 4411;
-            this.TxtBoletinsRecebidosM1.Text = "0";
-            this.TxtBoletinsRecebidosM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtBoletinsRecebidosM1.OnValueChanged += new System.EventHandler(this.TxtBoletinsRecebidosM1_OnValueChanged);
-            this.TxtBoletinsRecebidosM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBoletinsRecebidos_KeyPress);
-            this.TxtBoletinsRecebidosM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtBoletinsRecebidosM1_KeyUp);
-            // 
-            // TxtVotoNuloM1
-            // 
-            this.TxtVotoNuloM1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoNuloM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoNuloM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoNuloM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoNuloM1.BorderThickness = 3;
-            this.TxtVotoNuloM1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoNuloM1.Enabled = false;
-            this.TxtVotoNuloM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoNuloM1.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoNuloM1.isPassword = false;
-            this.TxtVotoNuloM1.Location = new System.Drawing.Point(250, 331);
-            this.TxtVotoNuloM1.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoNuloM1.Name = "TxtVotoNuloM1";
-            this.TxtVotoNuloM1.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoNuloM1.TabIndex = 27;
-            this.TxtVotoNuloM1.Text = "0";
-            this.TxtVotoNuloM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoNuloM1.OnValueChanged += new System.EventHandler(this.TxtVotoNuloM1_OnValueChanged);
-            this.TxtVotoNuloM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoNulo_KeyPress);
-            this.TxtVotoNuloM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoNulo_KeyUp);
-            // 
-            // TxtVotoReclamadoM1
-            // 
-            this.TxtVotoReclamadoM1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoReclamadoM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoReclamadoM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoReclamadoM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoReclamadoM1.BorderThickness = 3;
-            this.TxtVotoReclamadoM1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoReclamadoM1.Enabled = false;
-            this.TxtVotoReclamadoM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoReclamadoM1.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoReclamadoM1.isPassword = false;
-            this.TxtVotoReclamadoM1.Location = new System.Drawing.Point(250, 384);
-            this.TxtVotoReclamadoM1.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoReclamadoM1.Name = "TxtVotoReclamadoM1";
-            this.TxtVotoReclamadoM1.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoReclamadoM1.TabIndex = 26;
-            this.TxtVotoReclamadoM1.Text = "0";
-            this.TxtVotoReclamadoM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoReclamadoM1.OnValueChanged += new System.EventHandler(this.TxtVotoReclamadoM1_OnValueChanged);
-            this.TxtVotoReclamadoM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoReclamado_KeyPress);
-            this.TxtVotoReclamadoM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoReclamado_KeyUp);
-            // 
             // BtnVoltar
             // 
             this.BtnVoltar.ActiveBorderThickness = 2;
@@ -1832,10 +1721,10 @@
             this.BtnVoltar.IdleFillColor = System.Drawing.Color.Transparent;
             this.BtnVoltar.IdleForecolor = System.Drawing.Color.Black;
             this.BtnVoltar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.BtnVoltar.Location = new System.Drawing.Point(252, 554);
+            this.BtnVoltar.Location = new System.Drawing.Point(281, 554);
             this.BtnVoltar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(186, 58);
+            this.BtnVoltar.Size = new System.Drawing.Size(157, 58);
             this.BtnVoltar.TabIndex = 25;
             this.BtnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
@@ -1862,7 +1751,7 @@
             this.BtnContinuar.Location = new System.Drawing.Point(467, 554);
             this.BtnContinuar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnContinuar.Name = "BtnContinuar";
-            this.BtnContinuar.Size = new System.Drawing.Size(265, 58);
+            this.BtnContinuar.Size = new System.Drawing.Size(264, 58);
             this.BtnContinuar.TabIndex = 24;
             this.BtnContinuar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnContinuar.Click += new System.EventHandler(this.BtnContinuar_Click);
@@ -1880,29 +1769,6 @@
             this.bunifuCustomLabel3.TabIndex = 20;
             this.bunifuCustomLabel3.Text = "Votos brancos:";
             this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtVotoBrancoM1
-            // 
-            this.TxtVotoBrancoM1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotoBrancoM1.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotoBrancoM1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotoBrancoM1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotoBrancoM1.BorderThickness = 3;
-            this.TxtVotoBrancoM1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotoBrancoM1.Enabled = false;
-            this.TxtVotoBrancoM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotoBrancoM1.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotoBrancoM1.isPassword = false;
-            this.TxtVotoBrancoM1.Location = new System.Drawing.Point(250, 280);
-            this.TxtVotoBrancoM1.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotoBrancoM1.Name = "TxtVotoBrancoM1";
-            this.TxtVotoBrancoM1.Size = new System.Drawing.Size(66, 45);
-            this.TxtVotoBrancoM1.TabIndex = 17;
-            this.TxtVotoBrancoM1.Text = "0";
-            this.TxtVotoBrancoM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotoBrancoM1.OnValueChanged += new System.EventHandler(this.TxtVotoBrancoM1_OnValueChanged);
-            this.TxtVotoBrancoM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotoBranco_KeyPress);
-            this.TxtVotoBrancoM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotoBranco_KeyUp);
             // 
             // panel6
             // 
@@ -2246,42 +2112,42 @@
             this.DGVResultados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVResultados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DGVResultados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVResultados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVResultados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DGVResultados.ColumnHeadersHeight = 47;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(67)))), ((int)(((byte)(102)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVResultados.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(67)))), ((int)(((byte)(102)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVResultados.DefaultCellStyle = dataGridViewCellStyle2;
             this.DGVResultados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGVResultados.EnableHeadersVisualStyles = false;
             this.DGVResultados.Location = new System.Drawing.Point(0, 25);
             this.DGVResultados.Name = "DGVResultados";
             this.DGVResultados.ReadOnly = true;
             this.DGVResultados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVResultados.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVResultados.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DGVResultados.RowHeadersVisible = false;
             this.DGVResultados.RowHeadersWidth = 70;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DGVResultados.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGVResultados.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DGVResultados.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DGVResultados.RowTemplate.Height = 45;
             this.DGVResultados.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -2317,17 +2183,15 @@
             this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.bunifuCustomLabel39);
-            this.panel9.Controls.Add(this.bunifuCustomLabel15);
-            this.panel9.Controls.Add(this.TxtVotosM6);
-            this.panel9.Controls.Add(this.bunifuCustomLabel34);
+            this.panel9.Controls.Add(this.LbM5);
             this.panel9.Controls.Add(this.TxtVotosM5);
-            this.panel9.Controls.Add(this.bunifuCustomLabel35);
+            this.panel9.Controls.Add(this.LbM4);
             this.panel9.Controls.Add(this.TxtVotosM4);
-            this.panel9.Controls.Add(this.bunifuCustomLabel36);
+            this.panel9.Controls.Add(this.LbM3);
             this.panel9.Controls.Add(this.TxtVotosM3);
-            this.panel9.Controls.Add(this.bunifuCustomLabel37);
+            this.panel9.Controls.Add(this.LbM2);
             this.panel9.Controls.Add(this.TxtVotosM2);
-            this.panel9.Controls.Add(this.bunifuCustomLabel38);
+            this.panel9.Controls.Add(this.LbM1);
             this.panel9.Controls.Add(this.TxtVotosM1);
             this.panel9.Controls.Add(this.panel11);
             this.panel9.Controls.Add(this.panel12);
@@ -2339,6 +2203,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(512, 494);
             this.panel9.TabIndex = 1;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // bunifuCustomLabel39
             // 
@@ -2348,64 +2213,28 @@
             this.bunifuCustomLabel39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bunifuCustomLabel39.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel39.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel39.Location = new System.Drawing.Point(420, 257);
+            this.bunifuCustomLabel39.Location = new System.Drawing.Point(400, 257);
             this.bunifuCustomLabel39.Name = "bunifuCustomLabel39";
             this.bunifuCustomLabel39.Size = new System.Drawing.Size(51, 18);
             this.bunifuCustomLabel39.TabIndex = 4469;
             this.bunifuCustomLabel39.Text = "TOTAL";
             this.bunifuCustomLabel39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuCustomLabel15
+            // LbM5
             // 
-            this.bunifuCustomLabel15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel15.AutoSize = true;
-            this.bunifuCustomLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel15.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel15.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel15.Location = new System.Drawing.Point(314, 257);
-            this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
-            this.bunifuCustomLabel15.Size = new System.Drawing.Size(60, 18);
-            this.bunifuCustomLabel15.TabIndex = 4468;
-            this.bunifuCustomLabel15.Text = "Mesa 6";
-            this.bunifuCustomLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtVotosM6
-            // 
-            this.TxtVotosM6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtVotosM6.BorderColorFocused = System.Drawing.Color.OrangeRed;
-            this.TxtVotosM6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.TxtVotosM6.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.TxtVotosM6.BorderThickness = 3;
-            this.TxtVotosM6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtVotosM6.Enabled = false;
-            this.TxtVotosM6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVotosM6.ForeColor = System.Drawing.Color.Black;
-            this.TxtVotosM6.isPassword = false;
-            this.TxtVotosM6.Location = new System.Drawing.Point(315, 277);
-            this.TxtVotosM6.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVotosM6.Name = "TxtVotosM6";
-            this.TxtVotosM6.Size = new System.Drawing.Size(53, 45);
-            this.TxtVotosM6.TabIndex = 4467;
-            this.TxtVotosM6.Text = "0";
-            this.TxtVotosM6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxtVotosM6.OnValueChanged += new System.EventHandler(this.TxtVotosM6_OnValueChanged);
-            this.TxtVotosM6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotosM6_KeyPress);
-            // 
-            // bunifuCustomLabel34
-            // 
-            this.bunifuCustomLabel34.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel34.AutoSize = true;
-            this.bunifuCustomLabel34.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel34.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel34.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel34.Location = new System.Drawing.Point(252, 257);
-            this.bunifuCustomLabel34.Name = "bunifuCustomLabel34";
-            this.bunifuCustomLabel34.Size = new System.Drawing.Size(60, 18);
-            this.bunifuCustomLabel34.TabIndex = 4466;
-            this.bunifuCustomLabel34.Text = "Mesa 5";
-            this.bunifuCustomLabel34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LbM5.AutoSize = true;
+            this.LbM5.BackColor = System.Drawing.Color.Transparent;
+            this.LbM5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LbM5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbM5.ForeColor = System.Drawing.Color.Black;
+            this.LbM5.Location = new System.Drawing.Point(295, 257);
+            this.LbM5.Name = "LbM5";
+            this.LbM5.Size = new System.Drawing.Size(60, 18);
+            this.LbM5.TabIndex = 4466;
+            this.LbM5.Text = "Mesa 5";
+            this.LbM5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM5.Visible = false;
             // 
             // TxtVotosM5
             // 
@@ -2419,31 +2248,32 @@
             this.TxtVotosM5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVotosM5.ForeColor = System.Drawing.Color.Black;
             this.TxtVotosM5.isPassword = false;
-            this.TxtVotosM5.Location = new System.Drawing.Point(254, 277);
+            this.TxtVotosM5.Location = new System.Drawing.Point(297, 277);
             this.TxtVotosM5.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVotosM5.Name = "TxtVotosM5";
             this.TxtVotosM5.Size = new System.Drawing.Size(53, 45);
             this.TxtVotosM5.TabIndex = 4465;
             this.TxtVotosM5.Text = "0";
             this.TxtVotosM5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotosM5.Visible = false;
             this.TxtVotosM5.OnValueChanged += new System.EventHandler(this.TxtVotosM5_OnValueChanged);
             this.TxtVotosM5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotosM5_KeyPress);
-            this.TxtVotosM5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotosM5_KeyUp);
             // 
-            // bunifuCustomLabel35
+            // LbM4
             // 
-            this.bunifuCustomLabel35.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel35.AutoSize = true;
-            this.bunifuCustomLabel35.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel35.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel35.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel35.Location = new System.Drawing.Point(192, 257);
-            this.bunifuCustomLabel35.Name = "bunifuCustomLabel35";
-            this.bunifuCustomLabel35.Size = new System.Drawing.Size(60, 18);
-            this.bunifuCustomLabel35.TabIndex = 4464;
-            this.bunifuCustomLabel35.Text = "Mesa 4";
-            this.bunifuCustomLabel35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LbM4.AutoSize = true;
+            this.LbM4.BackColor = System.Drawing.Color.Transparent;
+            this.LbM4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LbM4.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbM4.ForeColor = System.Drawing.Color.Black;
+            this.LbM4.Location = new System.Drawing.Point(235, 257);
+            this.LbM4.Name = "LbM4";
+            this.LbM4.Size = new System.Drawing.Size(60, 18);
+            this.LbM4.TabIndex = 4464;
+            this.LbM4.Text = "Mesa 4";
+            this.LbM4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM4.Visible = false;
             // 
             // TxtVotosM4
             // 
@@ -2457,31 +2287,33 @@
             this.TxtVotosM4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVotosM4.ForeColor = System.Drawing.Color.Black;
             this.TxtVotosM4.isPassword = false;
-            this.TxtVotosM4.Location = new System.Drawing.Point(193, 277);
+            this.TxtVotosM4.Location = new System.Drawing.Point(236, 277);
             this.TxtVotosM4.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVotosM4.Name = "TxtVotosM4";
             this.TxtVotosM4.Size = new System.Drawing.Size(53, 45);
             this.TxtVotosM4.TabIndex = 4463;
             this.TxtVotosM4.Text = "0";
             this.TxtVotosM4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotosM4.Visible = false;
             this.TxtVotosM4.OnValueChanged += new System.EventHandler(this.TxtVotosM4_OnValueChanged);
             this.TxtVotosM4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotosM4_KeyPress);
             this.TxtVotosM4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotosM4_KeyUp);
             // 
-            // bunifuCustomLabel36
+            // LbM3
             // 
-            this.bunifuCustomLabel36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel36.AutoSize = true;
-            this.bunifuCustomLabel36.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel36.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel36.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel36.Location = new System.Drawing.Point(131, 257);
-            this.bunifuCustomLabel36.Name = "bunifuCustomLabel36";
-            this.bunifuCustomLabel36.Size = new System.Drawing.Size(60, 18);
-            this.bunifuCustomLabel36.TabIndex = 4462;
-            this.bunifuCustomLabel36.Text = "Mesa 3";
-            this.bunifuCustomLabel36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LbM3.AutoSize = true;
+            this.LbM3.BackColor = System.Drawing.Color.Transparent;
+            this.LbM3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LbM3.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbM3.ForeColor = System.Drawing.Color.Black;
+            this.LbM3.Location = new System.Drawing.Point(174, 257);
+            this.LbM3.Name = "LbM3";
+            this.LbM3.Size = new System.Drawing.Size(60, 18);
+            this.LbM3.TabIndex = 4462;
+            this.LbM3.Text = "Mesa 3";
+            this.LbM3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM3.Visible = false;
             // 
             // TxtVotosM3
             // 
@@ -2495,31 +2327,33 @@
             this.TxtVotosM3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVotosM3.ForeColor = System.Drawing.Color.Black;
             this.TxtVotosM3.isPassword = false;
-            this.TxtVotosM3.Location = new System.Drawing.Point(132, 277);
+            this.TxtVotosM3.Location = new System.Drawing.Point(175, 277);
             this.TxtVotosM3.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVotosM3.Name = "TxtVotosM3";
             this.TxtVotosM3.Size = new System.Drawing.Size(53, 45);
             this.TxtVotosM3.TabIndex = 4461;
             this.TxtVotosM3.Text = "0";
             this.TxtVotosM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotosM3.Visible = false;
             this.TxtVotosM3.OnValueChanged += new System.EventHandler(this.TxtVotosM3_OnValueChanged);
             this.TxtVotosM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotosM3_KeyPress);
             this.TxtVotosM3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotosM3_KeyUp);
             // 
-            // bunifuCustomLabel37
+            // LbM2
             // 
-            this.bunifuCustomLabel37.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel37.AutoSize = true;
-            this.bunifuCustomLabel37.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel37.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel37.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel37.Location = new System.Drawing.Point(70, 257);
-            this.bunifuCustomLabel37.Name = "bunifuCustomLabel37";
-            this.bunifuCustomLabel37.Size = new System.Drawing.Size(60, 18);
-            this.bunifuCustomLabel37.TabIndex = 4460;
-            this.bunifuCustomLabel37.Text = "Mesa 2";
-            this.bunifuCustomLabel37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LbM2.AutoSize = true;
+            this.LbM2.BackColor = System.Drawing.Color.Transparent;
+            this.LbM2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LbM2.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbM2.ForeColor = System.Drawing.Color.Black;
+            this.LbM2.Location = new System.Drawing.Point(113, 257);
+            this.LbM2.Name = "LbM2";
+            this.LbM2.Size = new System.Drawing.Size(60, 18);
+            this.LbM2.TabIndex = 4460;
+            this.LbM2.Text = "Mesa 2";
+            this.LbM2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM2.Visible = false;
             // 
             // TxtVotosM2
             // 
@@ -2533,31 +2367,33 @@
             this.TxtVotosM2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVotosM2.ForeColor = System.Drawing.Color.Black;
             this.TxtVotosM2.isPassword = false;
-            this.TxtVotosM2.Location = new System.Drawing.Point(71, 277);
+            this.TxtVotosM2.Location = new System.Drawing.Point(114, 277);
             this.TxtVotosM2.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVotosM2.Name = "TxtVotosM2";
             this.TxtVotosM2.Size = new System.Drawing.Size(53, 45);
             this.TxtVotosM2.TabIndex = 4459;
             this.TxtVotosM2.Text = "0";
             this.TxtVotosM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotosM2.Visible = false;
             this.TxtVotosM2.OnValueChanged += new System.EventHandler(this.TxtVotosM2_OnValueChanged);
             this.TxtVotosM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotosM2_KeyPress);
             this.TxtVotosM2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotosM2_KeyUp);
             // 
-            // bunifuCustomLabel38
+            // LbM1
             // 
-            this.bunifuCustomLabel38.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCustomLabel38.AutoSize = true;
-            this.bunifuCustomLabel38.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel38.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel38.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel38.Location = new System.Drawing.Point(8, 257);
-            this.bunifuCustomLabel38.Name = "bunifuCustomLabel38";
-            this.bunifuCustomLabel38.Size = new System.Drawing.Size(60, 18);
-            this.bunifuCustomLabel38.TabIndex = 4458;
-            this.bunifuCustomLabel38.Text = "Mesa 1";
-            this.bunifuCustomLabel38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LbM1.AutoSize = true;
+            this.LbM1.BackColor = System.Drawing.Color.Transparent;
+            this.LbM1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LbM1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbM1.ForeColor = System.Drawing.Color.Black;
+            this.LbM1.Location = new System.Drawing.Point(51, 257);
+            this.LbM1.Name = "LbM1";
+            this.LbM1.Size = new System.Drawing.Size(60, 18);
+            this.LbM1.TabIndex = 4458;
+            this.LbM1.Text = "Mesa 1";
+            this.LbM1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LbM1.Visible = false;
             // 
             // TxtVotosM1
             // 
@@ -2571,13 +2407,14 @@
             this.TxtVotosM1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVotosM1.ForeColor = System.Drawing.Color.Black;
             this.TxtVotosM1.isPassword = false;
-            this.TxtVotosM1.Location = new System.Drawing.Point(10, 277);
+            this.TxtVotosM1.Location = new System.Drawing.Point(53, 277);
             this.TxtVotosM1.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVotosM1.Name = "TxtVotosM1";
             this.TxtVotosM1.Size = new System.Drawing.Size(53, 45);
             this.TxtVotosM1.TabIndex = 4457;
             this.TxtVotosM1.Text = "0";
             this.TxtVotosM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtVotosM1.Visible = false;
             this.TxtVotosM1.OnValueChanged += new System.EventHandler(this.TxtVotosM1_OnValueChanged);
             this.TxtVotosM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVotosM1_KeyPress);
             this.TxtVotosM1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtVotosM1_KeyUp);
@@ -2741,10 +2578,10 @@
             this.BtnAdicionar.IdleFillColor = System.Drawing.Color.Transparent;
             this.BtnAdicionar.IdleForecolor = System.Drawing.Color.Black;
             this.BtnAdicionar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.BtnAdicionar.Location = new System.Drawing.Point(134, 331);
+            this.BtnAdicionar.Location = new System.Drawing.Point(53, 331);
             this.BtnAdicionar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnAdicionar.Name = "BtnAdicionar";
-            this.BtnAdicionar.Size = new System.Drawing.Size(234, 58);
+            this.BtnAdicionar.Size = new System.Drawing.Size(297, 58);
             this.BtnAdicionar.TabIndex = 4400;
             this.BtnAdicionar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnAdicionar.Click += new System.EventHandler(this.BtnAdicionar_Click);
@@ -2776,7 +2613,7 @@
             this.TxtVotos.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVotos.ForeColor = System.Drawing.Color.Black;
             this.TxtVotos.isPassword = false;
-            this.TxtVotos.Location = new System.Drawing.Point(397, 277);
+            this.TxtVotos.Location = new System.Drawing.Point(377, 277);
             this.TxtVotos.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVotos.Name = "TxtVotos";
             this.TxtVotos.Size = new System.Drawing.Size(100, 45);
@@ -2805,42 +2642,42 @@
             this.DGVEntidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVEntidade.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DGVEntidade.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVEntidade.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVEntidade.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DGVEntidade.ColumnHeadersHeight = 47;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(67)))), ((int)(((byte)(102)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVEntidade.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(67)))), ((int)(((byte)(102)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVEntidade.DefaultCellStyle = dataGridViewCellStyle6;
             this.DGVEntidade.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGVEntidade.EnableHeadersVisualStyles = false;
             this.DGVEntidade.Location = new System.Drawing.Point(0, 25);
             this.DGVEntidade.Name = "DGVEntidade";
             this.DGVEntidade.ReadOnly = true;
             this.DGVEntidade.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVEntidade.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVEntidade.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.DGVEntidade.RowHeadersVisible = false;
             this.DGVEntidade.RowHeadersWidth = 70;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DGVEntidade.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGVEntidade.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.DGVEntidade.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DGVEntidade.RowTemplate.Height = 50;
             this.DGVEntidade.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -2972,6 +2809,16 @@
             this.tabPage2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.Mesa1.ResumeLayout(false);
+            this.Mesa1.PerformLayout();
+            this.Mesa2.ResumeLayout(false);
+            this.Mesa2.PerformLayout();
+            this.Mesa3.ResumeLayout(false);
+            this.Mesa3.PerformLayout();
+            this.Mesa4.ResumeLayout(false);
+            this.Mesa4.PerformLayout();
+            this.Mesa5.ResumeLayout(false);
+            this.Mesa5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.tabPage6.ResumeLayout(false);
@@ -3097,14 +2944,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotoNulo;
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotoReclamado;
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotoBranco;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel32;
-        private Bunifu.Framework.UI.BunifuMetroTextbox TxtBoletinsInutilizadosM6;
-        private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotoValidoM6;
-        private Bunifu.Framework.UI.BunifuMetroTextbox TxtBoletinsNaoUtilizadosM6;
-        private Bunifu.Framework.UI.BunifuMetroTextbox TxtBoletinsRecebidosM6;
-        private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotoNuloM6;
-        private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotoReclamadoM6;
-        private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotoBrancoM6;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel31;
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtBoletinsInutilizadosM5;
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotoValidoM5;
@@ -3139,18 +2978,21 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotoBrancoM2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel23;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel39;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel15;
-        private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotosM6;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel34;
+        private Bunifu.Framework.UI.BunifuCustomLabel LbM5;
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotosM5;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel35;
+        private Bunifu.Framework.UI.BunifuCustomLabel LbM4;
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotosM4;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel36;
+        private Bunifu.Framework.UI.BunifuCustomLabel LbM3;
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotosM3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel37;
+        private Bunifu.Framework.UI.BunifuCustomLabel LbM2;
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotosM2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel38;
+        private Bunifu.Framework.UI.BunifuCustomLabel LbM1;
         private Bunifu.Framework.UI.BunifuMetroTextbox TxtVotosM1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel40;
+        private System.Windows.Forms.Panel Mesa5;
+        private System.Windows.Forms.Panel Mesa1;
+        private System.Windows.Forms.Panel Mesa2;
+        private System.Windows.Forms.Panel Mesa3;
+        private System.Windows.Forms.Panel Mesa4;
     }
 }

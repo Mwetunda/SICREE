@@ -26,6 +26,7 @@ namespace SICREE
 
         int votos;
         int voto;
+        int mesas;
 
         public FrmActa()
         {
@@ -52,7 +53,7 @@ namespace SICREE
         private void Tamanho()
         {
             style.MaxLength(TxtAssembleia, 5);
-            style.MaxLength(TxtNumMesas, 2);
+            style.MaxLength(TxtNumMesas, 1);
 
             style.MaxLength(TxtBoletinsRecebidosM1, 3);
             style.MaxLength(TxtBoletinsInutilizadosM1, 3);
@@ -94,21 +95,13 @@ namespace SICREE
             style.MaxLength(TxtVotoReclamadoM5, 3);
             style.MaxLength(TxtVotoValidoM5, 3);
 
-            style.MaxLength(TxtBoletinsRecebidosM6, 3);
-            style.MaxLength(TxtBoletinsInutilizadosM6, 3);
-            style.MaxLength(TxtBoletinsNaoUtilizadosM6, 3);
-            style.MaxLength(TxtVotoBrancoM6, 3);
-            style.MaxLength(TxtVotoNuloM6, 3);
-            style.MaxLength(TxtVotoReclamadoM6, 3);
-            style.MaxLength(TxtVotoValidoM6, 3);
-
+            
 
             style.MaxLength(TxtVotosM1, 3);
             style.MaxLength(TxtVotosM2, 3);
             style.MaxLength(TxtVotosM3, 3);
             style.MaxLength(TxtVotosM4, 3);
             style.MaxLength(TxtVotosM5, 3);
-            style.MaxLength(TxtVotosM6, 3);
         }
 
         private void CalcularBoletinsRecebidos()
@@ -135,18 +128,14 @@ namespace SICREE
                 {
                     TxtBoletinsRecebidosM5.Text = "0";
                 }
-                if (TxtBoletinsRecebidosM6.Text == "")
-                {
-                    TxtBoletinsRecebidosM6.Text = "0";
-                }
+                
 
                 TxtBoletinsRecebidos.Text = 
                     (Convert.ToInt32(TxtBoletinsRecebidosM1.Text)+
                     Convert.ToInt32(TxtBoletinsRecebidosM2.Text)+
                     Convert.ToInt32(TxtBoletinsRecebidosM3.Text)+
                     Convert.ToInt32(TxtBoletinsRecebidosM4.Text)+
-                    Convert.ToInt32(TxtBoletinsRecebidosM5.Text)+
-                    Convert.ToInt32(TxtBoletinsRecebidosM6.Text)).ToString();
+                    Convert.ToInt32(TxtBoletinsRecebidosM5.Text)).ToString();
             }
             catch
             {
@@ -177,18 +166,14 @@ namespace SICREE
                 {
                     TxtBoletinsInutilizadosM5.Text = "0";
                 }
-                if (TxtBoletinsInutilizadosM6.Text == "")
-                {
-                    TxtBoletinsInutilizadosM6.Text = "0";
-                }
+                
 
                 TxtBoletinsInutilizados.Text =
                     (Convert.ToInt32(TxtBoletinsInutilizadosM1.Text) +
                     Convert.ToInt32(TxtBoletinsInutilizadosM2.Text) +
                     Convert.ToInt32(TxtBoletinsInutilizadosM3.Text) +
                     Convert.ToInt32(TxtBoletinsInutilizadosM4.Text) +
-                    Convert.ToInt32(TxtBoletinsInutilizadosM5.Text) +
-                    Convert.ToInt32(TxtBoletinsInutilizadosM6.Text)).ToString();
+                    Convert.ToInt32(TxtBoletinsInutilizadosM5.Text)).ToString();
             }
             catch
             {
@@ -219,18 +204,14 @@ namespace SICREE
                 {
                     TxtBoletinsNaoUtilizadosM5.Text = "0";
                 }
-                if (TxtBoletinsNaoUtilizadosM6.Text == "")
-                {
-                    TxtBoletinsNaoUtilizadosM6.Text = "0";
-                }
+                
 
                 TxtBoletinsNaoUtilizados.Text =
                     (Convert.ToInt32(TxtBoletinsNaoUtilizadosM1.Text) +
                     Convert.ToInt32(TxtBoletinsNaoUtilizadosM2.Text) +
                     Convert.ToInt32(TxtBoletinsNaoUtilizadosM3.Text) +
                     Convert.ToInt32(TxtBoletinsNaoUtilizadosM4.Text) +
-                    Convert.ToInt32(TxtBoletinsNaoUtilizadosM5.Text) +
-                    Convert.ToInt32(TxtBoletinsNaoUtilizadosM6.Text)).ToString();
+                    Convert.ToInt32(TxtBoletinsNaoUtilizadosM5.Text)).ToString();
             }
             catch
             {
@@ -261,18 +242,14 @@ namespace SICREE
                 {
                     TxtVotoBrancoM5.Text = "0";
                 }
-                if (TxtVotoBrancoM6.Text == "")
-                {
-                    TxtVotoBrancoM6.Text = "0";
-                }
+                
 
                 TxtVotoBranco.Text =
                     (Convert.ToInt32(TxtVotoBrancoM1.Text) +
                     Convert.ToInt32(TxtVotoBrancoM2.Text) +
                     Convert.ToInt32(TxtVotoBrancoM3.Text) +
                     Convert.ToInt32(TxtVotoBrancoM4.Text) +
-                    Convert.ToInt32(TxtVotoBrancoM5.Text) +
-                    Convert.ToInt32(TxtVotoBrancoM6.Text)).ToString();
+                    Convert.ToInt32(TxtVotoBrancoM5.Text)).ToString();
             }
             catch
             {
@@ -303,18 +280,13 @@ namespace SICREE
                 {
                     TxtVotoNuloM5.Text = "0";
                 }
-                if (TxtVotoNuloM6.Text == "")
-                {
-                    TxtVotoNuloM6.Text = "0";
-                }
-
+                
                 TxtVotoNulo.Text =
                     (Convert.ToInt32(TxtVotoNuloM1.Text) +
                     Convert.ToInt32(TxtVotoNuloM2.Text) +
                     Convert.ToInt32(TxtVotoNuloM3.Text) +
                     Convert.ToInt32(TxtVotoNuloM4.Text) +
-                    Convert.ToInt32(TxtVotoNuloM5.Text) +
-                    Convert.ToInt32(TxtVotoNuloM6.Text)).ToString();
+                    Convert.ToInt32(TxtVotoNuloM5.Text)).ToString();
             }
             catch
             {
@@ -345,18 +317,14 @@ namespace SICREE
                 {
                     TxtVotoReclamadoM5.Text = "0";
                 }
-                if (TxtVotoReclamadoM6.Text == "")
-                {
-                    TxtVotoReclamadoM6.Text = "0";
-                }
+                
 
                 TxtVotoReclamado.Text =
                     (Convert.ToInt32(TxtVotoReclamadoM1.Text) +
                     Convert.ToInt32(TxtVotoReclamadoM2.Text) +
                     Convert.ToInt32(TxtVotoReclamadoM3.Text) +
                     Convert.ToInt32(TxtVotoReclamadoM4.Text) +
-                    Convert.ToInt32(TxtVotoReclamadoM5.Text) +
-                    Convert.ToInt32(TxtVotoReclamadoM6.Text)).ToString();
+                    Convert.ToInt32(TxtVotoReclamadoM5.Text)).ToString();
             }
             catch
             {
@@ -387,18 +355,14 @@ namespace SICREE
                 {
                     TxtVotoValidoM5.Text = "0";
                 }
-                if (TxtVotoValidoM6.Text == "")
-                {
-                    TxtVotoValidoM6.Text = "0";
-                }
+                
 
                 TxtVotoValido.Text =
                     (Convert.ToInt32(TxtVotoValidoM1.Text) +
                     Convert.ToInt32(TxtVotoValidoM2.Text) +
                     Convert.ToInt32(TxtVotoValidoM3.Text) +
                     Convert.ToInt32(TxtVotoValidoM4.Text) +
-                    Convert.ToInt32(TxtVotoValidoM5.Text) +
-                    Convert.ToInt32(TxtVotoValidoM6.Text)).ToString();
+                    Convert.ToInt32(TxtVotoValidoM5.Text)).ToString();
             }
             catch
             {
@@ -429,18 +393,13 @@ namespace SICREE
                 {
                     TxtVotosM5.Text = "0";
                 }
-                if (TxtVotosM6.Text == "")
-                {
-                    TxtVotosM6.Text = "0";
-                }
-
+                
                 TxtVotos.Text =
                     (Convert.ToInt32(TxtVotosM1.Text) +
                     Convert.ToInt32(TxtVotosM2.Text) +
                     Convert.ToInt32(TxtVotosM3.Text) +
                     Convert.ToInt32(TxtVotosM4.Text) +
-                    Convert.ToInt32(TxtVotosM5.Text) +
-                    Convert.ToInt32(TxtVotosM6.Text)).ToString();
+                    Convert.ToInt32(TxtVotosM5.Text)).ToString();
             }
             catch
             {
@@ -470,63 +429,119 @@ namespace SICREE
 
         void Continuar()
         {
+
             if (TxtAssembleia.Text == "")
             {
-                MessageBox.Show("Digite o número da assembleia", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Digite o código da assembleia", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TxtBoletinsRecebidosM1.Focus();
             }
             else
             {
-                assembleia = assembleiaNegocio.BuscaID(Convert.ToInt32(TxtAssembleia.Text));
-
-
-                if (assembleia == null)
+                if (TxtNumMesas.Text == "")
                 {
-                    MessageBox.Show("Assembleia inexistente no sistema", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    TxtAssembleia.Focus();
+                    MessageBox.Show("Digite a quantidade de mesas da assembleia", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    TxtNumMesas.Focus();
                 }
                 else
                 {
+                    mesas = Convert.ToInt32(TxtNumMesas.Text);
 
-                    if (actaNegocio.Verificar(assembleia.Numero))
+                    assembleia = assembleiaNegocio.BuscaID(Convert.ToInt32(TxtAssembleia.Text));
+
+                    if (assembleia == null)
                     {
-                        MessageBox.Show("A assembleia " + assembleia.Numero + " já foi escrutinada", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Assembleia inexistente no sistema", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         TxtAssembleia.Focus();
                     }
                     else
                     {
-                        LblCabecalho.Text = "DADOS DA ASSEMBLEIA Nº: " + TxtAssembleia.Text;
-                        tabControl1.SelectTab(tabPage2);
-                        TxtBoletinsRecebidosM1.Focus();
+
+                        if (actaNegocio.Verificar(assembleia.Numero))
+                        {
+                            MessageBox.Show("A assembleia " + assembleia.Numero + " já foi escrutinada", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            TxtAssembleia.Focus();
+                        }
+                        else
+                        {
+                            if(mesas >= 1)
+                            {
+                                Mesa1.Visible = true;
+                            }
+                            if (mesas >= 2)
+                            {
+                                Mesa2.Visible = true;
+                            }
+                            if (mesas >= 3)
+                            {
+                                Mesa3.Visible = true;
+                            }
+                            if (mesas >= 4)
+                            {
+                                Mesa4.Visible = true;
+                            }
+                            if (mesas >= 5)
+                            {
+                                Mesa5.Visible = true;
+                            }
+
+                            LblCabecalho.Text = "DADOS DA ASSEMBLEIA Nº: " + TxtAssembleia.Text;
+                            tabControl1.SelectTab(tabPage2);
+                            TxtBoletinsRecebidosM1.Focus();
+                        }
                     }
-                }
+                } 
             }
         }
 
         void Avancar()
         {
-            if (TxtVotoBrancoM1.Text == "")
+            if (TxtVotoBranco.Text == "")
             {
                 MessageBox.Show("Didite a quantidade de votos brancos da assembleia " + TxtAssembleia.Text, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TxtVotoBrancoM1.Focus();
+                TxtVotoBranco.Focus();
             }
-            else if (TxtVotoNuloM1.Text == "")
+            else if (TxtVotoNulo.Text == "")
             {
                 MessageBox.Show("Didite a quantidade de votos nulos da assembleia " + TxtAssembleia.Text, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TxtVotoNuloM1.Focus();
+                TxtVotoNulo.Focus();
             }
-            else if (TxtVotoReclamadoM1.Text == "")
+            else if (TxtVotoReclamado.Text == "")
             {
                 MessageBox.Show("Didite a quantidade de votos reclamados da assembleia " + TxtAssembleia.Text, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TxtVotoReclamadoM1.Focus();
+                TxtVotoReclamado.Focus();
             }
-            else if (TxtVotoValidoM1.Text == "")
+            else if (TxtVotoValido.Text == "")
             {
                 MessageBox.Show("Didite a quantidade de votos válidos da assembleia " + TxtAssembleia.Text, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TxtVotoValidoM1.Focus();
+                TxtVotoValido.Focus();
             }
             else
             {
+                if (mesas >= 1)
+                {
+                    LbM1.Visible = true;
+                    TxtVotosM1.Visible = true;
+                }
+                if (mesas >= 2)
+                {
+                    LbM2.Visible = true;
+                    TxtVotosM2.Visible = true;
+                }
+                if (mesas >= 3)
+                {
+                    LbM3.Visible = true;
+                    TxtVotosM3.Visible = true;
+                }
+                if (mesas >= 4)
+                {
+                    LbM4.Visible = true;
+                    TxtVotosM4.Visible = true;
+                }
+                if (mesas >= 5)
+                {
+                    LbM5.Visible = true;
+                    TxtVotosM5.Visible = true;
+                }
 
                 LbAss.Text = TxtAssembleia.Text;
                 LbVotoB.Text = TxtVotoBranco.Text;
@@ -596,7 +611,6 @@ namespace SICREE
             TxtVotosM3.Enabled = true;
             TxtVotosM4.Enabled = true;
             TxtVotosM5.Enabled = true;
-            TxtVotosM6.Enabled = true;
 
             TxtVotosM1.Focus();
         }
@@ -662,7 +676,6 @@ namespace SICREE
                         TxtVotosM3.Text = "0";
                         TxtVotosM4.Text = "0";
                         TxtVotosM5.Text = "0";
-                        TxtVotosM6.Text = "0";
                         TxtVotos.Text = "0";
 
                         TxtVotos.Enabled = false;
@@ -671,7 +684,6 @@ namespace SICREE
                         TxtVotosM3.Enabled = false;
                         TxtVotosM4.Enabled = false;
                         TxtVotosM5.Enabled = false;
-                        TxtVotosM6.Enabled = false;
 
                         votos += voto;
 
@@ -830,14 +842,6 @@ namespace SICREE
             TxtVotoReclamadoM5.Text = "0";
             TxtVotoValidoM5.Text = "0";
 
-            TxtBoletinsNaoUtilizadosM6.Text = "0";
-            TxtBoletinsInutilizadosM6.Text = "0";
-            TxtBoletinsRecebidosM6.Text = "0";
-            TxtVotoBrancoM6.Text = "0";
-            TxtVotoNuloM6.Text = "0";
-            TxtVotoReclamadoM6.Text = "0";
-            TxtVotoValidoM6.Text = "0";
-
             TxtBoletinsNaoUtilizados.Text = "0";
             TxtBoletinsInutilizados.Text = "0";
             TxtBoletinsRecebidos.Text = "0";
@@ -851,19 +855,41 @@ namespace SICREE
             TxtVotosM3.Text = "0";
             TxtVotosM4.Text = "0";
             TxtVotosM5.Text = "0";
-            TxtVotosM6.Text = "0";
             TxtVotos.Text = "0";
 
+            Mesa1.Visible = false;
+            Mesa2.Visible = false;
+            Mesa3.Visible = false;
+            Mesa4.Visible = false;
+            Mesa5.Visible = false;
+
+            LbM1.Visible = false;
+            TxtVotosM1.Visible = false;
+            LbM2.Visible = false;
+            TxtVotosM2.Visible = false;
+            LbM3.Visible = false;
+            TxtVotosM3.Visible = false;
+            LbM4.Visible = false;
+            TxtVotosM4.Visible = false;
+            LbM5.Visible = false;
+            TxtVotosM5.Visible = false;
         }
 
         private void BtnVoltar_Click(object sender, EventArgs e)
         {
+            Mesa1.Visible = false;
+            Mesa2.Visible = false;
+            Mesa3.Visible = false;
+            Mesa4.Visible = false;
+            Mesa5.Visible = false;
+
             tabControl1.SelectTab(tabPage1);
         }
 
         private void BtnRetroceder_Click(object sender, EventArgs e)
         {
             PanelCabecalho.Visible = false;
+
             tabControl1.SelectTab(tabPage2);
         }
 
@@ -1002,6 +1028,17 @@ namespace SICREE
 
         private void BtnRetroceder_Click_1(object sender, EventArgs e)
         {
+            LbM1.Visible = false;
+            TxtVotosM1.Visible = false;
+            LbM2.Visible = false;
+            TxtVotosM2.Visible = false;
+            LbM3.Visible = false;
+            TxtVotosM3.Visible = false;
+            LbM4.Visible = false;
+            TxtVotosM4.Visible = false;
+            LbM5.Visible = false;
+            TxtVotosM5.Visible = false;
+
             tabControl1.SelectTab(tabPage2);
         }
 
@@ -1963,76 +2000,6 @@ namespace SICREE
             }
         }
 
-        private void TxtVotoValidoM5_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                
-                TxtBoletinsRecebidosM6.Enabled = true;
-                TxtBoletinsRecebidosM6.Focus();
-            }
-        }
-
-        private void TxtBoletinsRecebidosM6_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                
-                TxtBoletinsInutilizadosM6.Enabled = true;
-                TxtBoletinsInutilizadosM6.Focus();
-            }
-        }
-
-        private void TxtBoletinsInutilizadosM6_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                
-                TxtBoletinsNaoUtilizadosM6.Enabled = true;
-                TxtBoletinsNaoUtilizadosM6.Focus();
-            }
-        }
-
-        private void TxtBoletinsNaoUtilizadosM6_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                
-                TxtVotoBrancoM6.Enabled = true;
-                TxtVotoBrancoM6.Focus();
-            }
-        }
-
-        private void TxtVotoBrancoM6_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                
-                TxtVotoNuloM6.Enabled = true;
-                TxtVotoNuloM6.Focus();
-            }
-        }
-
-        private void TxtVotoNuloM6_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                
-                TxtVotoReclamadoM6.Enabled = true;
-                TxtVotoReclamadoM6.Focus();
-            }
-        }
-
-        private void TxtVotoReclamadoM6_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                
-                TxtVotoValidoM6.Enabled = true;
-                TxtVotoValidoM6.Focus();
-            }
-        }
-
         private void TxtVotosM1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -2073,21 +2040,17 @@ namespace SICREE
             }
         }
 
-        private void TxtVotosM5_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                
-                TxtVotosM6.Enabled = true;
-                TxtVotosM6.Focus();
-            }
-        }
-
+        
         private void bunifuCustomLabel40_Click(object sender, EventArgs e)
         {
             this.Hide();
             FrmLogin form = new FrmLogin();
             form.Show();
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

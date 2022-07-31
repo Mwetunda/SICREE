@@ -93,7 +93,7 @@
                           <FontFamily>Century Gothic</FontFamily>
                           <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
-                          <Format>N2</Format>
+                          <Format>N0</Format>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
@@ -372,7 +372,7 @@
                           <FontFamily>Century Gothic</FontFamily>
                           <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
-                          <Format>N2</Format>
+                          <Format>N0</Format>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
@@ -421,7 +421,7 @@
                           <FontFamily>Century Gothic</FontFamily>
                           <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
-                          <Format>N2</Format>
+                          <Format>N0</Format>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
@@ -703,7 +703,7 @@
                         <Style>
                           <FontFamily>Century Gothic</FontFamily>
                           <FontWeight>Bold</FontWeight>
-                          <Format>N2</Format>
+                          <Format>N0</Format>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
@@ -752,6 +752,7 @@
                         <Style>
                           <FontFamily>Century Gothic</FontFamily>
                           <FontWeight>Bold</FontWeight>
+                          <Format>N0</Format>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
@@ -800,7 +801,7 @@
                         <Style>
                           <FontFamily>Century Gothic</FontFamily>
                           <FontWeight>Bold</FontWeight>
-                          <Format>N2</Format>
+                          <Format>N0</Format>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
@@ -1349,6 +1350,7 @@
                 </ChartCategoryAxes>
                 <ChartValueAxes>
                   <ChartAxis Name="Primary">
+                    <Visible>False</Visible>
                     <Style>
                       <FontSize>8pt</FontSize>
                       <Format>#,0;(#,0)</Format>

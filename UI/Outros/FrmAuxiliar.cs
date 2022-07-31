@@ -433,6 +433,16 @@ namespace SICREE
             tabControl1.SelectTab(tabPage6);
         }
 
+        private void Limpar()
+        {
+            TxtAssembleia.Text = "";
+            TxtEndereco.Text = "";
+            TxtNumEleitores.Text = "";
+            TxtNomeDelegado.Text = "";
+            TxtTelefoneDelegado.Text = "";
+            TxtGeolocalizacao.Text = "";
+        }
+
         //Assembleia
         void GravarAssembleia()
         {
@@ -462,9 +472,8 @@ namespace SICREE
                     {
                         assembleiaNegocio.Gravar(assembleiaPropriedades);
                         MessageBox.Show("Assembleia registada com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        
-                        TxtAssembleia.Text = "";
-                        TxtEndereco.Text = "";
+
+                        Limpar();
                         TxtAssembleia.Focus();
 
                         ListarAssembleias();
@@ -500,8 +509,7 @@ namespace SICREE
                     assembleiaNegocio.Actualizar(assembleiaPropriedades);
                     MessageBox.Show("Assembleia actualizada com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ListarAssembleias();
-                    TxtAssembleia.Text = "";
-                    TxtEndereco.Text = "";
+                    Limpar();
                     TxtAssembleia.Focus();
                 }
 
@@ -859,6 +867,11 @@ namespace SICREE
                 }
             }
             catch { }
+        }
+
+        private void bunifuCustomLabel10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

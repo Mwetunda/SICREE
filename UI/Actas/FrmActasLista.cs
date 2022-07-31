@@ -62,7 +62,7 @@ namespace SICREE.Actas
         void ActaNacional()
         {
             var Acta = actaNegocio.DadosNacionais();
-            var Geral = geralNegocio.DadosGeraisNacional();
+            //var Geral = geralNegocio.DadosGeraisNacional();
             var Lista = resultadoNegocio.ListarResultadoNacional();
 
             DGVNacional.DataSource = Lista;
@@ -98,7 +98,7 @@ namespace SICREE.Actas
         void ActaProvincial()
         {
             var Acta = actaNegocio.BuscarDadosMesaProvincial(Convert.ToInt32(CbxProvinciaG.SelectedValue));
-            var Geral = geralNegocio.DadosGeraisProvincial(Convert.ToInt32(CbxProvinciaG.SelectedValue));
+            //var Geral = geralNegocio.DadosGeraisProvincial(Convert.ToInt32(CbxProvinciaG.SelectedValue));
 
             var Lista = resultadoNegocio.ListarResultadoProvincial(Convert.ToInt32(CbxProvinciaG.SelectedValue));
 
@@ -131,7 +131,7 @@ namespace SICREE.Actas
                 LbVV1.Text = "";
             }
         }
-        //ACTA PROVINCIAL
+        //ACTA MUNICIPAL
         void ActaMunicipal()
         {
             var Acta = actaNegocio.BuscarDadosMesaMunicipal(Convert.ToInt32(CbxMunicipioG.SelectedValue));
@@ -270,7 +270,7 @@ namespace SICREE.Actas
             try
             {
                 var Acta = actaNegocio.DadosNacionais();
-                var Geral = geralNegocio.DadosGeraisNacional();
+                //var Geral = geralNegocio.DadosGeraisNacional();
                 var Lista = resultadoNegocio.ListarResultadoNacional();
 
                 var VotosValidos = Acta.VotosValidos;
